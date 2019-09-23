@@ -17,11 +17,11 @@
             android:icon="@drawable/ic_campus"
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/nav_test"
             android:icon="@drawable/ic_checklist"
             android:title="@string/test" />
         <item
-            android:id="@+id/nav_share"
+            android:id="@+id/nav_cal"
             android:icon="@drawable/ic_calendar"
             android:title="@string/menu_tools" />
         <item
@@ -31,11 +31,11 @@
 
 
             <item
-                android:id="@+id/order"
+                android:id="@+id/nav_shoping_card"
                 android:icon="@drawable/ic_empty_shopping_cart"
                 android:title="@string/menu_send" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_my_orders"
                 android:icon="@drawable/ic_box"
                 android:title="@string/menu_order" />
 

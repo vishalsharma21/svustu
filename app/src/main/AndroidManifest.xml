@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ritara.svustudent">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/new_logo"
@@ -11,13 +14,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Password"></activity>
+        <activity android:name=".Payments"></activity>
+        <activity android:name=".Password" />
         <activity android:name=".Verify" />
         <activity
             android:name=".Dashboard"
             android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,15 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MainActivity" />
         <activity android:name=".CircularViewActivity" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
 
-    </application>
-    <uses-permission android:name="android.permission.INTERNET" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_jb3DjVU34kmZi4"/>
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    </application>
 
 </manifest>

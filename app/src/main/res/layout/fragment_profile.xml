@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_bg"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_background">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Shivani Singh"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"    > </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/gradient">
+
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="8766318889"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="35dp"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_call_answer"
+            android:drawablePadding="10dp"
+            android:textColor="@color/Dark_Blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/gradient">
+
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="shivanisingh7291@gmail.com"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="35dp"
+            android:textSize="18dp"
+            android:textColor="@color/Dark_Blue" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/gradient">
+
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Profile Completion"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/Dark_Blue" />
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:minWidth="200dp"
+            android:max="100"
+            android:indeterminate="false"
+            android:progress="20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/gradient">
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Profile URL(Your CV/ Resume)"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/Dark_Blue" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="www.svu.edu.in"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/Dark_Blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/gradient">
+
+        </View>
+
+        <EditText
+            android:id="@+id/editAddressProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Tower / Flat No. / Apartment"
+            android:textColorHint="@color/grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:textColor="@color/Dark_Blue" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:textColorHint="@color/grey"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/submit_background"
+            android:ems="12"
+            android:textColor="@color/black"
+            android:text="Update"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -38,7 +38,6 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment implements ListManager.ListManagerInterface {
 
-
     private ListManager grid_adapter;
     private TextView title;
     private ImageView image;

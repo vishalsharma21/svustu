@@ -12,7 +12,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.ritara.svustudent.R;
 
-public class SendFragment extends Fragment {
+public class ShoppingCartFragment extends Fragment {
 
   private SendViewModel sendViewModel;
 

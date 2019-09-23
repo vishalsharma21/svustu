@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/3c3da13cb839bed0ba936da31cda7908/jetified-navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1e100e230132b3b24e85d42d485ec742/jetified-android-networking-1.0.2/AndroidManifest.xml:18:1-27:12
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9f5d65e55831530acf1aa466979096a5/jetified-android-networking-1.0.2/AndroidManifest.xml:18:1-27:12
 MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/93a3b468b9ce7b060126b9b93e51e66a/jetified-circlemenu-2.0.2/AndroidManifest.xml:2:1-11:12
 MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/AndroidManifest.xml:2:1-17:12
 MERGED from [com.github.mukeshsolanki:android-otpview-pinview:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06580449c08a6f1e5e0f603d005076ac/android-otpview-pinview-1.0.2/AndroidManifest.xml:2:1-12:12
@@ -17,9 +18,9 @@ MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/mac/.gradle/c
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/df470e1373f88845f5f332cb0d11af75/lifecycle-extensions-2.1.0/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d382ba9b8c9ea9d7b43a9cfaea0ecdf4/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/324a702de98e8e0560de88ae82ee3427/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/7c7aacbc203fb40dc09d2c2619bbf656/jetified-glide-4.8.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/aa91d8d2653c363bbd5da9d9892260d3/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/ba2af06f417607d7ef1ca9f201a0d139/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -54,27 +55,39 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d4ef17d609918d2a5f5a86d1ea02678f/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:4:5-36
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-39:12
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:9:5-67
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:6:5-34:19
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:9:5-40:19
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:11:5-30:19
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:11:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/AndroidManifest.xml:11:5-15:19
@@ -98,83 +111,87 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mac/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:12:9-41
 	tools:ignore
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:13:9-48
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:16:9-48
 	android:icon
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:8:9-42
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:11:9-42
 	android:allowBackup
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:14:9-40
 	android:usesCleartextTraffic
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:12:9-44
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:9-44
+activity#com.ritara.svustudent.Payments
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:9-55
+	android:name
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:19-43
 activity#com.ritara.svustudent.Password
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:14:9-55
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:9-46
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:14:19-43
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:19-43
 activity#com.ritara.svustudent.Verify
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:9-44
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:9-44
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:19-41
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:19-41
 activity#com.ritara.svustudent.Dashboard
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:16:9-19:59
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:20:9-23:59
 	android:label
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:13-33
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:22:13-33
 	android:theme
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:13-56
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:13-38
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:21:13-38
 activity#com.ritara.svustudent.SplashScreenActivity
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:21:9-27:20
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:21:19-55
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:24:19-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.ritara.svustudent.MainActivity
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:29:9-50
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:31:9-50
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:29:19-47
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:31:19-47
 activity#com.ritara.svustudent.CircularViewActivity
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:30:9-58
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:32:9-58
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:30:19-55
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:32:19-55
 activity#com.ritara.svustudent.Register
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:31:9-46
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:33:9-46
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:31:19-43
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:33:19-43
 activity#com.ritara.svustudent.Login
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:32:9-43
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:34:9-43
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:32:19-40
-uses-permission#android.permission.INTERNET
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:35:5-67
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:34:19-40
+meta-data#com.razorpay.ApiKey
+ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:36:9-38:54
+	android:value
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:38:13-52
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:35:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:37:5-79
-	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:37:22-76
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:37:13-47
 uses-sdk
 INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:5:5-7:41
+MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/3c3da13cb839bed0ba936da31cda7908/jetified-navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/3c3da13cb839bed0ba936da31cda7908/jetified-navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1e100e230132b3b24e85d42d485ec742/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
-MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1e100e230132b3b24e85d42d485ec742/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9f5d65e55831530acf1aa466979096a5/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9f5d65e55831530acf1aa466979096a5/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
 MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/93a3b468b9ce7b060126b9b93e51e66a/jetified-circlemenu-2.0.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/93a3b468b9ce7b060126b9b93e51e66a/jetified-circlemenu-2.0.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/AndroidManifest.xml:7:5-9:41
@@ -195,12 +212,12 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mac/.
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d382ba9b8c9ea9d7b43a9cfaea0ecdf4/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/324a702de98e8e0560de88ae82ee3427/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/324a702de98e8e0560de88ae82ee3427/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/7c7aacbc203fb40dc09d2c2619bbf656/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/7c7aacbc203fb40dc09d2c2619bbf656/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/aa91d8d2653c363bbd5da9d9892260d3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
@@ -279,6 +296,32 @@ INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidMani
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
+receiver#com.razorpay.RzpTokenReceiver
+ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:12:9-16:20
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:12:19-63
+intent-filter#action:name:rzp.device_token.share
+ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:13:13-15:29
+action#rzp.device_token.share
+ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:14:17-65
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:14:25-62
+activity#com.razorpay.CheckoutActivity
+ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:18:9-29:20
+	android:configChanges
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:20:13-83
+	android:theme
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:21:13-49
+	android:name
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:19:13-57
+intent-filter#action:name:android.intent.action.MAIN+data:host:rzp.io+data:scheme:io.rzp
+ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:22:13-28:29
+data
+ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:25:17-27:47
+	android:host
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:26:21-42
+	android:scheme
+		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:27:21-44
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities

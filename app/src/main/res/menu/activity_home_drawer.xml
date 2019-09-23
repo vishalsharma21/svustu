@@ -4,51 +4,39 @@
     tools:showIn="navigation_view">
 
   <group android:checkableBehavior="single">
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_users"
-        android:title="@string/menu_home" />
-    <item
-        android:id="@+id/nav_gallery"
-        android:icon="@drawable/ic_books"
-        android:title="@string/menu_gallery" />
-    <item
-        android:id="@+id/nav_slideshow"
-        android:icon="@drawable/ic_digital_campaign"
-        android:title="@string/menu_slideshow" />
-    <item
-        android:id="@+id/nav_tools"
-        android:icon="@drawable/ic_checklist"
-        android:title="@string/test" />
-    <item
-      android:id="@+id/nav_share"
-      android:icon="@drawable/ic_calendar"
-      android:title="@string/menu_tools" />
-    <item
-        android:id="@+id/notifications"
-        android:icon="@drawable/ic_notifications"
-        android:title="@string/menu_share" />
-  </group>
 
-
-    <menu>
-      <group android:checkableBehavior="single">
       <item
-          android:id="@+id/order"
+          android:id="@+id/nav_profile"
+          android:icon="@drawable/ic_users"
+          android:title="@string/menu_home" />
+      <item
+          android:id="@+id/nav_books"
+          android:icon="@drawable/ic_books"
+          android:title="@string/menu_gallery" />
+      <item
+          android:id="@+id/nav_video"
+          android:icon="@drawable/ic_digital_campaign"
+          android:title="@string/menu_slideshow" />
+      <item
+          android:id="@+id/nav_test"
+          android:icon="@drawable/ic_checklist"
+          android:title="@string/test" />
+      <item
+          android:id="@+id/nav_cal"
+          android:icon="@drawable/ic_calendar"
+          android:title="@string/menu_tools" />
+      <item
+          android:id="@+id/notifications"
+          android:icon="@drawable/ic_notifications"
+          android:title="@string/menu_share" />
+      <item
+          android:id="@+id/nav_shoping_card"
           android:icon="@drawable/ic_empty_shopping_cart"
           android:title="@string/menu_send" />
       <item
-          android:id="@+id/nav_send"
+          android:id="@+id/nav_my_orders"
           android:icon="@drawable/ic_box"
           android:title="@string/menu_order" />
-
-      </group>
-
-    </menu>
-
-
-  <menu>
-    <group android:checkableBehavior="single">
       <item
           android:id="@+id/account"
           android:icon="@drawable/ic_settings"
@@ -59,7 +47,5 @@
           android:title="@string/help" />
 
     </group>
-
-  </menu>
 
 </menu>

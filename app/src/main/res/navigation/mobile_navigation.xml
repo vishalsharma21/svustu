@@ -3,54 +3,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_profile">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.ritara.svustudent.ui.home.HomeFragment"
+        android:id="@+id/nav_profile"
+        android:name="com.ritara.svustudent.ui.profile.ProfileFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/login" >
-        <action
-            android:id="@+id/action_nav_home_self"
-            app:destination="@id/nav_home" />
-    </fragment>
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_books"
         android:name="com.ritara.svustudent.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-    android:id="@+id/nav_slideshow"
-    android:name="com.ritara.svustudent.ui.slideshow.SlideshowFragment"
-    android:label="@string/menu_slideshow"
-    tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_video"
+        android:name="com.ritara.svustudent.ui.vid.VideosFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_videos" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.ritara.svustudent.ui.tools.ToolsFragment"
+        android:id="@+id/nav_test"
+        android:name="com.ritara.svustudent.ui.cal.CalendarFragment"
         android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_calendar" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.ritara.svustudent.ui"
+        android:id="@+id/nav_cal"
+        android:name="com.ritara.svustudent.ui.noti.NotificationFragment"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_notify" />
+        tools:layout="@layout/fragment_item_list" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.ritara.svustudent.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_shopping" />
-
-
-    <fragment
-        android:id="@+id/orders"
+        android:id="@+id/notifications"
         android:name="com.ritara.svustudent.ui.orders.OrdersFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/nav_shoping_card"
+        android:name="com.ritara.svustudent.ui.send.ShoppingCartFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_shopping" />
+
+    <fragment
+        android:id="@+id/nav_my_orders"
+        android:name="com.ritara.svustudent.ui.shopping_cart.ShoppingFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_shopping" />
 
     <fragment
         android:id="@+id/account"
@@ -64,9 +65,6 @@
         android:label="@string/help"
         tools:layout="@layout/fragment_help" />
 
-    <fragment
-        android:id="@+id/shopping"
-        android:name="com.ritara.svustudent.ui.shopping_cart.ShoppingFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_shopping" />
+
+
 </navigation>

@@ -29,7 +29,6 @@ public class BaseActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     private float mDensity;
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         progressDialog = new ProgressDialog(BaseActivity.this);

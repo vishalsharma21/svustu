@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_marginTop="30dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="45dp"
         android:background="@drawable/side_nav_bar"
         app:title="SVU Apps"
         android:layout_marginBottom="15dp"
@@ -27,8 +27,8 @@
 
         <ImageView
             android:id="@+id/image_home"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_home_icon"
             android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"
@@ -63,8 +63,8 @@
 
         <ImageView
             android:id="@+id/image_connect"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_connect"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp">
@@ -92,9 +92,8 @@
             android:singleLine="false"
             android:layout_below="@id/text_connect"
             android:layout_marginLeft="65dp"
-            android:textSize="16dp">
+            android:textSize="14dp">
         </TextView>
-
 
     </RelativeLayout>
 
@@ -114,8 +113,8 @@
 
         <ImageView
             android:id="@+id/image_campus"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_campus"
             android:layout_marginLeft="15dp">
@@ -154,8 +153,8 @@
 
         <ImageView
             android:id="@+id/image_books"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_books"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp">
@@ -193,8 +192,8 @@
 
         <ImageView
             android:id="@+id/image_videos"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_videos"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp">
@@ -235,8 +234,8 @@
 
         <ImageView
             android:id="@+id/image_skills"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_skills"
             android:layout_marginLeft="15dp">
@@ -275,8 +274,8 @@
 
         <ImageView
             android:id="@+id/image_prep"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_prep"
             android:layout_marginLeft="15dp">
@@ -315,8 +314,8 @@
 
         <ImageView
             android:id="@+id/image_interns"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_interns"
             android:layout_marginLeft="15dp">
@@ -356,8 +355,8 @@
 
         <ImageView
             android:id="@+id/image_jobs"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_jobs"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp">
@@ -397,8 +396,8 @@
 
         <ImageView
             android:id="@+id/image_news"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_news"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp">
