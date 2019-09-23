@@ -24,7 +24,7 @@
         <activity android:name="com.ritara.svustudent.Password" />
         <activity android:name="com.ritara.svustudent.Verify" />
         <activity
-            android:name="com.ritara.svustudent.Home"
+            android:name="com.ritara.svustudent.Dashboard"
             android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.ritara.svustudent.SplashScreenActivity" >

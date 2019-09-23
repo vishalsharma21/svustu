@@ -119,14 +119,14 @@ activity#com.ritara.svustudent.Verify
 ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:9-44
 	android:name
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:19-41
-activity#com.ritara.svustudent.Home
+activity#com.ritara.svustudent.Dashboard
 ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:16:9-19:59
 	android:label
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:13-33
 	android:theme
 		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:13-33
+		ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:13-38
 activity#com.ritara.svustudent.SplashScreenActivity
 ADDED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:21:9-27:20
 	android:name

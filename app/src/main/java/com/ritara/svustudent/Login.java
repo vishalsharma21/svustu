@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
@@ -37,7 +35,7 @@ public class Login extends BaseActivity {
     login.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-          Intent intent = new Intent(Login.this, Home.class);
+          Intent intent = new Intent(Login.this, Dashboard.class);
           startActivity(intent);
       }
     });
@@ -72,7 +70,7 @@ public class Login extends BaseActivity {
                       sharedPreferences_svu.setAddress(jsonObject1.getString("address"));
                       sharedPreferences_svu.set_deviceId(jsonObject1.getString("device_id"));
                       sharedPreferences_svu.set_Logged(true);
-                      startActivity(new Intent(Login.this, Home.class));
+                      startActivity(new Intent(Login.this, Dashboard.class));
                       finish();
 
                     }

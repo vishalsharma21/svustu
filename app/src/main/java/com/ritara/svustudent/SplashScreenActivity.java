@@ -65,7 +65,7 @@ public class SplashScreenActivity extends Activity {
         Intent intent;
 
         if(sharedPreferences_svu.getTrainingDone()){
-          intent = new Intent(SplashScreenActivity.this, Home.class);
+          intent = new Intent(SplashScreenActivity.this, Dashboard.class);
         }else{
           intent = new Intent(SplashScreenActivity.this, MainActivity.class);
         }

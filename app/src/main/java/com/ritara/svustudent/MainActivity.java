@@ -19,10 +19,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.ritara.svustudent.Home;
-import com.ritara.svustudent.PreferenceManager;
-import com.ritara.svustudent.R;
-
 public class MainActivity extends AppCompatActivity {
 
     PreferenceManager preferenceManager;
@@ -58,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         vp.setCurrentItem(2);
                         break;
                     case 2:
-                        Intent intent = new Intent(MainActivity.this, Home.class);
+                        Intent intent = new Intent(MainActivity.this, Dashboard.class);
                         startActivity(intent);
                         break;
                 }
@@ -69,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, Home.class);
+                Intent intent = new Intent(MainActivity.this, Dashboard.class);
                 startActivity(intent);
             }
         });
@@ -123,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void launchMain() {
         preferenceManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(MainActivity.this, Home.class));
+        startActivity(new Intent(MainActivity.this, Dashboard.class));
         finish();
     }
 

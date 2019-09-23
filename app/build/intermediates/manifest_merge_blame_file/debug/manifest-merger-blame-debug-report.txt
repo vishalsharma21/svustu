@@ -43,8 +43,8 @@
 25-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:19-41
 26        <activity
 26-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:16:9-19:59
-27            android:name="com.ritara.svustudent.Home"
-27-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:13-33
+27            android:name="com.ritara.svustudent.Dashboard"
+27-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:13-38
 28            android:label="Home"
 28-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:13-33
 29            android:theme="@style/AppTheme.NoActionBar" />
