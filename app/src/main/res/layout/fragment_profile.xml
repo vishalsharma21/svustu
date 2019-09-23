@@ -121,6 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="www.svu.edu.in"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="15dp"
             android:textColor="@color/Dark_Blue" />
 
@@ -131,38 +132,120 @@
 
         </View>
 
-        <EditText
-            android:id="@+id/editAddressProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:hint="Tower / Flat No. / Apartment"
-            android:textColorHint="@color/grey"/>
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/general"
+            android:layout_margin="10dp">
         <TextView
+            android:id="@+id/aptitude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Email"
-            android:textColor="@color/Dark_Blue" />
+            android:text="General Aptitude Score"
+            android:textColor="@color/white"
+            android:paddingLeft="5dp"
+           android:textSize="20dp"/>
 
-        <EditText
-            android:id="@+id/edit_email"
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click to improve score"
+                android:textColor="@color/white"
+                android:layout_below="@id/aptitude"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/percent_apti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:hint="Email"
-            android:textColorHint="@color/grey"/>
+            android:layout_height="55dp"
+            android:background="@drawable/general"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/ability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Verbal Ability Score"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:textSize="20dp"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/submit_background"
-            android:ems="12"
-            android:textColor="@color/black"
-            android:text="Update"/>
+            <TextView
+                android:id="@+id/score_abi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click to improve score"
+                android:textColor="@color/white"
+                android:layout_below="@id/ability"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/percent_abi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/general"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/dues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fees Paid"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/fee_dues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to know dues"
+                android:textColor="@color/white"
+                android:layout_below="@id/dues"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/fees_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"/>
+        </RelativeLayout>
     </LinearLayout>
 
 </RelativeLayout>

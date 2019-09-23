@@ -24,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.ritara.svustudent.ui.home.HomeFragment;
+import com.ritara.svustudent.ui.profile.ProfileFragment;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 public class Dashboard extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -106,7 +107,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                         changeFragment(new HomeFragment() , "Home");
                         break;
                     case "Profile":
-                        changeFragment(new HomeFragment() , "Home");
+                        changeFragment(new ProfileFragment() , "Profile");
                         break;
                     case "Notifications":
                         startActivity(new Intent(Dashboard.this, Payments.class));
