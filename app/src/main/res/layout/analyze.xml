@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/exams_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/app_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="-231dp"
+            android:text="Shri Venkateshwara University"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="27dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/exams_bg"
+        android:id="@+id/vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome :"
+        android:textSize="25dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/vision">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/exams_bg"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/vision_text"
+        android:layout_below="@id/vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_1"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true">
+    </TextView>
+
+
+    <TextView
+        android:layout_below="@id/vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:text="@string/welcome_2"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true">
+    </TextView>
+
+
+    <TextView
+        android:layout_below="@id/vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_3"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true">
+    </TextView>
+
+</LinearLayout>
+
+
+</ScrollView>
+</RelativeLayout>

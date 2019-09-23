@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/connect"
+            android:icon="@drawable/ic_connect"
+            android:contentDescription="Connect with your peers and expert faculities worldwide"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/campus"
+            android:icon="@drawable/ic_campus"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_checklist"
+            android:title="@string/test" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/ic_notifications"
+            android:title="@string/menu_share" />
+
+
+            <item
+                android:id="@+id/order"
+                android:icon="@drawable/ic_empty_shopping_cart"
+                android:title="@string/menu_send" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_box"
+                android:title="@string/menu_order" />
+
+
+            <item
+                android:id="@+id/account"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/account" />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_icon"
+                android:title="@string/help" />
+
+
+
+    </menu>
+

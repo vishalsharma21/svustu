@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SVU</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="next">NEXT</string>
+    <string name="welcome_3">With the above aim in focus and to make the University as a Centre of Excellence for higher studies and research, the University has been equipped with excellent physical and academic infrastructure, latest curriculum, and improved teaching methodology. Best talent has been recruited as faculty, industry interaction and practical exposure makes the learning process at the university dynamic. Our aim is to make Shri Venkateshwara University as one of the best Centres of Excellence in higher studies and research.</string>
+    <string name="welcome_2">In order to face the challenges of globalization and liberalization in the field of higher education, the University has endowed its faculty and students with modern technologies, facilities and resources so as to enhance their competency and quality of teaching so they are able to contribute constantly towards learning &amp; research. It is true that conducive environment with updated technological inputs and latest information helps not only providing quality education but also provides human touch and ensures fervent dedication to the cause of the nation and the society.</string>
+    <string name="welcome_1">Shri Venkateshwara University is an autonomous body promulgated by the Govt. of Uttar Pradesh Act. No. 26 of 2010, passed by Uttar Pradesh Assembly. The university is further approved by the UGC u/s 2(f) of the UGC Act 1956, with the right to confer degree u/s 22(1) of the UGC Act.</string>
+    <string name="admission">The application can be sent to DDE directly or through its Head Office at Directorate of Distance Education, Shri Venkateshwara University, NH-24, Rajabpur, Gajraula, Dist-Amroha-244236 (UP) or through online web portal i.e. www.svu.edu.in for the centralized registration of ODL. Online registration details are also available on the university portal of the Shri Venkateshwara University, Gajraula, Uttar Pradesh. The applicant’s eligibility will be checked and accordingly, he/she shall be granted admission and an acknowledgment of the receipt of the fee and the application form shall be issued.</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">My Profile</string>
+    <string name="menu_gallery">My Books</string>
+    <string name="menu_slideshow">My Videos</string>
+    <string name="menu_tools">My Calendar</string>
+    <string name="test">My Tests</string>
+    <string name="menu_share">Notifications</string>
+    <string name="menu_send">My Shopping Cart</string>
+
+
+    <string name="first_approval">Your Request to join SVU university has been sent</string>
+    <string name="approval">You may contact your institution\'s management or wait for the approval</string>
+    <string name="three_approval">Alternatively,you can contact support@svu.edu.in</string>
+
+    <string name="menu_order">My Orders</string>
+    <string name="account">Account Settings</string>
+    <string name="help">Help</string>
+    <string name="suport"><u>support@svu.edu.in</u></string>
+    <string name="mobile_no"><u>+91-8166318889</u></string>
+    <string name="resend"><u>Resend Code</u></string>
+
+</resources>

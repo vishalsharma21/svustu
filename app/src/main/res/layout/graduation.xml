@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/exams_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_undraw_exams_g4ow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="-231dp"
+            android:text="Vision &amp; Mission"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/vision"
+        android:layout_below="@id/exams_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vision :"
+        android:textSize="25dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true"/>
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:layout_below="@id/vision"-->
+<!--        colo></View>-->
+
+
+    <TextView
+        android:id="@+id/vision_text"
+        android:layout_below="@id/vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=". To be a global center of academic excellence with the state-of-art facilities and the best educational resources for imparting innovative knowledge and learning environment and resources:"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_below="@id/vision_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Mission:"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/mision_text"
+        android:layout_below="@id/mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Knowledge dissemination for achievements in the international arena and facilitating the integration of multidisciplinary approaches for enrichment and quality enhancement."
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
+        android:textColor="#FF090909"
+        android:layout_centerInParent="true">
+
+
+    </TextView>
+</RelativeLayout>

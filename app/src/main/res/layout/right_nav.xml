@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/side_nav_bar"
+        app:title="SVU Apps"
+        android:layout_marginBottom="15dp"
+        app:titleTextColor="#fff">
+
+    </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/image_home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_connect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_connect"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/image_connect"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:text="Connect with your peers and expert faculties worldwide "
+            android:textColor="#969292"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:layout_below="@id/text_connect"
+            android:layout_marginLeft="65dp"
+            android:textSize="16dp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/campus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_campus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_campus"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_campus"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_books"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_books"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Books"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_books"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/videos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_videos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_videos"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videos"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_videos"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+
+
+    <RelativeLayout
+        android:id="@+id/skills"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_skills"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_skills"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_skills"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/preps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_prep"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_prep"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preps"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_prep"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/interns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_interns"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_interns"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interns"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_interns"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/jobs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_jobs"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_jobs"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_jobs"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_news"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_news"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image_news"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/gradient">
+
+    </View>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="For any help or assitance ,please contact support@svu.com"></TextView>
+</LinearLayout>
+</LinearLayout>

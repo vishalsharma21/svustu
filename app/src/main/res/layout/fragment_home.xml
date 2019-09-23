@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+  android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="40dp"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/app_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+    android:text="Shri Venkateshwara University"
+    android:textSize="18dp"
+    android:textColor="#fff">
+   </TextView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Rajabpur Gajraula - 244236,Distt. Amroha"
+          android:textSize="12dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="#fff">
+      </TextView>
+
+  </LinearLayout>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_vertical"
+      android:layout_marginTop="25dp"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="40dp"
+      >
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="120dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_signup_curve"
+        android:text="SIGN UP"
+        android:textColor="#fff">
+
+    </Button>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_signup_curve"
+        android:text="SIGN IN"
+        android:textColor="#fff">
+
+    </Button>
+
+  </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/about"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@id/banner"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="35dp"
+    android:background="@drawable/button_signup_curve"
+    android:orientation="horizontal">
+
+  <ImageView
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:src="@drawable/ic_building"
+      android:layout_marginLeft="65dp"
+      android:layout_gravity="center_vertical">
+  </ImageView>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="About University"
+      android:textSize="16dp"
+      android:layout_gravity="center"
+      android:layout_marginLeft="10dp"
+      android:textStyle="bold"
+      android:textColor="#fff"
+      ></TextView>
+
+</LinearLayout>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/grid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/about"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:background="@drawable/grid_background"
+      >
+
+  </androidx.recyclerview.widget.RecyclerView>
+  <LinearLayout
+      android:id="@+id/download"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@id/grid"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:paddingRight="15dp"
+      android:paddingLeft="35dp"
+      android:background="@drawable/button_signup_curve"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_emails_interface_download_symbol"
+        android:layout_marginLeft="65dp"
+        android:layout_gravity="center_vertical">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloads and links"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        ></TextView>
+
+  </LinearLayout>
+
+</RelativeLayout>

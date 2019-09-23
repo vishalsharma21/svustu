@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgToolRight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_icon"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"/>
+      </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#01baf2 "
+        app:tabSelectedTextColor="#fff"
+        app:tabTextColor="#000">
+      <com.google.android.material.tabs.TabItem
+          android:id="@+id/home"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Home"/>
+
+
+      <com.google.android.material.tabs.TabItem
+          android:id="@+id/experts"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Experts"/>
+
+      <com.google.android.material.tabs.TabItem
+          android:id="@+id/profile"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Profile"/>
+
+    </com.google.android.material.tabs.TabLayout>
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <include layout="@layout/content_home"/>
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_margin="@dimen/fab_margin"
+      android:visibility="gone"
+      app:srcCompat="@android:drawable/ic_menu_help" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

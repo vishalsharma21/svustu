@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.imangazaliev.circlemenu.CircleMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/app_icon"
+        app:openOnStart="true"
+        android:id="@+id/circleMenu">
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#2196F3"
+            app:colorPressed="#1E88E5"
+            app:icon="@drawable/new_logo"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#4CAF50"
+            app:colorPressed="#43A047"
+            app:icon="@drawable/new_logo"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/admission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/placement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:icon="@drawable/new_logo"/>
+
+    </com.imangazaliev.circlemenu.CircleMenu>
+
+</RelativeLayout>

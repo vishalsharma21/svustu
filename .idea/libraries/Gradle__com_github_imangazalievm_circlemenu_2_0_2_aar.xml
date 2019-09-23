@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.imangazalievm:circlemenu:2.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/93a3b468b9ce7b060126b9b93e51e66a/jetified-circlemenu-2.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/93a3b468b9ce7b060126b9b93e51e66a/jetified-circlemenu-2.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.imangazalievm/circlemenu/2.0.2/a02bf197e7e1dea4220cf1dbab7f1eae0ac162af/circlemenu-2.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.imangazalievm/circlemenu/2.0.2/e55a8cd5551aa823fd6fb3db7bffafac743603ce/circlemenu-2.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

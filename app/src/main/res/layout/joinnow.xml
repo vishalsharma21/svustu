@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/new_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shri Venkateshwara University"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDUCATION IS NOT PREPARATION FOR LIFE, EDUCATION IS LIFE ITSELF"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3F3D3D"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/department_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="16dp"
+            android:hint="Select your Department"
+            android:layout_marginRight="25dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_course"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="55dp">
+
+        <EditText
+            android:id="@+id/cpurse"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="16dp"
+                android:hint="Select your Course"
+            android:layout_marginRight="25dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_class"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="55dp">
+
+        <EditText
+            android:id="@+id/class_view"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="16dp"
+            android:hint="Select your Class"
+            android:layout_marginRight="25dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registration_number"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="70dp">
+
+        <EditText
+            android:id="@+id/registration"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="20dp"
+            android:hint="Select your registration number"
+            android:layout_marginRight="25dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/aadhar_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="70dp">
+
+        <EditText
+            android:id="@+id/adhaar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="16dp"
+            android:hint="Enter your aadhar number"
+            android:layout_marginRight="25dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/side_nav_bar"
+        android:text="SEND JOIN REQUEST"
+        android:textColor="#fff"
+        android:textSize="16dp">
+    </Button>
+
+</LinearLayout>
