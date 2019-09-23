@@ -1323,6 +1323,7 @@ drawable flag_wallis_and_futuna
 drawable flag_yemen
 drawable flag_zambia
 drawable flag_zimbabwe
+drawable general
 drawable gradient
 drawable grid_background
 drawable home_bg
@@ -1411,6 +1412,7 @@ drawable submit_background
 drawable svu_app_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user
 id ALT
 id ARABIC
 id BENGALI
@@ -1427,7 +1429,6 @@ id JAPANESE
 id JAVANESE
 id META
 id PORTUGUESE
-id ProfileImg
 id RUSSIAN
 id SHIFT
 id SPANISH
@@ -1556,9 +1557,6 @@ id disableHome
 id download
 id drawer_layout
 id editAddressProfile
-id editAgeProfile
-id editMobileNoProfile
-id editNameProfile
 id editText_search
 id edit_email
 id edit_query
@@ -1687,6 +1685,7 @@ id otp_three_edit_text
 id otp_two_edit_text
 id otp_view
 id outline
+id pBar
 id packed
 id parallax
 id parent
