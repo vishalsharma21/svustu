@@ -24,21 +24,21 @@
         tools:layout="@layout/fragment_videos" />
 
     <fragment
-        android:id="@+id/nav_test"
+        android:id="@+id/nav_cal"
         android:name="com.ritara.svustudent.ui.cal.CalendarFragment"
         android:label="@string/menu_tools"
         tools:layout="@layout/fragment_calendar" />
 
     <fragment
-        android:id="@+id/nav_cal"
-        android:name="com.ritara.svustudent.ui.noti.NotificationFragment"
+        android:id="@+id/nav_test"
+        android:name="com.ritara.svustudent.ui.test.TestsFragment"
         android:label="@string/menu_share"
         tools:layout="@layout/fragment_item_list" />
 
     <fragment
-        android:id="@+id/notifications"
+        android:id="@+id/nav_my_orders"
         android:name="com.ritara.svustudent.ui.orders.OrdersFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_order"
         tools:layout="@layout/fragment_orders" />
 
     <fragment
@@ -48,10 +48,10 @@
         tools:layout="@layout/fragment_shopping" />
 
     <fragment
-        android:id="@+id/nav_my_orders"
-        android:name="com.ritara.svustudent.ui.shopping_cart.ShoppingFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_shopping" />
+        android:id="@+id/notifications"
+        android:name="com.ritara.svustudent.ui.notifications.NotifyFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_notify" />
 
     <fragment
         android:id="@+id/account"

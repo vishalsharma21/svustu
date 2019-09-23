@@ -62,6 +62,7 @@ public class SplashScreenActivity extends Activity {
         }
         SplashScreenActivity.this.finish();
 
+
         Intent intent;
 
         if(sharedPreferences_svu.getTrainingDone()){

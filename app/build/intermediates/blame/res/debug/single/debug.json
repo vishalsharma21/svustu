@@ -116,6 +116,10 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_record.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_record.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -180,16 +184,16 @@
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\navigation\\right.xml"
     },
     {
-        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
-        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\cb634fe4b4d1fdfcd5255e485d30a0c1\\material-1.0.0\\res\\color\\mtrl_btn_stroke_color_selector.xml"
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_mozambique.png.flat",
+        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_mozambique.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_zambia.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_zambia.png"
     },
     {
-        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_mozambique.png.flat",
-        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_mozambique.png"
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
+        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\cb634fe4b4d1fdfcd5255e485d30a0c1\\material-1.0.0\\res\\color\\mtrl_btn_stroke_color_selector.xml"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_canada.png.flat",
@@ -350,6 +354,10 @@
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_record.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_record.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -740,6 +748,10 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_record.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_record.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_checklist.xml.flat",
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\drawable-v24\\ic_checklist.xml"
     },
@@ -980,6 +992,10 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_record.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_record.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_pitcairn_islands.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_pitcairn_islands.png"
     },
@@ -1100,20 +1116,28 @@
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\drawable-v24\\general.xml"
     },
     {
-        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_edit.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_edit.png"
     },
     {
-        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\layout_interns_fragment.xml.flat",
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\layout\\interns_fragment.xml"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_edit.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_edit.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1362,6 +1386,10 @@
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_uganda.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_uganda.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_edit.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_edit.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
@@ -1896,12 +1924,12 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_pop_exit_anim.xml.flat",
-        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f7796b0767470d729e51d6c1a355638a\\jetified-navigation-ui-2.1.0\\res\\anim\\nav_default_pop_exit_anim.xml"
-    },
-    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_tokelau.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_tokelau.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_pop_exit_anim.xml.flat",
+        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f7796b0767470d729e51d6c1a355638a\\jetified-navigation-ui-2.1.0\\res\\anim\\nav_default_pop_exit_anim.xml"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
@@ -1954,6 +1982,10 @@
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rzp_logo.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\cb959ff3d6a327c2db060a4e9eca91f0\\checkout-1.5.12\\res\\drawable-hdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_security.xml.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\layout\\fragment_security.xml"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
@@ -2220,6 +2252,10 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_guam.png"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_edit.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_edit.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -2344,6 +2380,10 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\cb634fe4b4d1fdfcd5255e485d30a0c1\\material-1.0.0\\res\\color\\design_tint_password_toggle.xml"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_record.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_record.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\cb634fe4b4d1fdfcd5255e485d30a0c1\\material-1.0.0\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
@@ -2372,12 +2412,12 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_philippines.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\drawable-nodpi-v4\\flag_philippines.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
@@ -2592,6 +2632,10 @@
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\layout\\fragment_item.xml"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_edit.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_edit.png"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\c527b78844be871c44103f6f45a963fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -2638,6 +2682,10 @@
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_record.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_record.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_menu_gallery.xml.flat",
@@ -2868,6 +2916,10 @@
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f6a183f8595ca34f3d5cc99d1f8bc322\\appcompat-1.0.2\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_record.xml.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_record.xml"
+    },
+    {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_expert.xml.flat",
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\drawable-v24\\ic_expert.xml"
     },
@@ -2934,6 +2986,10 @@
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_code_picker.xml.flat",
         "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\18539a8455cabac6e1263da26eb134c7\\jetified-ccp-1.7.2\\res\\layout\\layout_code_picker.xml"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_edit.xml.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_edit.xml"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -3118,6 +3174,10 @@
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\layout_right_nav.xml.flat",
         "source": "D:\\SVU_Student\\svu_student\\app\\src\\main\\res\\layout\\right_nav.xml"
+    },
+    {
+        "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_edit.png.flat",
+        "source": "D:\\SVU_Student\\svu_student\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_edit.png"
     },
     {
         "merged": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",

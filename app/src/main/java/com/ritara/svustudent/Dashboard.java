@@ -32,6 +32,7 @@ import com.ritara.svustudent.fragments.PrepsFragment;
 import com.ritara.svustudent.fragments.SkillsFragment;
 import com.ritara.svustudent.fragments.VidsFragment;
 import com.ritara.svustudent.ui.home.HomeFragment;
+import com.ritara.svustudent.ui.profile.ProfileFragment;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 public class Dashboard extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -174,7 +175,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                         changeFragment(new HomeFragment() , "Home");
                         break;
                     case "Profile":
-                        changeFragment(new HomeFragment() , "Home");
+                        changeFragment(new ProfileFragment() , "Profile");
                         break;
                     case "Notifications":
                         startActivity(new Intent(Dashboard.this, Payments.class));
