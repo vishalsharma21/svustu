@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -157,8 +159,57 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     }
 
     @Override
-    public void onBindView(ListManager.BaseAdapterViewHolder holder, int position, String for_what) {
+    public void onBindView(final ListManager.BaseAdapterViewHolder holder, final int position, String for_what) {
         ((TextView)holder.itemView.findViewById(R.id.title)).setText(item_list.get(position).getName());
+        holder.itemView.findViewById(R.id.image).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String test = "";
+                switch (item_list.get(position).getName()){
+                    case "My Class" :
+                        test = "My Class";
+                        break;
+                    case "E-Library" :
+                        test = "Library";
+                        break;
+                    case "Members" :
+                        test = "Members";
+                        break;
+                    case "My Books" :
+                        test = "Books";
+                        break;
+                    case "My Videos" :
+                        test = "Videos";
+                        break;
+                    case "My Tests" :
+                        test = "Tests";
+                        break;
+                    case "Calendar" :
+                        test = "Calendar";
+                        break;
+                    case "Message" :
+                        test = "Message";
+                        break;
+                    case "Notice Board" :
+                        test = "Notice";
+                        break;
+                    case "Alumini" :
+                        test = "Alumini";
+                        break;
+                    case "Emergency" :
+                        test = "Emergency";
+                        break;
+                    case "Reports" :
+                        test = "Reports";
+                        break;
+
+                    default:
+                        break;
+                }
+                Toast.makeText(getActivity(), test, Toast.LENGTH_SHORT).show();
+            }
+        });
+
         try {
             Picasso.get()
                     .load(item_list.get(position).getImage())

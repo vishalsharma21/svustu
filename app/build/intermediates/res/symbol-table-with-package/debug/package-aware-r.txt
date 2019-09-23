@@ -1699,7 +1699,6 @@ id pin
 id placement
 id preferenceDivider
 id preps
-id profile
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1896,6 +1895,8 @@ layout activity_splash_screen
 layout analyze
 layout app_bar_home
 layout approval
+layout books_fragment
+layout campus_fragment
 layout content_home
 layout custom_dialog
 layout custom_layout
@@ -1932,8 +1933,10 @@ layout fragment_tools
 layout fragment_videos
 layout graduation
 layout header
+layout interns_fragment
 layout item_home
 layout item_nav
+layout jobs_fragment
 layout joinnow
 layout layout_code_picker
 layout layout_picker_dialog
@@ -1942,6 +1945,7 @@ layout login
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_home
+layout news_fragment
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1959,6 +1963,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout otpview_layout
 layout password
+layout preps_fragment
 layout register
 layout right_nav
 layout rzp_loader
@@ -1966,9 +1971,12 @@ layout rzp_magic_base
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout skills_fragment
 layout support_simple_spinner_dropdown_item
 layout test_nav
 layout verify
+layout videos_fragment
+layout vids_fragment
 menu activity_home_drawer
 menu activity_right_drawer
 menu bottom_nav

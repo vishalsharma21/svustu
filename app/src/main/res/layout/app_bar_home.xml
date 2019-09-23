@@ -32,32 +32,32 @@
       </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#01baf2 "
-        app:tabSelectedTextColor="#fff"
-        app:tabTextColor="#000">
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="#01baf2 "-->
+<!--        app:tabSelectedTextColor="#fff"-->
+<!--        app:tabTextColor="#000">-->
 
-      <com.google.android.material.tabs.TabItem
-          android:id="@+id/home"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Home"/>
+<!--      <com.google.android.material.tabs.TabItem-->
+<!--          android:id="@+id/home"-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:text="Home"/>-->
 
-      <com.google.android.material.tabs.TabItem
-          android:id="@+id/experts"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Experts"/>
+<!--      <com.google.android.material.tabs.TabItem-->
+<!--          android:id="@+id/experts"-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:text="Experts"/>-->
 
-      <com.google.android.material.tabs.TabItem
-          android:id="@+id/profile"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Profile"/>
+<!--      <com.google.android.material.tabs.TabItem-->
+<!--          android:id="@+id/profile"-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:text="Profile"/>-->
 
-    </com.google.android.material.tabs.TabLayout>
+<!--    </com.google.android.material.tabs.TabLayout>-->
   </com.google.android.material.appbar.AppBarLayout>
 
   <include layout="@layout/content_home"/>

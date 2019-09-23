@@ -36,7 +36,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.ritara.svustudent.MainActivity" />
-        <activity android:name="com.ritara.svustudent.CircularViewActivity" />
         <activity android:name="com.ritara.svustudent.Register" />
         <activity android:name="com.ritara.svustudent.Login" />
 
