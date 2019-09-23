@@ -1323,6 +1323,7 @@ drawable flag_wallis_and_futuna
 drawable flag_yemen
 drawable flag_zambia
 drawable flag_zimbabwe
+drawable general
 drawable gradient
 drawable grid_background
 drawable home_bg
@@ -1340,6 +1341,7 @@ drawable ic_connect
 drawable ic_cursor
 drawable ic_dashboard_black_24dp
 drawable ic_digital_campaign
+drawable ic_edit
 drawable ic_email_filled_closed_envelope
 drawable ic_emails_interface_download_symbol
 drawable ic_empty_shopping_cart
@@ -1370,6 +1372,7 @@ drawable ic_notifications
 drawable ic_notifications_black_24dp
 drawable ic_prep
 drawable ic_profile
+drawable ic_record
 drawable ic_settings
 drawable ic_skills
 drawable ic_undraw_analyze_17kw
@@ -1411,6 +1414,7 @@ drawable submit_background
 drawable svu_app_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user
 id ALT
 id ARABIC
 id BENGALI
@@ -1427,12 +1431,12 @@ id JAPANESE
 id JAVANESE
 id META
 id PORTUGUESE
-id ProfileImg
 id RUSSIAN
 id SHIFT
 id SPANISH
 id SYM
 id aadhar_layout
+id ability
 id about
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1497,6 +1501,7 @@ id alertTitle
 id all
 id always
 id app
+id aptitude
 id async
 id auto
 id back
@@ -1505,6 +1510,7 @@ id barrier
 id beginning
 id blocking
 id books
+id books_img
 id bottom
 id bottom_nav
 id btnPayment
@@ -1555,12 +1561,8 @@ id direct
 id disableHome
 id download
 id drawer_layout
-id editAddressProfile
-id editAgeProfile
-id editMobileNoProfile
-id editNameProfile
+id dues
 id editText_search
-id edit_email
 id edit_query
 id email
 id email_id
@@ -1570,6 +1572,10 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id etAmount
+id et_email
+id et_mobile
+id et_password
+id et_profile_url
 id exams_bg
 id exitUntilCollapsed
 id expand_activities_button
@@ -1577,6 +1583,8 @@ id expanded_menu
 id experts
 id fab
 id favorite
+id fee_dues
+id fees_paid
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1650,6 +1658,7 @@ id mission
 id mobile
 id mobile_img
 id mobile_navigation
+id mobile_no
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1687,6 +1696,7 @@ id otp_three_edit_text
 id otp_two_edit_text
 id otp_view
 id outline
+id pBar
 id packed
 id parallax
 id parent
@@ -1695,12 +1705,17 @@ id parent_matrix
 id pass
 id password
 id percent
+id percent_abi
+id percent_apti
 id phone_number
 id pin
 id placement
+id policy
 id preferenceDivider
 id preps
+id privacy
 id profile
+id profile_url
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1726,6 +1741,8 @@ id rzp_theMainMagicView
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
+id score
+id score_abi
 id screen
 id scroll
 id scrollIndicatorDown
@@ -1783,6 +1800,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id terms
 id text
 id text2
 id textSpacerNoButtons
@@ -1925,6 +1943,7 @@ layout fragment_item_list
 layout fragment_notify
 layout fragment_orders
 layout fragment_profile
+layout fragment_security
 layout fragment_send
 layout fragment_share
 layout fragment_shopping
@@ -2056,10 +2075,13 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string policy
+string privacy
 string resend
 string search_menu_title
 string status_bar_notification_info_overflow
 string suport
+string terms
 string test
 string three_approval
 string title_activity_home

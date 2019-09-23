@@ -34,6 +34,11 @@
     <string name="help">Help</string>
     <string name="suport"><u>support@svu.edu.in</u></string>
     <string name="mobile_no"><u>+91-8166318889</u></string>
+    <string name="terms"><u>Terms Of Services</u></string>
+    <string name="privacy"><u>Privacy Policy</u></string>
+    <string name="policy"><u>Take Down Policy</u></string>
+
+
     <string name="resend"><u>Resend Code</u></string>
 
     <!-- TODO: Remove or change this placeholder text -->
