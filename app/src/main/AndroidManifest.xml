@@ -29,7 +29,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".CircularViewActivity" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
 

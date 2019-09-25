@@ -115,6 +115,37 @@ public class SharedPreferences_SVU {
 
 
 
+
+
+
+
+
+    public void set_MotherName(String getTrainingDone) {
+        editor.putString("set_MotherName", getTrainingDone);
+        editor.commit();
+    }
+
+    public String get_MotherName() {
+        return sharedPreference.getString("set_MotherName", "");
+    }
+
+    public void set_FatherName(String getTrainingDone) {
+        editor.putString("set_FatherName", getTrainingDone);
+        editor.commit();
+    }
+
+    public String get_FatherName() {
+        return sharedPreference.getString("set_FatherName", "");
+    }
+
+    public void set_CurrentAddress(String getTrainingDone) {
+        editor.putString("set_CurrentAddress", getTrainingDone);
+        editor.commit();
+    }
+
+    public String get_CurrentAddress() {
+        return sharedPreference.getString("set_CurrentAddress", "");
+    }
 }
 
 

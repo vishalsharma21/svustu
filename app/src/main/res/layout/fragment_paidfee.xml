@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/submit_background"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/item_Branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin_2"
+        android:visibility="gone"
+        android:text="item_Branch"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_Course"
+        android:layout_width="wrap_content"
+        android:text="item_Course"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_Credit"
+        android:layout_width="wrap_content"
+        android:text="item_Credit"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_Debit"
+        android:layout_width="wrap_content"
+        android:text="item_Debit"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item_Description"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_EnrollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item_EnrollNo"
+        android:visibility="gone"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item_FName"
+        android:visibility="gone"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item_Name"
+        android:layout_margin="@dimen/text_margin_2"
+        android:visibility="gone"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_ReceiptNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item_ReceiptNo"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/item_TransDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item_TransDate"
+        android:layout_margin="@dimen/text_margin_2"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+</LinearLayout>

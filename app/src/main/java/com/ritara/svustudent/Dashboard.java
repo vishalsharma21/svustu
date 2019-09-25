@@ -23,6 +23,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
+import com.ritara.svustudent.fragments.BooksFragment;
+import com.ritara.svustudent.fragments.CampusFragment;
+import com.ritara.svustudent.fragments.InternsFragment;
+import com.ritara.svustudent.fragments.JobsFragment;
+import com.ritara.svustudent.fragments.NewsFragment;
+import com.ritara.svustudent.fragments.PrepsFragment;
+import com.ritara.svustudent.fragments.SkillsFragment;
+import com.ritara.svustudent.fragments.VidsFragment;
 import com.ritara.svustudent.ui.home.HomeFragment;
 import com.ritara.svustudent.ui.profile.ProfileFragment;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
@@ -45,6 +53,8 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
         sharedPreferences_svu.setTrainingDone(true);
 
+
+
         ImageView imgToolRight = (ImageView) toolbar.findViewById(R.id.imgToolRight);
 
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
@@ -61,21 +71,81 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
         NavigationView navigationViewRight = findViewById(R.id.nav_view2);
         navigationViewRight.setItemIconTintList(null);
-        navigationViewRight.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        View headerview = navigationViewRight.getHeaderView(0);
+
+        headerview.findViewById(R.id.home).setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getTitle().toString()){
-                    case "home" :
-                        changeFragment(new HomeFragment() , "Home");
-                        break ;
-                    case "connect" :
+            public void onClick(View view) {
+                changeFragment(new HomeFragment() , "Home");
 
-                        break;
-                    case "campus" :
-                        break;
+            }
+        });
 
-                }
-                return true;
+        headerview.findViewById(R.id.connect).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new HomeFragment() , "Home");
+
+            }
+        });
+
+        headerview.findViewById(R.id.campus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new CampusFragment() , "Campus");
+            }
+        });
+
+        headerview.findViewById(R.id.books).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new BooksFragment() , "Books");
+            }
+        });
+
+        headerview.findViewById(R.id.videos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new VidsFragment() , "Videos");
+            }
+        });
+
+        headerview.findViewById(R.id.skills).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new SkillsFragment() , "Skills");
+            }
+        });
+
+        headerview.findViewById(R.id.preps).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new PrepsFragment() , "Preps");
+
+            }
+        });
+
+        headerview.findViewById(R.id.interns).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new InternsFragment() , "Interns");
+
+            }
+        });
+
+        headerview.findViewById(R.id.jobs).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new JobsFragment() , "Jobs");
+
+            }
+        });
+
+        headerview.findViewById(R.id.news).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new NewsFragment() , "News");
+
             }
         });
 
@@ -112,6 +182,8 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     case "Notifications":
                         startActivity(new Intent(Dashboard.this, Payments.class));
                         break;
+                    case "Experts":
+                        changeFragment(new CircularView() , "Experts");
 
                         default:
                             break;
@@ -155,6 +227,10 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         transaction.replace(R.id.nav_host_fragment, fragment, "" + title).commit();
         transaction.addToBackStack(title);
         toolbar.setTitle(title);
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        drawer.closeDrawer(GravityCompat.END);
     }
 
     @Override
@@ -170,16 +246,15 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         } else if (id == R.id.nav_my_orders) {
             text = "send";
             startActivity(new Intent(Dashboard.this, Login.class));
+            finish();
         } else if (id == R.id.nav_profile) {
             text = "home";
-            startActivity(new Intent(Dashboard.this, CircularViewActivity.class));
+//            startActivity(new Intent(Dashboard.this, CircularView.class));
         }
 
         Toast.makeText(this, "You have chosen " + text, Toast.LENGTH_LONG).show();
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        drawer.closeDrawer(GravityCompat.END);
+
 
         return true;
     }

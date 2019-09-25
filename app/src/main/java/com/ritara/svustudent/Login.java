@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
@@ -31,12 +32,12 @@ public class Login extends BaseActivity {
     password = (EditText)findViewById(R.id.password);
     login = (Button) findViewById(R.id.btnSubmit);
     forgotpassword = (TextView)findViewById(R.id.forgot);
+    sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
 
     login.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-          Intent intent = new Intent(Login.this, Dashboard.class);
-          startActivity(intent);
+        register();
       }
     });
 
@@ -46,34 +47,33 @@ public class Login extends BaseActivity {
   private void register() {
     if (!isloadershowing())
       showLoader();
-    AndroidNetworking.post("solutionsdot-com.in/SVU_api/svu_api.php")
-            .addBodyParameter("rule", "login")
-            .addBodyParameter("password", "" +password )
-            .addBodyParameter("mob_email", "" + username)
-            .addBodyParameter("device_id", sharedPreferences_svu.getTokenIdForFirebase())
+    AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetPersonalInfo?EnrollNo=" + username.getText().toString().trim() + "&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+            .addBodyParameter("EnrollNo", "" + username.getText().toString().trim())
+            .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+//            .addBodyParameter("mob_email", "" + username)
+//            .addBodyParameter("device_id", sharedPreferences_svu.getTokenIdForFirebase())
             .setTag("login")
             .setPriority(Priority.MEDIUM)
             .build()
-            .getAsJSONObject(new JSONObjectRequestListener() {
+            .getAsJSONArray(new JSONArrayRequestListener() {
               @Override
-              public void onResponse(JSONObject response) {
+              public void onResponse(JSONArray response) {
                 try {
-                  if (response.getString("status").equalsIgnoreCase("0")) {
-                    JSONArray jsonArray = response.getJSONArray("message");
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                      JSONObject jsonObject1 = (JSONObject) jsonArray.get(i);
+                    for (int i = 0; i < response.length(); i++) {
+                      JSONObject jsonObject1 = (JSONObject) response.get(i);
 
-                      sharedPreferences_svu.setUserId(jsonObject1.getString("id"));
-                      sharedPreferences_svu.set_Username(jsonObject1.getString("name"));
-                      sharedPreferences_svu.set_email(jsonObject1.getString("email"));
-                      sharedPreferences_svu.set_phone(jsonObject1.getString("contact"));
-                      sharedPreferences_svu.setAddress(jsonObject1.getString("address"));
-                      sharedPreferences_svu.set_deviceId(jsonObject1.getString("device_id"));
+                      sharedPreferences_svu.setUserId(jsonObject1.getString("EnrollNo"));
+                      sharedPreferences_svu.set_Username(jsonObject1.getString("Name"));
+                      sharedPreferences_svu.set_email(jsonObject1.getString("EmailId"));
+                      sharedPreferences_svu.setAddress(jsonObject1.getString("PAddress"));
+
+                      sharedPreferences_svu.set_MotherName(jsonObject1.getString("MName"));
+                      sharedPreferences_svu.set_FatherName(jsonObject1.getString("FName"));
+                      sharedPreferences_svu.set_CurrentAddress(jsonObject1.getString("CAddress"));
+
                       sharedPreferences_svu.set_Logged(true);
                       startActivity(new Intent(Login.this, Dashboard.class));
                       finish();
-
-                    }
                   }
                 }
                 catch (
@@ -87,15 +87,10 @@ public class Login extends BaseActivity {
 
               @Override
               public void onError(ANError anError) {
-
+                anError.getResponse();
+                dismissLoader();
               }
 
-            });}}
-
-
-
-
-
-
-
-
+            });
+  }
+}

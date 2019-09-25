@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -22,13 +24,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.androidnetworking.interfaces.UploadProgressListener;
+import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.Login;
 import com.ritara.svustudent.MainActivity;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
 import com.ritara.svustudent.utils.ListManager;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -48,11 +53,14 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     private LinearLayout about, download;
     public static ArrayList<HomeItemModel> item_list;
     private HomeViewModel homeViewModel;
+    private SharedPreferences_SVU sharedPreferences_svu;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
 
         grid_view = (RecyclerView) view.findViewById(R.id.grid);
         Sign_in = (Button) view.findViewById(R.id.signin);
@@ -101,6 +109,12 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
         });
 
         onResponse();
+
+        if(!sharedPreferences_svu.getUserId().isEmpty()){
+            LinearLayout llBanner = (LinearLayout) view.findViewById(R.id.llBanner);
+            llBanner.setVisibility(View.GONE);
+        }
+
         return view;
     }
 
@@ -157,8 +171,57 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     }
 
     @Override
-    public void onBindView(ListManager.BaseAdapterViewHolder holder, int position, String for_what) {
+    public void onBindView(final ListManager.BaseAdapterViewHolder holder, final int position, String for_what) {
         ((TextView)holder.itemView.findViewById(R.id.title)).setText(item_list.get(position).getName());
+        holder.itemView.findViewById(R.id.image).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String test = "";
+                switch (item_list.get(position).getName()){
+                    case "My Class" :
+                        test = "My Class";
+                        break;
+                    case "E-Library" :
+                        test = "Library";
+                        break;
+                    case "Members" :
+                        test = "Members";
+                        break;
+                    case "My Books" :
+                        test = "Books";
+                        break;
+                    case "My Videos" :
+                        test = "Videos";
+                        break;
+                    case "My Tests" :
+                        test = "Tests";
+                        break;
+                    case "Calendar" :
+                        test = "Calendar";
+                        break;
+                    case "Message" :
+                        test = "Message";
+                        break;
+                    case "Notice Board" :
+                        test = "Notice";
+                        break;
+                    case "Alumini" :
+                        test = "Alumini";
+                        break;
+                    case "Emergency" :
+                        test = "Emergency";
+                        break;
+                    case "Reports" :
+                        test = "Reports";
+                        break;
+
+                    default:
+                        break;
+                }
+                Toast.makeText(getActivity(), test, Toast.LENGTH_SHORT).show();
+            }
+        });
+
         try {
             Picasso.get()
                     .load(item_list.get(position).getImage())
@@ -173,4 +236,6 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     public void holderClass(View v, String for_what) {
 
     }
+
+
 }
