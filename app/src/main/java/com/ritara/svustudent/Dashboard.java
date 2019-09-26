@@ -31,6 +31,7 @@ import com.ritara.svustudent.fragments.NewsFragment;
 import com.ritara.svustudent.fragments.PrepsFragment;
 import com.ritara.svustudent.fragments.SkillsFragment;
 import com.ritara.svustudent.fragments.VidsFragment;
+import com.ritara.svustudent.fragments.ViewAttendance;
 import com.ritara.svustudent.ui.home.HomeFragment;
 import com.ritara.svustudent.ui.profile.ProfileFragment;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
@@ -82,7 +83,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         headerview.findViewById(R.id.connect).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new HomeFragment() , "Home");
+                changeFragment(new ViewAttendance() , "Home");
 
             }
         });
@@ -90,7 +91,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         headerview.findViewById(R.id.campus).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new CampusFragment() , "Campus");
+                changeFragment(new ViewAttendance()  , "Campus");
             }
         });
 

@@ -35,6 +35,7 @@ animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array dot_on_page_active
 array dot_on_page_not_active
+array role_arrays
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1368,13 +1369,17 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_news
+drawable ic_newspaper
 drawable ic_notifications
 drawable ic_notifications_black_24dp
+drawable ic_planning
 drawable ic_prep
 drawable ic_profile
 drawable ic_record
 drawable ic_settings
+drawable ic_shipping
 drawable ic_skills
+drawable ic_skills_circle
 drawable ic_undraw_analyze_17kw
 drawable ic_undraw_exams_g4ow
 drawable ic_undraw_graduation_ktn0
@@ -1504,6 +1509,7 @@ id app
 id aptitude
 id async
 id auto
+id avg_attendance
 id back
 id banner
 id barrier
@@ -1732,6 +1738,8 @@ id right_icon
 id right_side
 id rlClickConsumer
 id rlTop
+id role
+id role_layout
 id root_view
 id rzp_innerbox
 id rzp_outerbox
@@ -1826,6 +1834,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id today_attendance
 id toolbar
 id top
 id topPanel
@@ -1933,6 +1942,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_profile
 layout exams
 layout fragment_account
 layout fragment_calendar
@@ -1951,6 +1961,7 @@ layout fragment_shopping
 layout fragment_slideshow
 layout fragment_tools
 layout fragment_videos
+layout fragment_view_attendance
 layout graduation
 layout header
 layout interns_fragment
@@ -2086,6 +2097,7 @@ string path_password_strike_through
 string policy
 string privacy
 string resend
+string role_prompt
 string search_menu_title
 string status_bar_notification_info_overflow
 string suport

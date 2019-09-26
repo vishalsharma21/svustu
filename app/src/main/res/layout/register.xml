@@ -31,16 +31,34 @@
         android:layout_marginBottom="45dp"
         android:layout_marginTop="20dp"/>
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/role_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <Spinner
+            android:id="@+id/role"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="20dp"
+            android:entries="@array/role_arrays"
+            android:prompt="@string/role_prompt"
+            android:layout_marginRight="25dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_layout"
         android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="70dp">
+        android:layout_height="55dp">
 
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="55dp"
             android:textSize="20dp"
             android:hint="Name"
             android:layout_marginRight="25dp"/>
@@ -52,12 +70,12 @@
         android:id="@+id/email_id_layout"
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
-        android:layout_height="70dp">
+        android:layout_height="55dp">
 
         <EditText
             android:id="@+id/email_id"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="55dp"
             android:textSize="20dp"
             android:hint="Email id"
             android:layout_marginRight="25dp"/>
@@ -82,12 +100,12 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ccp"
-            android:layout_height="70dp">
+            android:layout_height="55dp">
 
             <EditText
                 android:id="@+id/phone_number"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="55dp"
                 android:textSize="20dp"
                 android:layout_toRightOf="@+id/ccp"
                 android:hint="Phone Number"
