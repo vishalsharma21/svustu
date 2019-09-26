@@ -1,0 +1,5 @@
+<root>
+    <item name='com.github.mikephil.charting.utils.ColorTemplate'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

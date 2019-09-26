@@ -35,6 +35,7 @@ animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array dot_on_page_active
 array dot_on_page_not_active
+array role_arrays
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -686,6 +687,7 @@ color colorNavIcon
 color colorNavText
 color colorPrimary
 color colorPrimaryDark
+color color_green_icash
 color current_day_of_month
 color day_disabled_background_color
 color day_disabled_text_color
@@ -787,6 +789,7 @@ color tooltip_background_light
 color transparent1
 color white
 dimen _216sdp
+dimen _3sdp
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -929,6 +932,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen eightfive
 dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
@@ -1129,6 +1133,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable education
+drawable fees_paid
 drawable flag_afghanistan
 drawable flag_albania
 drawable flag_algeria
@@ -1385,12 +1391,15 @@ drawable ic_close_vector
 drawable ic_connect
 drawable ic_cursor
 drawable ic_dashboard_black_24dp
+drawable ic_data_scientist
+drawable ic_debitkarte
 drawable ic_digital_campaign
 drawable ic_edit
 drawable ic_email_filled_closed_envelope
 drawable ic_emails_interface_download_symbol
 drawable ic_empty_shopping_cart
 drawable ic_expert
+drawable ic_fees
 drawable ic_file
 drawable ic_home
 drawable ic_home_black_24dp
@@ -1416,15 +1425,20 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_news
+drawable ic_newspaper
 drawable ic_notifications
 drawable ic_notifications_black_24dp
+drawable ic_planning
 drawable ic_play
 drawable ic_prep
 drawable ic_profile
 drawable ic_record
 drawable ic_send_msg
 drawable ic_settings
+drawable ic_shipping
 drawable ic_skills
+drawable ic_skills_circle
+drawable ic_speech_bubble
 drawable ic_undraw_analyze_17kw
 drawable ic_undraw_exams_g4ow
 drawable ic_undraw_graduation_ktn0
@@ -1434,6 +1448,7 @@ drawable ic_video_camera
 drawable ic_videos
 drawable image_splash
 drawable item_transparent_background
+drawable loader
 drawable members
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1452,6 +1467,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pp
+drawable progresscustombg
 drawable recieve_message
 drawable rzp_border
 drawable rzp_border_bottom
@@ -1464,11 +1480,13 @@ drawable rzp_secured_by_bg
 drawable rzp_white_border_black_bg
 drawable send_message
 drawable side_nav_bar
+drawable splash_new
 drawable submit_background
 drawable svu_app_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
+drawable verbal
 id ALT
 id ARABIC
 id BENGALI
@@ -1560,6 +1578,7 @@ id aptitude
 id async
 id attach
 id auto
+id avg_attendance
 id back
 id banner
 id barrier
@@ -1682,7 +1701,6 @@ id icon_group
 id ifRoom
 id image
 id imageView
-id imageViewSplash
 id imageView_arrow
 id image_books
 id image_campus
@@ -1741,6 +1759,7 @@ id lot
 id lstChat
 id mail_img
 id main_fragment_container
+id make_payment
 id masked
 id master
 id media_actions
@@ -1793,7 +1812,6 @@ id otp_three_edit_text
 id otp_two_edit_text
 id otp_view
 id outline
-id pBar
 id packed
 id parallax
 id parent
@@ -1816,6 +1834,7 @@ id profile_url
 id progressBar
 id progress_circular
 id progress_horizontal
+id progressbarr
 id radio
 id rcMarks
 id recTask
@@ -1837,6 +1856,8 @@ id right_side
 id rlBottom
 id rlClickConsumer
 id rlFees
+id role
+id role_layout
 id root_view
 id rzp_innerbox
 id rzp_outerbox
@@ -1938,6 +1959,7 @@ id title
 id titleDividerNoCustom
 id titleLayout
 id title_template
+id today_attendance
 id toolbar
 id top
 id topPanel
@@ -1949,7 +1971,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id txtAdDate
-id txtAppName
 id txtComment
 id txtCourse
 id txtCredit
@@ -1965,7 +1986,6 @@ id txtName
 id txtPAddress
 id txtToolHeader
 id uniform
-id university
 id unlabeled
 id up
 id useLogo
@@ -2068,6 +2088,8 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dialog_demo
 layout dialog_gallery
+layout dialog_profile
+layout dialog_progress
 layout dialog_zoommable_view
 layout emergency_dialog
 layout exams
@@ -2093,6 +2115,7 @@ layout fragment_shopping
 layout fragment_slideshow
 layout fragment_tools
 layout fragment_videos
+layout fragment_view_attendance
 layout graduation
 layout header
 layout interns_fragment
@@ -2238,6 +2261,7 @@ string path_password_strike_through
 string policy
 string privacy
 string resend
+string role_prompt
 string search_menu_title
 string status_bar_notification_info_overflow
 string suport

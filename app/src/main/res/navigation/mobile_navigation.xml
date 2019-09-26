@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_books"
-        android:name="com.ritara.svustudent.ui.gallery.GalleryFragment"
+        android:name="com.ritara.svustudent.fragments.BooksFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/books_fragment" />
 
     <fragment
         android:id="@+id/nav_video"
@@ -25,15 +25,15 @@
 
     <fragment
         android:id="@+id/nav_cal"
-        android:name="com.ritara.svustudent.ui.cal.CalendarFragment"
+        android:name="com.ritara.svustudent.fragments.CalendarFragment"
         android:label="@string/menu_tools"
         tools:layout="@layout/fragment_calendar" />
 
     <fragment
         android:id="@+id/nav_test"
-        android:name="com.ritara.svustudent.ui.test.TestsFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_item_list" />
+        android:name="com.ritara.svustudent.fragments.PaidFeeFragment"
+        android:label="@string/test"
+        tools:layout="@layout/fragment_paidfee_list" />
 
     <fragment
         android:id="@+id/nav_my_orders"
@@ -43,15 +43,15 @@
 
     <fragment
         android:id="@+id/nav_shoping_card"
-        android:name="com.ritara.svustudent.ui.send.ShoppingCartFragment"
+        android:name="com.ritara.svustudent.ui.shopping_cart.ShoppingFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_shopping" />
 
     <fragment
         android:id="@+id/notifications"
-        android:name="com.ritara.svustudent.ui.notifications.NotifyFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_notify" />
+        android:name="com.ritara.svustudent.fragments.BroadcastFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_broadcast" />
 
 
 

@@ -32,7 +32,9 @@
             android:name="com.ritara.svustudent.Dashboard"
             android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.ritara.svustudent.SplashScreenActivity" >
+        <activity
+            android:name="com.ritara.svustudent.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

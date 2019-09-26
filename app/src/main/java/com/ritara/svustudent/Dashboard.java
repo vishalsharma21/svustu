@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -16,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -25,6 +27,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.ritara.svustudent.fragments.BooksFragment;
+import com.ritara.svustudent.fragments.BroadcastFragment;
 import com.ritara.svustudent.fragments.CampusFragment;
 import com.ritara.svustudent.fragments.InternsFragment;
 import com.ritara.svustudent.fragments.JobsFragment;
@@ -32,6 +35,7 @@ import com.ritara.svustudent.fragments.NewsFragment;
 import com.ritara.svustudent.fragments.PrepsFragment;
 import com.ritara.svustudent.fragments.SkillsFragment;
 import com.ritara.svustudent.fragments.VidsFragment;
+import com.ritara.svustudent.fragments.ViewAttendance;
 import com.ritara.svustudent.ui.home.HomeFragment;
 import com.ritara.svustudent.ui.profile.ProfileFragment;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
@@ -72,7 +76,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         navigationView.setItemIconTintList(null);
 
         TextView txtHeaderNav = navigationView.getHeaderView(0).findViewById(R.id.textHeaderName);
-        txtHeaderNav.setText(sharedPreferences_svu.get_Username());
+        txtHeaderNav.setText(sharedPreferences_svu.get_Logged() ? sharedPreferences_svu.get_Username() : "Login");
 
         NavigationView navigationViewRight = findViewById(R.id.nav_view2);
         navigationViewRight.setItemIconTintList(null);
@@ -89,7 +93,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         headerview.findViewById(R.id.connect).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new HomeFragment() , "Home");
+                changeFragment(new ViewAttendance() , "Home");
 
             }
         });
@@ -97,7 +101,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         headerview.findViewById(R.id.campus).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new CampusFragment() , "Campus");
+                changeFragment(new ViewAttendance()  , "Campus");
             }
         });
 
@@ -165,6 +169,13 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+            @Override
+            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
+                txtToolHeader.setText(destination.getLabel());
+            }
+        });
+
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         NavigationUI.setupWithNavController(bottomNav, navController);
 
@@ -184,8 +195,8 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     case "Profile":
                         changeFragment(new ProfileFragment() , "Profile");
                         break;
-                    case "Notifications":
-                        startActivity(new Intent(Dashboard.this, Payments.class));
+                    case "Messages":
+                        changeFragment(new BroadcastFragment(), "My Messages");
                         break;
                     case "Experts":
                         changeFragment(new CircularView() , "Experts");
@@ -226,16 +237,20 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     }
 
     public void changeFragment(Fragment fragment, String title) {
-        fragmentManager = getSupportFragmentManager();
+        if(sharedPreferences_svu.get_Logged() || title.equalsIgnoreCase("Home")) {
+            fragmentManager = getSupportFragmentManager();
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.nav_host_fragment, fragment, "" + title).commit();
-        transaction.addToBackStack(title);
-        toolbar.setTitle(title);
-        txtToolHeader.setText(title);
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        drawer.closeDrawer(GravityCompat.END);
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.nav_host_fragment, fragment, "" + title).commit();
+            transaction.addToBackStack(title);
+            toolbar.setTitle(title);
+            txtToolHeader.setText(title);
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            drawer.closeDrawer(GravityCompat.END);
+        }else{
+            startActivity(new Intent(Dashboard.this, Login.class));
+        }
     }
 
     @Override
@@ -262,5 +277,13 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        if(!sharedPreferences_svu.get_Logged()){
+            changeFragment(new HomeFragment(), "Home");
+        }
     }
 }

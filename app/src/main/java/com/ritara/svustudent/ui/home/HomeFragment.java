@@ -38,10 +38,13 @@ import com.ritara.svustudent.MainActivity;
 import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
+import com.ritara.svustudent.fragments.BooksFragment;
 import com.ritara.svustudent.fragments.BroadcastFragment;
 import com.ritara.svustudent.fragments.CalendarFragment;
 import com.ritara.svustudent.fragments.MarksFragment;
+import com.ritara.svustudent.fragments.NewsFragment;
 import com.ritara.svustudent.fragments.PaidFeeFragment;
+import com.ritara.svustudent.ui.vid.VideosFragment;
 import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.ListManager;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
@@ -192,13 +195,15 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "My Books" :
                         test = "Books";
+                        ((Dashboard)getActivity()).changeFragment(new BooksFragment(), "My Books");
                         break;
                     case "My Videos" :
                         test = "Videos";
+                        ((Dashboard)getActivity()).changeFragment(new VideosFragment(), "My Videos");
                         break;
                     case "My Fees" :
                         test = "My Fees";
-                        ((Dashboard)getActivity()).changeFragment(new PaidFeeFragment(), "My Fee");
+                        ((Dashboard)getActivity()).changeFragment(new PaidFeeFragment(), "My Fees");
                         break;
                     case "Calendar" :
                         test = "Calendar";
@@ -210,6 +215,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "Notice Board" :
                         test = "Notice";
+                        ((Dashboard)getActivity()).changeFragment(new NewsFragment(), "Notice");
                         break;
                     case "Alumini" :
                         test = "Alumini";

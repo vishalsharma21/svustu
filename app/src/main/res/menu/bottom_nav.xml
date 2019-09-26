@@ -11,7 +11,7 @@
       android:title="Library" />
   <item
       android:id="@+id/experts"
-      android:icon="@drawable/ic_library"
+      android:icon="@drawable/ic_data_scientist"
       android:contentDescription="bb"
       android:title="Experts" />
   <item
@@ -21,7 +21,7 @@
       android:title="Profile" />
   <item
       android:id="@+id/master"
-      android:icon="@drawable/ic_notifications"
+      android:icon="@drawable/ic_speech_bubble"
       android:contentDescription="dd"
-      android:title="Notifications" />
+      android:title="Messages" />
 </menu>

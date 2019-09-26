@@ -48,6 +48,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.ritara.svustudent.BaseActivity;
 import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.DropDownAnim;
+import com.ritara.svustudent.Login;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.utils.Db_Chat;
 import com.ritara.svustudent.utils.Model;
@@ -96,29 +97,32 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_broadcast, container, false);
 
-        initView(root);
+        if(SharedPreferences_SVU.getInstance(getActivity()).get_Logged()) {
+            initView(root);
 
-        sharedPreference_main.setOnChat(true);
+            sharedPreference_main.setOnChat(true);
 
-        getChat( "get_chat",  getParams("get_chat"));
+            getChat("get_chat", getParams("get_chat"));
 
-        try {
-            chat_list = new ArrayList<>();
-            chat_list.addAll(Db_Chat.getInstance(getActivity()).get_DB_Chat_Details());
-            setAdapter();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
-        IntentFilter filter = new IntentFilter("com.yourcompany.testIntent");
-        BroadcastReceiver receiver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                getChat("get_chat_from_br",  getParams("get_chat"));
+            try {
+                chat_list = new ArrayList<>();
+                chat_list.addAll(Db_Chat.getInstance(getActivity()).get_DB_Chat_Details());
+                setAdapter();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        };
-        getActivity().registerReceiver(receiver, filter);
 
+            IntentFilter filter = new IntentFilter("com.yourcompany.testIntent");
+            BroadcastReceiver receiver = new BroadcastReceiver() {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    getChat("get_chat_from_br", getParams("get_chat"));
+                }
+            };
+            getActivity().registerReceiver(receiver, filter);
+        }else{
+            startActivity(new Intent(getActivity(), Login.class));
+        }
 
         return root;
     }

@@ -2,6 +2,7 @@ package com.ritara.svustudent.fragments;
 
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,27 +13,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ritara.svustudent.Dashboard;
+import com.ritara.svustudent.Login;
 import com.ritara.svustudent.R;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 public class BooksFragment extends Fragment {
 
     private BooksViewModel mViewModel;
 
-    public static BooksFragment newInstance() {
-        return new BooksFragment();
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.books_fragment, container, false);
-    }
+        View view = inflater.inflate(R.layout.books_fragment, container, false);
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(BooksViewModel.class);
-        // TODO: Use the ViewModel
+        if(!SharedPreferences_SVU.getInstance(getActivity()).get_Logged()){
+            startActivity(new Intent(getActivity(), Login.class));
+        }
+        return view;
     }
-
 }

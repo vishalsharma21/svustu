@@ -16,6 +16,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_verbal.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/verbal.xml"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -24,12 +28,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_vanuatu.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_graduation.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/graduation.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -40,16 +44,20 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable-mdpi-v4/design_ic_visibility_off.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_fees.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_fees.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_dominica.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_dominica.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -72,32 +80,32 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_undraw_analyze_17kw.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_undraw_analyze_17kw.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar_include.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/layout/mtrl_layout_snackbar_include.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_undraw_analyze_17kw.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_undraw_analyze_17kw.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/interpolator_mtrl_linear_out_slow_in.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/interpolator/mtrl_linear_out_slow_in.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_news_fragment.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/news_fragment.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_submit_background.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/submit_background.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_submit_background.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/submit_background.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_news_fragment.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/news_fragment.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_exams.xml.flat",
@@ -116,20 +124,24 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/a6ce3afbff3f1ae3fa1fe13048b173d9/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_speech_bubble.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_speech_bubble.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_uzbekistan.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_uzbekistan.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_button_next_month_selector.xml.flat",
@@ -148,12 +160,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_lesotho.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_lesotho.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_bosnia.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_bosnia.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_lesotho.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_lesotho.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_bg.png.flat",
@@ -164,16 +176,20 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_belgium.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_rwanda.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_rwanda.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_design_bottom_navigation_item_background.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable/design_bottom_navigation_item_background.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_rwanda.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_rwanda.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_ic_clear_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_planning.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_planning.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -200,12 +216,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/anim-v21/design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_arrow_drop_down_black_24dp.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-mdpi-v4/ic_arrow_drop_down_black_24dp.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_monaco.png.flat",
@@ -224,12 +240,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/interpolator/mtrl_fast_out_slow_in.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_register.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/register.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_thailand.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_thailand.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_register.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/register.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v21_abc_list_divider_material.xml.flat",
@@ -296,6 +312,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_skills_circle.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_skills_circle.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -320,6 +340,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_item_background_holo_light.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_planning.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_planning.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -338,6 +362,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_fees.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_fees.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_samoa.png.flat",
@@ -380,12 +408,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_tokelau.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-hdpi-v4/notification_bg_normal.9.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v21_avd_hide_password.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -404,12 +432,16 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/43e994e5406576743e1bf10b3b842ea1/jetified-navigation-ui-2.1.0/res/anim/nav_default_exit_anim.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/layout/design_navigation_item_separator.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_seychelles.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_seychelles.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_skills_circle.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_skills_circle.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_message2.xml.flat",
@@ -428,12 +460,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_guinea_bissau.png.flat",
@@ -452,12 +484,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/anim/abc_tooltip_exit.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_campus_fragment.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/campus_fragment.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color_mtrl_fab_ripple_color.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/color/mtrl_fab_ripple_color.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_campus_fragment.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/campus_fragment.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
@@ -472,32 +504,32 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_luxembourg.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_portugal.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_portugal.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_grid_background.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/grid_background.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_azerbaijan.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_azerbaijan.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_vids_fragment.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/vids_fragment.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_djibouti.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_djibouti.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_azerbaijan.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_azerbaijan.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_cape_verde.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_cape_verde.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_djibouti.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_djibouti.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_rzp_logo.png.flat",
@@ -524,12 +556,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_angola.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_angola.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_angola.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_angola.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_iraq.png.flat",
@@ -564,32 +596,32 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_malaysia.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_malaysia.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_malaysia.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_malaysia.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_central_african_republic.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_central_african_republic.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_gabon.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_gabon.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_menu_slideshow.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_menu_slideshow.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_ic_menu_vector.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/res/drawable/ic_menu_vector.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_gabon.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_gabon.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_arrow_drop_down_black_24dp.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-xhdpi-v4/ic_arrow_drop_down_black_24dp.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_ic_menu_vector.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/res/drawable/ic_menu_vector.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -602,6 +634,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_fees.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_fees.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_pitcairn_islands.png.flat",
@@ -656,6 +692,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/layout-v21/notification_template_custom_big.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_speech_bubble.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_speech_bubble.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -668,6 +708,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_isleof_man.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_education.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/education.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/color/mtrl_btn_text_btn_ripple_color.xml"
     },
@@ -676,12 +720,16 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_record.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_trinidad_and_tobago.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_trinidad_and_tobago.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_skills_circle.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_skills_circle.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_menu_gallery.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_trinidad_and_tobago.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_trinidad_and_tobago.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_home_icon.xml.flat",
@@ -706,6 +754,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_christmas_island.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_christmas_island.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_newspaper.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_newspaper.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_bangladesh.png.flat",
@@ -744,12 +796,12 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_play.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_emergency_dialog.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/emergency_dialog.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/menu_activity_right_drawer.xml.flat",
@@ -780,12 +832,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_ic_menu_animated.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/res/drawable/ic_menu_animated.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_georgia.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_georgia.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_ic_menu_animated.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/res/drawable/ic_menu_animated.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -822,6 +874,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_comoros.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_comoros.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_speech_bubble.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_speech_bubble.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -924,6 +980,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/res/drawable-hdpi-v4/rzp_logo.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_newspaper.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_newspaper.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_test_nav.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/test_nav.xml"
     },
@@ -932,12 +992,12 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_tools.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -1004,6 +1064,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_dominican_republic.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_shipping.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_shipping.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_security.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_security.xml"
     },
@@ -1016,20 +1080,24 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_germany.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_germany.png"
-    },
-    {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_menu_camera.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_menu_camera.xml"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_oman.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_oman.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_oman.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_oman.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_menu_camera.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_germany.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_germany.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_debitkarte.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_debitkarte.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_search_view.xml.flat",
@@ -1038,6 +1106,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/animator/mtrl_fab_transformation_sheet_collapse_spec.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_newspaper.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_newspaper.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1068,6 +1140,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_skills_circle.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_skills_circle.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_china.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_china.png"
     },
@@ -1084,28 +1160,32 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_planning.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_planning.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_share.xml.flat",
-        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_share.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_share.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_share.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1216,6 +1296,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_planning.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_planning.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
@@ -1230,6 +1314,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_shipping.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_shipping.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_israel.png.flat",
@@ -1312,6 +1400,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_data_scientist.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_data_scientist.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_profile.xml"
     },
@@ -1366,6 +1458,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_books_fragment.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/books_fragment.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_newspaper.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_newspaper.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_notify.xml.flat",
@@ -1438,6 +1534,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_shipping.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_shipping.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
@@ -1612,12 +1712,16 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_action_mode_bar.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_armenia.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_armenia.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_armenia.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_armenia.png"
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_shipping.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_shipping.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
@@ -1732,6 +1836,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_debitkarte.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_debitkarte.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_haiti.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_haiti.png"
     },
@@ -1778,6 +1886,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_dialog_profile.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/dialog_profile.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_south_africa.png.flat",
@@ -1854,6 +1966,14 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_cyprus.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_cyprus.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_debitkarte.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_debitkarte.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_newspaper.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_newspaper.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1944,6 +2064,10 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_edit.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_fees.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_fees.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
@@ -2016,6 +2140,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f27f02ac694958930370b74328d48d4b/Custom-Calendar-View-v1.1/res/drawable-xhdpi/ic_arrow_up_gray.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_planning.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_planning.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_south_georgia.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_south_georgia.png"
     },
@@ -2026,6 +2154,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_custom_dialog.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_shipping.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_shipping.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_bahrain.png.flat",
@@ -2070,6 +2202,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_progresscustombg.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/progresscustombg.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -2136,6 +2272,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_data_scientist.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_data_scientist.xml"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/color/abc_btn_colored_text_material.xml"
     },
@@ -2162,6 +2302,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_item_nav.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/item_nav.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_planning.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_planning.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2268,8 +2412,16 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_wallis_and_futuna.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_speech_bubble.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_speech_bubble.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_fees_paid.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/fees_paid.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
@@ -2290,6 +2442,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_debitkarte.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_debitkarte.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_botswana.png.flat",
@@ -2332,6 +2488,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_dialog_progress.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/dialog_progress.xml"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_rzp_poweredby.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/res/drawable/rzp_poweredby.png"
     },
@@ -2352,6 +2512,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_bhutan.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_speech_bubble.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_speech_bubble.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -2362,6 +2526,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_mauritius.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_mauritius.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_debitkarte.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_debitkarte.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -2386,6 +2554,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_data_scientist.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_data_scientist.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_new_logo.png.flat",
@@ -2416,6 +2588,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_fees.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_fees.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/anim/abc_popup_enter.xml"
     },
@@ -2440,6 +2616,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_fees.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_fees.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/navigation_right.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/navigation/right.xml"
     },
@@ -2458,6 +2638,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_button_signup_curve.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/button_signup_curve.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_newspaper.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_newspaper.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_of_montenegro.png.flat",
@@ -2524,6 +2708,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_el_salvador.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_data_scientist.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_data_scientist.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -2550,6 +2738,14 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_verified.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_verified.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_skills_circle.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_skills_circle.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_data_scientist.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_data_scientist.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -2580,12 +2776,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_afghanistan.png"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_file.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_file.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_light.xml.flat",
@@ -2618,6 +2814,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_splash_new.jpg.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/splash_new.jpg"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_south_korea.png.flat",
@@ -2704,6 +2904,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_belize.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_speech_bubble.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_speech_bubble.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_analyze.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/analyze.xml"
     },
@@ -2784,6 +2988,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_soviet_union.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_skills_circle.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_skills_circle.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -2822,6 +3030,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_skills_circle.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_skills_circle.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_marks.xml.flat",
@@ -2968,6 +3180,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_sao_tome_and_principe.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_speech_bubble.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_speech_bubble.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_jobs_fragment.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/jobs_fragment.xml"
     },
@@ -3056,6 +3272,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_loader.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable/loader.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_send.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_send.xml"
     },
@@ -3140,6 +3360,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_niger.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_data_scientist.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-mdpi/ic_data_scientist.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_edit.png.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_edit.png"
     },
@@ -3178,6 +3402,14 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_newspaper.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_newspaper.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_fees.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_fees.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -3220,12 +3452,20 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_shipping.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_shipping.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_macedonia.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_macedonia.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_shipping.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-hdpi/ic_shipping.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_rzp_magic_base.xml.flat",
@@ -3278,6 +3518,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_design_fab_background.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_view_attendance.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_view_attendance.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
@@ -3452,6 +3696,10 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_debitkarte.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_debitkarte.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -3480,6 +3728,10 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/nav_header_home.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_debitkarte.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_debitkarte.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_guatemala.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_guatemala.png"
     },
@@ -3500,8 +3752,16 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/a6ce3afbff3f1ae3fa1fe13048b173d9/media-1.0.0/res/layout/notification_template_media.xml"
     },
     {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_planning.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-ldpi/ic_planning.png"
+    },
+    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_notifications.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_notifications.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_data_scientist.png.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_data_scientist.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
@@ -3636,12 +3896,12 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/ic_campus.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_senegal.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_senegal.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_senegal.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_senegal.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -3656,12 +3916,12 @@
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/layout/layout_code_picker.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_border.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/border.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",

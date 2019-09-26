@@ -21,7 +21,8 @@
             android:name=".Dashboard"
             android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

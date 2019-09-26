@@ -44,5 +44,5 @@ dependencies {
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:1.0.2'
     implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.1'
     implementation files('libs/org.apache.http.legacy.jar')
-
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
