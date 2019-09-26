@@ -146,6 +146,48 @@ public class SharedPreferences_SVU {
     public String get_CurrentAddress() {
         return sharedPreference.getString("set_CurrentAddress", "");
     }
+
+    public boolean getOnChat() {
+        return sharedPreference.getBoolean("chat_page", false);
+    }
+
+    public void setOnChat(boolean onPage) {
+        editor = sharedPreference.edit();
+        editor.putBoolean("chat_page", onPage);
+        editor.commit();
+    }
+
+
+    public String getBatch() {
+        return sharedPreference.getString("Batch", "");
+
+    }
+    public void setBatch(String Batch) {
+        editor = sharedPreference.edit();
+        editor.putString("Batch", Batch);
+        editor.commit();
+    }
+
+    public String getProfilepic() {
+        return sharedPreference.getString("Profilepic", "");
+
+    }
+
+    public void setProfilepic(String Profilepic) {
+        editor = sharedPreference.edit();
+        editor.putString("Profilepic", Profilepic);
+        editor.commit();
+    }
+
+    public Integer getChatNotiCount() {
+        return sharedPreference.getInt("getChatNotiCount", 0);
+    }
+
+    public void setChatNotiCount(int userId) {
+        editor = sharedPreference.edit();
+        editor.putInt("getChatNotiCount", userId);
+        editor.commit();
+    }
 }
 
 

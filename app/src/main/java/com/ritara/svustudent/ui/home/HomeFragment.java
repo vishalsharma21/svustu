@@ -34,6 +34,8 @@ import com.ritara.svustudent.MainActivity;
 import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
+import com.ritara.svustudent.fragments.BroadcastFragment;
+import com.ritara.svustudent.fragments.CalendarFragment;
 import com.ritara.svustudent.fragments.MarksFragment;
 import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.ListManager;
@@ -193,9 +195,11 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "Calendar" :
                         test = "Calendar";
+                        ((Dashboard)getActivity()).changeFragment(new CalendarFragment(), "My Calendar");
                         break;
                     case "Message" :
                         test = "Message";
+                        ((Dashboard)getActivity()).changeFragment(new BroadcastFragment(), "My Messages");
                         break;
                     case "Notice Board" :
                         test = "Notice";

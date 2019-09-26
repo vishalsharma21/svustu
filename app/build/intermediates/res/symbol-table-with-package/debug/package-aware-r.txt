@@ -128,6 +128,8 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr calendarBackgroundColor
+attr calendarTitleTextColor
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -214,10 +216,13 @@ attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
 attr countryPreference
+attr currentDayOfMonthColor
 attr customMasterCountries
 attr customNavigationLayout
 attr data
 attr dataPattern
+attr dayOfMonthTextColor
+attr dayOfWeekTextColor
 attr defaultCode
 attr defaultNameCode
 attr defaultNavHost
@@ -226,6 +231,8 @@ attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
+attr disabledDayBackgroundColor
+attr disabledDayTextColor
 attr displayOptions
 attr distance
 attr divider
@@ -470,6 +477,8 @@ attr searchViewStyle
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr selectedDayBackgroundColor
+attr selectedDayTextColor
 attr selectionDialogShowSearch
 attr showAsAction
 attr showDividers
@@ -580,6 +589,7 @@ attr tint
 attr tintMode
 attr title
 attr titleEnabled
+attr titleLayoutBackgroundColor
 attr titleMargin
 attr titleMarginBottom
 attr titleMarginEnd
@@ -603,6 +613,7 @@ attr uri
 attr useCompatPadding
 attr viewInflaterClass
 attr voiceIcon
+attr weekLayoutBackgroundColor
 attr windowActionBar
 attr windowActionBarOverlay
 attr windowActionModeOverlay
@@ -651,6 +662,7 @@ color background_material_dark
 color background_material_light
 color black
 color black_overlay
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -674,6 +686,9 @@ color colorNavIcon
 color colorNavText
 color colorPrimary
 color colorPrimaryDark
+color current_day_of_month
+color day_disabled_background_color
+color day_disabled_text_color
 color defaultContentColor
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
@@ -699,6 +714,8 @@ color foreground_material_light
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_black
+color light_grey
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -740,6 +757,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color off_white
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -748,12 +766,14 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color selected_day_background
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -764,6 +784,7 @@ color test
 color text
 color tooltip_background_dark
 color tooltip_background_light
+color transparent1
 color white
 dimen _216sdp
 dimen abc_action_bar_content_inset_material
@@ -843,6 +864,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen calendarTitlePaddingBottom
+dimen calendarTitlePaddingTop
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -855,6 +878,11 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen dateTitleTextSize
+dimen dayOfMonthImageMarginTop
+dimen dayOfMonthIndicatorSize
+dimen dayOfWeekTextSize
+dimen day_of_month_background_size
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_item_min_width
@@ -916,6 +944,7 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen minDayCellHeight
 dimen mtrl_bottomappbar_fabOffsetEndMode
 dimen mtrl_bottomappbar_fab_cradle_margin
 dimen mtrl_bottomappbar_fab_cradle_rounded_corner_radius
@@ -981,6 +1010,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen padding
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -995,6 +1025,10 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen underline_height
+dimen underline_weight
+dimen weekTitlePaddingBottom
+dimen weekTitlePaddingTop
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -1083,8 +1117,12 @@ drawable app_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg
+drawable border
+drawable button_next_month_selector
+drawable button_previous_month_selector
 drawable button_signup_curve
 drawable card_background
+drawable cross
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1329,6 +1367,11 @@ drawable gradient
 drawable grid_background
 drawable home_bg
 drawable ic_arrow_drop_down_black_24dp
+drawable ic_arrow_up_blue
+drawable ic_arrow_up_blue_soft
+drawable ic_arrow_up_gray
+drawable ic_arrow_up_gray_soft
+drawable ic_attachment
 drawable ic_books
 drawable ic_box
 drawable ic_building
@@ -1347,14 +1390,17 @@ drawable ic_email_filled_closed_envelope
 drawable ic_emails_interface_download_symbol
 drawable ic_empty_shopping_cart
 drawable ic_expert
+drawable ic_file
 drawable ic_home
 drawable ic_home_black_24dp
 drawable ic_home_icon
 drawable ic_icon
+drawable ic_image
 drawable ic_interns
 drawable ic_jobs
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_left_arrow
 drawable ic_left_chevron
 drawable ic_library
 drawable ic_menu_animated
@@ -1371,15 +1417,19 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_news
 drawable ic_notifications
 drawable ic_notifications_black_24dp
+drawable ic_play
 drawable ic_prep
 drawable ic_profile
 drawable ic_record
+drawable ic_send_msg
 drawable ic_settings
 drawable ic_skills
 drawable ic_undraw_analyze_17kw
 drawable ic_undraw_exams_g4ow
 drawable ic_undraw_graduation_ktn0
 drawable ic_users
+drawable ic_verified
+drawable ic_video_camera
 drawable ic_videos
 drawable image_splash
 drawable item_transparent_background
@@ -1401,6 +1451,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pp
+drawable recieve_message
 drawable rzp_border
 drawable rzp_border_bottom
 drawable rzp_green_button
@@ -1410,6 +1461,7 @@ drawable rzp_name_logo
 drawable rzp_poweredby
 drawable rzp_secured_by_bg
 drawable rzp_white_border_black_bg
+drawable send_message
 drawable side_nav_bar
 drawable submit_background
 drawable svu_app_icon
@@ -1504,6 +1556,7 @@ id always
 id app
 id aptitude
 id async
+id attach
 id auto
 id back
 id banner
@@ -1519,9 +1572,11 @@ id btnSubmit
 id build
 id build_no
 id buttonPanel
+id calendar_view
 id campus
 id cancel
 id cancel_action
+id cancel_btn
 id ccp
 id center
 id center_horizontal
@@ -1546,6 +1601,9 @@ id courses
 id cpurse
 id custom
 id customPanel
+id date
+id dateTitle
+id daysContainer
 id decor_content_parent
 id default_activity_button
 id department
@@ -1557,6 +1615,9 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dialog_info
+id dialog_ok
+id dialog_time
 id dimensions
 id direct
 id disableHome
@@ -1573,6 +1634,7 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id etAmount
+id etChat
 id et_email
 id et_mobile
 id et_password
@@ -1586,6 +1648,9 @@ id fab
 id favorite
 id fee_dues
 id fees_paid
+id file_iamge
+id file_layout
+id file_text
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1594,6 +1659,7 @@ id fixed
 id forever
 id forgot
 id form
+id gallery
 id ghost_view
 id glide_custom_view_target_tag
 id gone
@@ -1603,6 +1669,7 @@ id groups
 id help
 id home
 id homeAsUp
+id house_no
 id icon
 id icon_group
 id ifRoom
@@ -1617,12 +1684,17 @@ id image_flag
 id image_home
 id image_interns
 id image_jobs
+id image_layout
 id image_news
 id image_prep
 id image_skills
 id image_videos
 id imgBack
+id imgComment
+id imgProImg
+id imgSend
 id imgToolRight
+id img_user_img
 id info
 id interns
 id invisible
@@ -1644,9 +1716,11 @@ id labeled
 id largeLabel
 id layoutBars
 id left
+id leftButton
 id left_drawer
 id line1
 id line3
+id linear_dialog_visible_area
 id linear_flag_holder
 id list
 id listMode
@@ -1657,12 +1731,15 @@ id loader
 id login
 id login_view
 id lot
+id lstChat
 id mail_img
 id main_fragment_container
 id masked
 id master
 id media_actions
 id message
+id message1
+id message2
 id middle
 id mini
 id mision_text
@@ -1702,6 +1779,7 @@ id notifications
 id number
 id number_layout
 id ok
+id open_attachment
 id otp_four_edit_text
 id otp_one_edit_text
 id otp_three_edit_text
@@ -1732,15 +1810,20 @@ id progress_circular
 id progress_horizontal
 id radio
 id rcMarks
+id recTask
 id recycler_countryDialog
 id registration
 id registration_number
 id relative
+id relativeLayout1
+id relativeLayout2
+id relative_text
 id release
 id release_date
 id resend
 id results
 id right
+id rightButton
 id right_icon
 id right_side
 id rlBottom
@@ -1783,6 +1866,7 @@ id showHome
 id showTitle
 id signin
 id signup
+id simple_linear
 id skills
 id skip
 id smallLabel
@@ -1813,10 +1897,12 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id take_photo
 id terms
 id text
 id text2
 id textHeaderName
+id textName
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1838,8 +1924,11 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timestamp
+id timestamp1
 id title
 id titleDividerNoCustom
+id titleLayout
 id title_template
 id toolbar
 id top
@@ -1853,6 +1942,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id txtAdDate
 id txtAppName
+id txtComment
 id txtCourse
 id txtCredit
 id txtDebit
@@ -1875,12 +1965,15 @@ id username
 id verify
 id version
 id version_no
+id video
+id video_layout
 id videos
 id view_offset_helper
 id view_pager
 id visible
 id vision
 id vision_text
+id weekLayout
 id welcome
 id withText
 id wrap
@@ -1945,6 +2038,10 @@ layout approval
 layout books_fragment
 layout campus_fragment
 layout content_home
+layout custom_calendar_layout
+layout custom_calendar_layout_new
+layout custom_calendar_title_layout
+layout custom_calendar_weeks_layout
 layout custom_dialog
 layout custom_layout
 layout design_bottom_navigation_item
@@ -1961,8 +2058,12 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_demo
+layout dialog_gallery
+layout dialog_zoommable_view
 layout exams
 layout fragment_account
+layout fragment_broadcast
 layout fragment_calendar
 layout fragment_gallery
 layout fragment_help
@@ -1994,6 +2095,8 @@ layout layout_code_picker
 layout layout_picker_dialog
 layout layout_recycler_country_tile
 layout login
+layout message
+layout message2
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_home
@@ -2013,11 +2116,19 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout open_chat_attachment
 layout otpview_layout
 layout password
 layout preps_fragment
+layout recyclerview_calendar
 layout register
 layout right_nav
+layout roboto_calendar_week_1
+layout roboto_calendar_week_2
+layout roboto_calendar_week_3
+layout roboto_calendar_week_4
+layout roboto_calendar_week_5
+layout roboto_calendar_week_6
 layout rzp_loader
 layout rzp_magic_base
 layout select_dialog_item_material
@@ -2137,6 +2248,7 @@ style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
+style AppBaseTheme
 style AppTheme
 style AppTheme_AppBarOverlay
 style AppTheme_NoActionBar
@@ -2329,6 +2441,10 @@ style Base_Widget_Design_TabLayout
 style Base_Widget_MaterialComponents_Chip
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
+style CalendarView
+style CalendarView_DayOfTheMonth
+style CalendarView_DayOfTheWeek
+style CalendarView_MonthTitle
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -2677,6 +2793,7 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CountryCodePicker arrowSize ccpClickable ccpLanguage contentColor countryPreference customMasterCountries defaultCode defaultNameCode hideNameCode keyboardAutoPopOnSearch selectionDialogShowSearch showFlag showFullName textSize
+styleable CustomCalendarView calendarBackgroundColor calendarTitleTextColor currentDayOfMonthColor dayOfMonthTextColor dayOfWeekTextColor disabledDayBackgroundColor disabledDayTextColor selectedDayBackgroundColor selectedDayTextColor titleLayoutBackgroundColor weekLayoutBackgroundColor
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle
 styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness

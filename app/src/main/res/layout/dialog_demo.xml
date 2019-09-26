@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/submit_background">
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Hello"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/dialog_info"
+        android:layout_below="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:gravity="start"
+        android:maxEms="5"
+        android:maxLines="5"
+        android:maxHeight="250dp"
+        android:hint="Write task here..."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialog_info">
+
+        <Button
+            android:id="@+id/dialog_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/submit_background"
+            android:text="Set Time"/>
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/submit_background"
+            android:text="Create"/>
+    </LinearLayout>
+
+</RelativeLayout>

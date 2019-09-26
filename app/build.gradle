@@ -31,6 +31,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.commit451:PhotoView:1.2.4'
     testImplementation 'junit:junit:4.12'
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'com.github.imangazalievm:circlemenu:2.0.2'
@@ -41,6 +42,7 @@ dependencies {
     implementation 'com.hbb20:ccp:1.7.2'
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:1.0.2'
+    implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.1'
     implementation files('libs/org.apache.http.legacy.jar')
 
 }
