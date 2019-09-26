@@ -1,12 +1,16 @@
 package com.ritara.svustudent.ui.home;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -60,6 +64,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     public static ArrayList<HomeItemModel> item_list;
     private HomeViewModel homeViewModel;
     private SharedPreferences_SVU sharedPreferences_svu;
+    private Dialog uplaod_complaint_dialog, emergency_dialog;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -209,6 +214,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "Emergency" :
                         test = "Emergency";
+                        openEmergencyDialog();
                         break;
                     case "Reports" :
                         test = "Reports";
@@ -230,6 +236,95 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
 
         }
 
+    }
+
+    private void openEmergencyDialog() {
+
+        emergency_dialog = new Dialog(getActivity(), android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar);
+        emergency_dialog.setContentView(R.layout.emergency_dialog);
+        emergency_dialog.setCancelable(true);
+
+        emergency_dialog.findViewById(R.id.police).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:100")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.fire).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:101")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.ambulance).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:102")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.call_president).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:8766318889")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.call_general_secretary).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:8766318889")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.call_treasure).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:8766318889")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.show();
+        Window window = emergency_dialog.getWindow();
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
     }
 
     @Override
