@@ -115,6 +115,79 @@ public class SharedPreferences_SVU {
 
 
 
+
+
+
+
+
+    public void set_MotherName(String getTrainingDone) {
+        editor.putString("set_MotherName", getTrainingDone);
+        editor.commit();
+    }
+
+    public String get_MotherName() {
+        return sharedPreference.getString("set_MotherName", "");
+    }
+
+    public void set_FatherName(String getTrainingDone) {
+        editor.putString("set_FatherName", getTrainingDone);
+        editor.commit();
+    }
+
+    public String get_FatherName() {
+        return sharedPreference.getString("set_FatherName", "");
+    }
+
+    public void set_CurrentAddress(String getTrainingDone) {
+        editor.putString("set_CurrentAddress", getTrainingDone);
+        editor.commit();
+    }
+
+    public String get_CurrentAddress() {
+        return sharedPreference.getString("set_CurrentAddress", "");
+    }
+
+    public boolean getOnChat() {
+        return sharedPreference.getBoolean("chat_page", false);
+    }
+
+    public void setOnChat(boolean onPage) {
+        editor = sharedPreference.edit();
+        editor.putBoolean("chat_page", onPage);
+        editor.commit();
+    }
+
+
+    public String getBatch() {
+        return sharedPreference.getString("Batch", "");
+
+    }
+    public void setBatch(String Batch) {
+        editor = sharedPreference.edit();
+        editor.putString("Batch", Batch);
+        editor.commit();
+    }
+
+    public String getProfilepic() {
+        return sharedPreference.getString("Profilepic", "");
+
+    }
+
+    public void setProfilepic(String Profilepic) {
+        editor = sharedPreference.edit();
+        editor.putString("Profilepic", Profilepic);
+        editor.commit();
+    }
+
+    public Integer getChatNotiCount() {
+        return sharedPreference.getInt("getChatNotiCount", 0);
+    }
+
+    public void setChatNotiCount(int userId) {
+        editor = sharedPreference.edit();
+        editor.putInt("getChatNotiCount", userId);
+        editor.commit();
+    }
 }
 
 

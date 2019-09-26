@@ -1,12 +1,16 @@
 package com.ritara.svustudent.ui.home;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,18 +23,31 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.androidnetworking.interfaces.UploadProgressListener;
+import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.Login;
 import com.ritara.svustudent.MainActivity;
+import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
+import com.ritara.svustudent.fragments.BooksFragment;
+import com.ritara.svustudent.fragments.BroadcastFragment;
+import com.ritara.svustudent.fragments.CalendarFragment;
+import com.ritara.svustudent.fragments.MarksFragment;
+import com.ritara.svustudent.fragments.NewsFragment;
+import com.ritara.svustudent.fragments.PaidFeeFragment;
+import com.ritara.svustudent.ui.vid.VideosFragment;
+import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.ListManager;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -50,11 +67,15 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     private LinearLayout about, download;
     public static ArrayList<HomeItemModel> item_list;
     private HomeViewModel homeViewModel;
+    private SharedPreferences_SVU sharedPreferences_svu;
+    private Dialog uplaod_complaint_dialog, emergency_dialog;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
 
         grid_view = (RecyclerView) view.findViewById(R.id.grid);
         Sign_in = (Button) view.findViewById(R.id.signin);
@@ -103,11 +124,18 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
         });
 
         onResponse();
+
+        if(!sharedPreferences_svu.getUserId().isEmpty()){
+            LinearLayout llBanner = (LinearLayout) view.findViewById(R.id.llBanner);
+            llBanner.setVisibility(View.GONE);
+        }
+
+        GetStuLoginAccess();
+
         return view;
     }
 
     public void onResponse(){
-
         AndroidNetworking.get("https://shuddhairpurifier.com/SVU/svu_api.php?rule=SVU_get_home")
                 .setTag("uploadTest")
                 .setPriority(Priority.HIGH)
@@ -115,17 +143,12 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                 .setUploadProgressListener(new UploadProgressListener() {
                     @Override
                     public void onProgress(long bytesUploaded, long totalBytes) {
-                        // do anything with progress
-//                                ((MainActivity)getActivity()).showLoader();
                     }
                 })
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        // do anything with response
-//                                dismissLoader();
                         Log.e("Resp :", response.toString());
-
                         try {
                             if (response.getString("status").equals("1")) {
                                 item_list.clear();
@@ -141,18 +164,13 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                                 }
                                 grid_adapter.getBaseAdapterClass().notifyDataSetChanged();
 
-                            } else {
-
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
-
                     @Override
                     public void onError(ANError error) {
-                        // handle error
-//                                dismissLoader();
                         error.getResponse();
                     }
                 });
@@ -177,30 +195,38 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "My Books" :
                         test = "Books";
+                        ((Dashboard)getActivity()).changeFragment(new BooksFragment(), "My Books");
                         break;
                     case "My Videos" :
                         test = "Videos";
+                        ((Dashboard)getActivity()).changeFragment(new VideosFragment(), "My Videos");
                         break;
-                    case "My Tests" :
-                        test = "Tests";
+                    case "My Fees" :
+                        test = "My Fees";
+                        ((Dashboard)getActivity()).changeFragment(new PaidFeeFragment(), "My Fees");
                         break;
                     case "Calendar" :
                         test = "Calendar";
+                        ((Dashboard)getActivity()).changeFragment(new CalendarFragment(), "My Calendar");
                         break;
                     case "Message" :
                         test = "Message";
+                        ((Dashboard)getActivity()).changeFragment(new BroadcastFragment(), "My Messages");
                         break;
                     case "Notice Board" :
                         test = "Notice";
+                        ((Dashboard)getActivity()).changeFragment(new NewsFragment(), "Notice");
                         break;
                     case "Alumini" :
                         test = "Alumini";
                         break;
                     case "Emergency" :
                         test = "Emergency";
+                        openEmergencyDialog();
                         break;
                     case "Reports" :
                         test = "Reports";
+                        ((Dashboard)getActivity()).changeFragment(new MarksFragment(), "Marks");
                         break;
 
                     default:
@@ -220,8 +246,135 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
 
     }
 
+    private void openEmergencyDialog() {
+
+        emergency_dialog = new Dialog(getActivity(), android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar);
+        emergency_dialog.setContentView(R.layout.emergency_dialog);
+        emergency_dialog.setCancelable(true);
+
+        emergency_dialog.findViewById(R.id.police).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:100")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.fire).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:101")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.ambulance).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:102")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.call_president).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:8766318889")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.call_general_secretary).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:8766318889")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.findViewById(R.id.call_treasure).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emergency_dialog.dismiss();
+                try {
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:8766318889")));
+                } catch (Exception e) {
+                    e.getMessage();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        emergency_dialog.show();
+        Window window = emergency_dialog.getWindow();
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+    }
+
     @Override
     public void holderClass(View v, String for_what) {
 
     }
+
+    private void GetStuLoginAccess() {
+        if (!((Dashboard)getActivity()).isloadershowing())
+            ((Dashboard)getActivity()).showLoader();
+        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetStuLoginAccess?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+                .addBodyParameter("EnrollNo", "SET14A00030058")
+                .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+                .setTag("login")
+                .setPriority(Priority.MEDIUM)
+                .build()
+                .getAsJSONArray(new JSONArrayRequestListener() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        try {
+                            for (int i = 0; i < response.length(); i++) {
+                                JSONObject object = response.getJSONObject(i);
+                                object.getString("AdmDate");
+                                object.getString("AdmMode");
+                                object.getString("BrLoction");
+                                object.getString("Course");
+                            }
+                        }
+                        catch (Exception e) {
+                            e.getMessage();
+                        } finally {
+                            ((Dashboard)getActivity()).dismissLoader();
+                        }
+                    }
+                    @Override
+                    public void onError(ANError anError) {
+                        anError.getResponse();
+                        ((Dashboard)getActivity()).dismissLoader();
+                    }
+                });
+    }
+
+
+
 }

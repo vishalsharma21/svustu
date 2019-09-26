@@ -19,6 +19,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -155,5 +157,22 @@ public class BaseActivity extends AppCompatActivity {
         return Math.round(px / (Resources.getSystem().getDisplayMetrics().xdpi / DisplayMetrics.DENSITY_DEFAULT));
     }
 
+    public static String getEncodedString(String rawString) {
+        try {
+            return URLEncoder.encode(rawString, "UTF-8");
+        } catch (Exception e1) {
+            e1.printStackTrace();
+            return rawString;
+        }
+    }
+
+    public static String getenDecoodedString(String rawString) {
+        try {
+            return URLDecoder.decode(rawString);
+        } catch (Exception e1) {
+            e1.printStackTrace();
+            return rawString;
+        }
+    }
 
 }

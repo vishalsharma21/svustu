@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="com.ritara.svustudent.fragments.PaidFeeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".fragments.PaidFeeFragment"
+        tools:listitem="@layout/fragment_paidfee"
+        android:background="@color/white"
+        android:layout_above="@+id/rlBottom"/>
+
+    <ImageView
+        android:id="@+id/make_payment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_debitkarte"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:accessibilityPaneTitle="Make Payment"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/txtDebit"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/button_signup_curve"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:id="@+id/txtCredit"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/button_signup_curve"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

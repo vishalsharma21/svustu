@@ -16,11 +16,23 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/white"
         app:popupTheme="@style/AppTheme.PopupOverlay">
 
       <RelativeLayout
-          android:layout_width="match_parent"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtToolHeader"
+            android:text="Shri Venkateshwara University"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <ImageView
             android:id="@+id/imgToolRight"
             android:layout_width="40dp"

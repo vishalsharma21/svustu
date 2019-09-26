@@ -16,124 +16,127 @@
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:7:5-79
 12-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:7:22-76
-13
-14    <application
-14-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:9:5-39:19
-15        android:allowBackup="true"
-15-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:10:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:icon="@drawable/new_logo"
-18-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:11:9-42
-19        android:label="@string/app_name"
-19-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:12:9-41
-20        android:supportsRtl="true"
-20-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:13:9-35
-21        android:theme="@style/AppTheme"
-21-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:14:9-40
-22        android:usesCleartextTraffic="true" >
-22-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:15:9-44
-23        <activity android:name="com.ritara.svustudent.Payments" />
-23-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:17:9-55
-23-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:17:19-43
-24        <activity android:name="com.ritara.svustudent.Password" />
-24-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:18:9-46
-24-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:18:19-43
-25        <activity android:name="com.ritara.svustudent.Verify" />
-25-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:19:9-44
-25-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:19:19-41
-26        <activity
-26-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:20:9-23:59
-27            android:name="com.ritara.svustudent.Dashboard"
-27-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:21:13-38
-28            android:label="Home"
-28-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:22:13-33
-29            android:theme="@style/AppTheme.NoActionBar" />
-29-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:23:13-56
-30        <activity android:name="com.ritara.svustudent.SplashScreenActivity" >
-30-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:24:9-30:20
-30-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:24:19-55
-31            <intent-filter>
-31-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:25:13-29:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:17-69
-32-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:28:17-77
-34-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:28:27-74
-35            </intent-filter>
-36        </activity>
-37        <activity android:name="com.ritara.svustudent.MainActivity" />
-37-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:31:9-50
-37-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:31:19-47
-38        <activity android:name="com.ritara.svustudent.Register" />
-38-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:32:9-46
-38-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:32:19-43
-39        <activity android:name="com.ritara.svustudent.Login" />
-39-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:33:9-43
-39-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:33:19-40
-40
-41        <meta-data
-41-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:35:9-37:54
-42            android:name="com.razorpay.ApiKey"
-42-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:36:13-47
-43            android:value="rzp_test_jb3DjVU34kmZi4" />
-43-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:37:13-52
-44
-45        <receiver android:name="com.razorpay.RzpTokenReceiver" >
-45-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:12:9-16:20
-45-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:12:19-63
-46            <intent-filter>
-46-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:13:13-15:29
-47                <action android:name="rzp.device_token.share" />
-47-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:14:17-65
-47-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:14:25-62
-48            </intent-filter>
-49        </receiver>
-50
-51        <activity
-51-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:18:9-29:20
-52            android:name="com.razorpay.CheckoutActivity"
-52-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:19:13-57
-53            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-53-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:20:13-83
-54            android:theme="@style/CheckoutTheme" >
-54-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:21:13-49
-55            <intent-filter>
-55-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:22:13-28:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:17-69
-56-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:25-66
-57
-58                <data
-58-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:25:17-27:47
-59                    android:host="rzp.io"
-59-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:26:21-42
-60                    android:scheme="io.rzp" />
-60-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:27:21-44
-61            </intent-filter>
-62        </activity>
-63
-64        <provider
-64-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-65            android:name="com.squareup.picasso.PicassoProvider"
-65-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-66            android:authorities="com.ritara.svustudent.com.squareup.picasso"
-66-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-67            android:exported="false" />
-67-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-68        <provider
-68-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-69            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-69-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-70            android:authorities="com.ritara.svustudent.lifecycle-process"
-70-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-71            android:exported="false"
-71-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-72            android:multiprocess="true" />
-72-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-73    </application>
-74
-75</manifest>
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16
+17    <application
+17-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:9:5-39:19
+18        android:allowBackup="true"
+18-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:10:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@drawable/new_logo"
+21-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:11:9-42
+22        android:label="@string/app_name"
+22-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:12:9-41
+23        android:supportsRtl="true"
+23-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:13:9-35
+24        android:theme="@style/AppTheme"
+24-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:14:9-40
+25        android:usesCleartextTraffic="true" >
+25-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:15:9-44
+26        <activity android:name="com.ritara.svustudent.Payments" />
+26-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:17:9-55
+26-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:17:19-43
+27        <activity android:name="com.ritara.svustudent.Password" />
+27-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:18:9-46
+27-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:18:19-43
+28        <activity android:name="com.ritara.svustudent.Verify" />
+28-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:19:9-44
+28-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:19:19-41
+29        <activity
+29-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:20:9-23:59
+30            android:name="com.ritara.svustudent.Dashboard"
+30-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:21:13-38
+31            android:label="Home"
+31-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:22:13-33
+32            android:theme="@style/AppTheme.NoActionBar" />
+32-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:23:13-56
+33        <activity android:name="com.ritara.svustudent.SplashScreenActivity" >
+33-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:24:9-30:20
+33-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:24:19-55
+34            <intent-filter>
+34-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:25:13-29:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:17-69
+35-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:28:17-77
+37-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:28:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity android:name="com.ritara.svustudent.MainActivity" />
+40-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:31:9-50
+40-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:31:19-47
+41        <activity android:name="com.ritara.svustudent.Register" />
+41-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:32:9-46
+41-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:32:19-43
+42        <activity android:name="com.ritara.svustudent.Login" />
+42-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:33:9-43
+42-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:33:19-40
+43
+44        <meta-data
+44-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:35:9-37:54
+45            android:name="com.razorpay.ApiKey"
+45-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:36:13-47
+46            android:value="rzp_test_jb3DjVU34kmZi4" />
+46-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:37:13-52
+47
+48        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+48-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:12:9-16:20
+48-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:12:19-63
+49            <intent-filter>
+49-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:13:13-15:29
+50                <action android:name="rzp.device_token.share" />
+50-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:14:17-65
+50-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:14:25-62
+51            </intent-filter>
+52        </receiver>
+53
+54        <activity
+54-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:18:9-29:20
+55            android:name="com.razorpay.CheckoutActivity"
+55-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:19:13-57
+56            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+56-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:20:13-83
+57            android:theme="@style/CheckoutTheme" >
+57-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:21:13-49
+58            <intent-filter>
+58-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:22:13-28:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:17-69
+59-->D:\SVU_Student\svu_student\app\src\main\AndroidManifest.xml:26:25-66
+60
+61                <data
+61-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:25:17-27:47
+62                    android:host="rzp.io"
+62-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:26:21-42
+63                    android:scheme="io.rzp" />
+63-->[com.razorpay:checkout:1.5.12] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\cb959ff3d6a327c2db060a4e9eca91f0\checkout-1.5.12\AndroidManifest.xml:27:21-44
+64            </intent-filter>
+65        </activity>
+66
+67        <provider
+67-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+68            android:name="com.squareup.picasso.PicassoProvider"
+68-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+69            android:authorities="com.ritara.svustudent.com.squareup.picasso"
+69-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+70            android:exported="false" />
+70-->[com.squareup.picasso:picasso:2.71828] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\74a4099a090a29d8f3a6e0cf28d5411e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+71        <provider
+71-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+72            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+73            android:authorities="com.ritara.svustudent.lifecycle-process"
+73-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+74            android:exported="false"
+74-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+75            android:multiprocess="true" />
+75-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Gyanendra\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+76    </application>
+77
+78</manifest>

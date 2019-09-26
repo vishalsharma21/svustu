@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    >
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Upload Image"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Take photo"
+        android:id="@+id/take_photo"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Pick from Gallery"
+        android:gravity="center"
+        android:id="@+id/gallery"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:id="@+id/cancel_btn"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+
+
+
+
+
+</LinearLayout>

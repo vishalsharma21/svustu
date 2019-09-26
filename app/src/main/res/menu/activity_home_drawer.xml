@@ -19,7 +19,7 @@
           android:title="@string/menu_slideshow" />
       <item
           android:id="@+id/nav_test"
-          android:icon="@drawable/ic_checklist"
+          android:icon="@drawable/education"
           android:title="@string/test" />
       <item
           android:id="@+id/nav_cal"
@@ -27,8 +27,8 @@
           android:title="@string/menu_tools" />
       <item
           android:id="@+id/notifications"
-          android:icon="@drawable/ic_notifications"
-          android:title="@string/menu_share" />
+          android:icon="@drawable/ic_speech_bubble"
+          android:title="Messages" />
       <item
           android:id="@+id/nav_shoping_card"
           android:icon="@drawable/ic_empty_shopping_cart"
