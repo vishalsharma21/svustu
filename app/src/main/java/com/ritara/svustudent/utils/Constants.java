@@ -1,7 +1,7 @@
 package com.ritara.svustudent.utils;
 
 public class Constants {
-    public static final String BASE_URL = "http://solutionsdot-com.in/svu_api/Svu_api/";
+    public static final String BASE_URL = "http://solutionsdot-com.in/SVU_api/svu_api.php/";
     public static final String LOGIN_URL = BASE_URL + "login";
     public static final String SIGNUP_URL = BASE_URL + "registration";
     public static final String UPDATE_LOCATION = BASE_URL + "lat_long";

@@ -592,13 +592,15 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
         }
 
         AndroidNetworking.post(BASE_URL)
-                .addBodyParameter("rule", "send_chat")
+                .addBodyParameter("rule", "gp_chat")
                 .addBodyParameter("sender_id", sharedPreference_main.getUserId())
-                .addBodyParameter("batch", sharedPreference_main.getBatch())
+                .addBodyParameter("batch", "2019")
                 .addBodyParameter("profile_img", sharedPreference_main.getProfilepic())
-                .addBodyParameter("mobile_number", sharedPreference_main.get_phone())
+                .addBodyParameter("mobile_number", sharedPreference_main.getUserId())
                 .addBodyParameter("name", sharedPreference_main.get_Username())
                 .addBodyParameter("receiver_id", ""+ jumpTo)
+                .addBodyParameter("society_id", "SVU")
+                .addBodyParameter("house_number", "C150")
                 .addBodyParameter(mBodyParameterMap)
                 .setTag("set_contribution")
                 .setPriority(Priority.MEDIUM)
