@@ -41,6 +41,7 @@ import com.ritara.svustudent.Register;
 import com.ritara.svustudent.fragments.BroadcastFragment;
 import com.ritara.svustudent.fragments.CalendarFragment;
 import com.ritara.svustudent.fragments.MarksFragment;
+import com.ritara.svustudent.fragments.PaidFeeFragment;
 import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.ListManager;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
@@ -195,8 +196,9 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                     case "My Videos" :
                         test = "Videos";
                         break;
-                    case "My Tests" :
-                        test = "Tests";
+                    case "My Fees" :
+                        test = "My Fees";
+                        ((Dashboard)getActivity()).changeFragment(new PaidFeeFragment(), "My Fee");
                         break;
                     case "Calendar" :
                         test = "Calendar";

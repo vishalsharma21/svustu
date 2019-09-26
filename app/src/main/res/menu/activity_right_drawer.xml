@@ -2,34 +2,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
-        <item
-            android:id="@+id/home"
-            android:icon="@drawable/ic_home"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/connect"
-            android:icon="@drawable/ic_connect"
-            android:contentDescription="Connect with your peers and expert faculities worldwide"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/campus"
-            android:icon="@drawable/ic_campus"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_test"
-            android:icon="@drawable/ic_checklist"
-            android:title="@string/test" />
-        <item
-            android:id="@+id/nav_cal"
-            android:icon="@drawable/ic_calendar"
-            android:title="@string/menu_tools" />
-        <item
-            android:id="@+id/notifications"
-            android:icon="@drawable/ic_notifications"
-            android:title="@string/menu_share" />
-
-
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/connect"
+                android:icon="@drawable/ic_connect"
+                android:contentDescription="Connect with your peers and expert faculities worldwide"
+                android:title="@string/menu_gallery" />
+            <item
+                android:id="@+id/campus"
+                android:icon="@drawable/ic_campus"
+                android:title="@string/menu_slideshow" />
+            <item
+                android:id="@+id/nav_test"
+                android:icon="@drawable/ic_checklist"
+                android:title="@string/test" />
+            <item
+                android:id="@+id/nav_cal"
+                android:icon="@drawable/ic_calendar"
+                android:title="@string/menu_tools" />
+            <item
+                android:id="@+id/notifications"
+                android:icon="@drawable/ic_notifications"
+                android:title="@string/menu_share" />
             <item
                 android:id="@+id/nav_shoping_card"
                 android:icon="@drawable/ic_empty_shopping_cart"
@@ -38,8 +35,6 @@
                 android:id="@+id/nav_my_orders"
                 android:icon="@drawable/ic_box"
                 android:title="@string/menu_order" />
-
-
             <item
                 android:id="@+id/account"
                 android:icon="@drawable/ic_settings"
@@ -49,7 +44,4 @@
                 android:icon="@drawable/ic_icon"
                 android:title="@string/help" />
 
-
-
     </menu>
-

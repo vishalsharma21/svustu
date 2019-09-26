@@ -1376,6 +1376,7 @@ drawable ic_books
 drawable ic_box
 drawable ic_building
 drawable ic_calendar
+drawable ic_call
 drawable ic_call_answer
 drawable ic_campus
 drawable ic_checklist
@@ -1553,6 +1554,7 @@ id alert
 id alertTitle
 id all
 id always
+id ambulance
 id app
 id aptitude
 id async
@@ -1567,12 +1569,16 @@ id books
 id books_img
 id bottom
 id bottom_nav
+id btnLogOut
 id btnPayment
 id btnSubmit
 id build
 id build_no
 id buttonPanel
 id calendar_view
+id call_general_secretary
+id call_president
+id call_treasure
 id campus
 id cancel
 id cancel_action
@@ -1655,6 +1661,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id fire
 id fixed
 id forever
 id forgot
@@ -1800,6 +1807,7 @@ id percent_apti
 id phone_number
 id pin
 id placement
+id police
 id policy
 id preferenceDivider
 id preps
@@ -2061,6 +2069,7 @@ layout design_text_input_password_icon
 layout dialog_demo
 layout dialog_gallery
 layout dialog_zoommable_view
+layout emergency_dialog
 layout exams
 layout fragment_account
 layout fragment_broadcast
