@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -42,6 +43,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     private TabLayout.Tab tablayout;
     private FragmentManager fragmentManager;
     private Toolbar toolbar;
+    private TextView txtToolHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
         sharedPreferences_svu.setTrainingDone(true);
-
+        txtToolHeader = (TextView) toolbar.findViewById(R.id.txtToolHeader);
 
 
         ImageView imgToolRight = (ImageView) toolbar.findViewById(R.id.imgToolRight);
@@ -68,6 +70,9 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setItemIconTintList(null);
+
+        TextView txtHeaderNav = navigationView.getHeaderView(0).findViewById(R.id.textHeaderName);
+        txtHeaderNav.setText(sharedPreferences_svu.get_Username());
 
         NavigationView navigationViewRight = findViewById(R.id.nav_view2);
         navigationViewRight.setItemIconTintList(null);
@@ -227,7 +232,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         transaction.replace(R.id.nav_host_fragment, fragment, "" + title).commit();
         transaction.addToBackStack(title);
         toolbar.setTitle(title);
-
+        txtToolHeader.setText(title);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         drawer.closeDrawer(GravityCompat.END);

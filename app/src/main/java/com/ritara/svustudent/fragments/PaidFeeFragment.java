@@ -36,8 +36,9 @@ public class PaidFeeFragment extends Fragment {
     private int mColumnCount = 1;
     private ArrayList<FeeModel> feeModels;
     private View view;
-    int debit = 0, credit = 0;
+    double debit = 0, credit = 0;
     private TextView txtDebit, txtCredit;
+    private RecyclerView recyclerView;
     private OnListFragmentInteractionListener mListener;
 
     public PaidFeeFragment() {
@@ -67,8 +68,8 @@ public class PaidFeeFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_paidfee_list, container, false);
 
         txtCredit = (TextView) view.findViewById(R.id.txtCredit);
-        txtCredit = (TextView) view.findViewById(R.id.txtCredit);
-
+        txtDebit = (TextView) view.findViewById(R.id.txtDebit);
+        recyclerView = (RecyclerView) view.findViewById(R.id.list);
         feeModels = new ArrayList<>();
 
         GetFeeInfo();
@@ -138,13 +139,13 @@ public class PaidFeeFragment extends Fragment {
                                 feeModel.setName(jsonObject1.getString("Name"));
 
                                 try {
-                                    debit = Integer.parseInt(jsonObject1.getString("Debit")) + debit;
+                                    debit = Double.parseDouble(jsonObject1.getString("Debit")) + debit;
                                 }catch (Exception e){
 
                                 }
 
                                 try {
-                                    credit = Integer.parseInt(jsonObject1.getString("Credit")) + credit;
+                                    credit = Double.parseDouble(jsonObject1.getString("Credit")) + credit;
                                 }catch (Exception e){
 
                                 }
@@ -155,16 +156,16 @@ public class PaidFeeFragment extends Fragment {
                             txtCredit.setText("Total Credit : " + credit);
                             txtDebit.setText("Total Debit : " + debit);
 
-                            if (view instanceof RecyclerView) {
+//                            if (view instanceof RecyclerView) {
                                 Context context = view.getContext();
-                                RecyclerView recyclerView = (RecyclerView) view;
+
                                 if (mColumnCount <= 1) {
                                     recyclerView.setLayoutManager(new LinearLayoutManager(context));
                                 } else {
                                     recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
                                 }
                                 recyclerView.setAdapter(new MyPaidFeeRecyclerViewAdapter(feeModels, mListener));
-                            }
+//                            }
 
                         }
                         catch (

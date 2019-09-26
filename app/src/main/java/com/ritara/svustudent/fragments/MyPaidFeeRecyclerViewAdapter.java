@@ -77,7 +77,6 @@ public class MyPaidFeeRecyclerViewAdapter extends RecyclerView.Adapter<MyPaidFee
         public String toString() {
 
             return "";
-//            return super.toString() + " '" + view.getText() + "'";
         }
     }
 }

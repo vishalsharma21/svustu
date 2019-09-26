@@ -118,13 +118,13 @@
 63        </activity>
 64
 65        <provider
-65-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+65-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 66            android:name="com.squareup.picasso.PicassoProvider"
-66-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+66-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 67            android:authorities="com.ritara.svustudent.com.squareup.picasso"
-67-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+67-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 68            android:exported="false" />
-68-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/c689b4a0747cfcbd3e6c3d75a4f46b8e/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+68-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 69        <provider
 69-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c75b512c68f7bb7a7c5a931aae563be5/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
 70            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.androidnetworking.AndroidNetworking;
@@ -30,8 +31,11 @@ import com.androidnetworking.interfaces.UploadProgressListener;
 import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.Login;
 import com.ritara.svustudent.MainActivity;
+import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
+import com.ritara.svustudent.fragments.MarksFragment;
+import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.ListManager;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import com.squareup.picasso.Picasso;
@@ -115,11 +119,12 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
             llBanner.setVisibility(View.GONE);
         }
 
+        GetStuLoginAccess();
+
         return view;
     }
 
     public void onResponse(){
-
         AndroidNetworking.get("https://shuddhairpurifier.com/SVU/svu_api.php?rule=SVU_get_home")
                 .setTag("uploadTest")
                 .setPriority(Priority.HIGH)
@@ -127,17 +132,12 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                 .setUploadProgressListener(new UploadProgressListener() {
                     @Override
                     public void onProgress(long bytesUploaded, long totalBytes) {
-                        // do anything with progress
-//                                ((MainActivity)getActivity()).showLoader();
                     }
                 })
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        // do anything with response
-//                                dismissLoader();
                         Log.e("Resp :", response.toString());
-
                         try {
                             if (response.getString("status").equals("1")) {
                                 item_list.clear();
@@ -153,18 +153,13 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                                 }
                                 grid_adapter.getBaseAdapterClass().notifyDataSetChanged();
 
-                            } else {
-
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
-
                     @Override
                     public void onError(ANError error) {
-                        // handle error
-//                                dismissLoader();
                         error.getResponse();
                     }
                 });
@@ -213,6 +208,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "Reports" :
                         test = "Reports";
+                        ((Dashboard)getActivity()).changeFragment(new MarksFragment(), "Marks");
                         break;
 
                     default:
@@ -236,6 +232,42 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     public void holderClass(View v, String for_what) {
 
     }
+
+    private void GetStuLoginAccess() {
+        if (!((Dashboard)getActivity()).isloadershowing())
+            ((Dashboard)getActivity()).showLoader();
+        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetStuLoginAccess?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+                .addBodyParameter("EnrollNo", "SET14A00030058")
+                .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+                .setTag("login")
+                .setPriority(Priority.MEDIUM)
+                .build()
+                .getAsJSONArray(new JSONArrayRequestListener() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        try {
+                            for (int i = 0; i < response.length(); i++) {
+                                JSONObject object = response.getJSONObject(i);
+                                object.getString("AdmDate");
+                                object.getString("AdmMode");
+                                object.getString("BrLoction");
+                                object.getString("Course");
+                            }
+                        }
+                        catch (Exception e) {
+                            e.getMessage();
+                        } finally {
+                            ((Dashboard)getActivity()).dismissLoader();
+                        }
+                    }
+                    @Override
+                    public void onError(ANError anError) {
+                        anError.getResponse();
+                        ((Dashboard)getActivity()).dismissLoader();
+                    }
+                });
+    }
+
 
 
 }

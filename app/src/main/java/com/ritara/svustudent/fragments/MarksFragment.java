@@ -17,6 +17,7 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.ritara.svustudent.Dashboard;
+import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.utils.FeeModel;
 
@@ -33,6 +34,7 @@ public class MarksFragment extends Fragment {
     private View view;
     int debit = 0, credit = 0;
     private TextView txtDebit, txtCredit;
+    RecyclerView rcMarks;
     private OnListFragmentInteractionListener mListener;
 
     public MarksFragment() {
@@ -59,30 +61,18 @@ public class MarksFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_paidfee_list, container, false);
+        view = inflater.inflate(R.layout.fragment_marks_list, container, false);
 
-        txtCredit = (TextView) view.findViewById(R.id.txtCredit);
-        txtCredit = (TextView) view.findViewById(R.id.txtCredit);
+        rcMarks = (RecyclerView) view.findViewById(R.id.rcMarks);
 
         feeModels = new ArrayList<>();
-
-        GetFeeInfo();
-
-        // Set the adapter
-
+        GetMarksInfo();
         return view;
     }
-
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        /*if (context instanceof OnListFragmentInteractionListener) {
-            mListener = (OnListFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnListFragmentInteractionListener");
-        }*/
     }
 
     @Override
@@ -91,21 +81,14 @@ public class MarksFragment extends Fragment {
         mListener = null;
     }
 
-//    @Override
-//    public void onListFragmentInteraction(ArrayList<FeeModel> item) {
-//
-//    }
-
-
     public interface OnListFragmentInteractionListener {
-        // TODO: Update argument type and name
         void onListFragmentInteraction(ArrayList<FeeModel> item);
     }
 
-    private void GetFeeInfo() {
+    private void GetMarksInfo() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetFeeInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetMarksheetInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .addBodyParameter("EnrollNo", "SET14A00030058")
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
@@ -116,50 +99,19 @@ public class MarksFragment extends Fragment {
                     public void onResponse(JSONArray response) {
                         try {
                             for (int i = 0; i < response.length(); i++) {
-
                                 FeeModel feeModel = new FeeModel();
-
-                                JSONObject jsonObject1 = (JSONObject) response.get(i);
-
-                                feeModel.setBranch(jsonObject1.getString("Branch"));
-                                feeModel.setCourse(jsonObject1.getString("Course"));
-                                feeModel.setCredit(jsonObject1.getString("Credit"));
-                                feeModel.setDebit(jsonObject1.getString("Debit"));
-                                feeModel.setDescription(jsonObject1.getString("Description"));
-                                feeModel.setEnrollNo(jsonObject1.getString("EnrollNo"));
-                                feeModel.setFName(jsonObject1.getString("FName"));
-                                feeModel.setReceiptNo(jsonObject1.getString("ReceiptNo"));
-                                feeModel.setTransDate(jsonObject1.getString("TransDate"));
-                                feeModel.setName(jsonObject1.getString("Name"));
-
-                                try {
-                                    debit = Integer.parseInt(jsonObject1.getString("Debit")) + debit;
-                                }catch (Exception e){
-
-                                }
-
-                                try {
-                                    credit = Integer.parseInt(jsonObject1.getString("Credit")) + credit;
-                                }catch (Exception e){
-
-                                }
-
+                                JSONObject object = response.getJSONObject(i);
+                                feeModel.setName(object.getString("YearSem"));
                                 feeModels.add(feeModel);
+
                             }
 
-                            txtCredit.setText("Total Credit : " + credit);
-                            txtDebit.setText("Total Debit : " + debit);
-
-                            /*if (view instanceof RecyclerView) {
-                                Context context = view.getContext();
-                                RecyclerView recyclerView = (RecyclerView) view;
                                 if (mColumnCount <= 1) {
-                                    recyclerView.setLayoutManager(new LinearLayoutManager(context));
+                                    rcMarks.setLayoutManager(new LinearLayoutManager(getActivity()));
                                 } else {
-                                    recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+                                    rcMarks.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
                                 }
-                                recyclerView.setAdapter(new MyPaidFeeRecyclerViewAdapter(feeModels, mListener));
-                            }*/
+                            rcMarks.setAdapter(new MyMarksAdapter(feeModels, mListener));
 
                         }
                         catch (
