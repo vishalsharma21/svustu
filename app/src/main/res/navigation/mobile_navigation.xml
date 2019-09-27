@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_books"
-        android:name="com.ritara.svustudent.ui.gallery.GalleryFragment"
+        android:name="com.ritara.svustudent.fragments.BooksFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/books_fragment" />
 
     <fragment
         android:id="@+id/nav_video"
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/nav_cal"
-        android:name="com.ritara.svustudent.ui.cal.CalendarFragment"
+        android:name="com.ritara.svustudent.fragments.CalendarFragment"
         android:label="@string/menu_tools"
         tools:layout="@layout/fragment_calendar" />
 
@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/nav_shoping_card"
-        android:name="com.ritara.svustudent.ui.send.ShoppingCartFragment"
+        android:name="com.ritara.svustudent.ui.shopping_cart.ShoppingFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_shopping" />
 

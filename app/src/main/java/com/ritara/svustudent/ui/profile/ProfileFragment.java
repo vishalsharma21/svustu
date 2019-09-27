@@ -1,6 +1,7 @@
 package com.ritara.svustudent.ui.profile;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -16,6 +17,7 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.ritara.svustudent.Dashboard;
+import com.ritara.svustudent.Login;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.fragments.PaidFeeFragment;
 import com.ritara.svustudent.ui.home.HomeFragment;
@@ -37,22 +39,25 @@ public class ProfileFragment extends Fragment {
 
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
 
-        ((TextView)view.findViewById(R.id.txtName)).setText(sharedPreferences_svu.get_Username());
-        ((TextView)view.findViewById(R.id.txtEmail)).setText("Email : " + sharedPreferences_svu.get_email());
+        if(sharedPreferences_svu.get_Logged()) {
+            ((TextView) view.findViewById(R.id.txtName)).setText(sharedPreferences_svu.get_Username());
+            ((TextView) view.findViewById(R.id.txtEmail)).setText("Email : " + sharedPreferences_svu.get_email());
 
-        ((TextView)view.findViewById(R.id.txtPAddress)).setText("Address : " + sharedPreferences_svu.getAddress());
-        ((TextView)view.findViewById(R.id.txtFather)).setText("Father's Name : " + sharedPreferences_svu.get_FatherName());
-        ((TextView)view.findViewById(R.id.txtMother)).setText("Mother's Name : " + sharedPreferences_svu.get_MotherName());
+            ((TextView) view.findViewById(R.id.txtPAddress)).setText("Address : " + sharedPreferences_svu.getAddress());
+            ((TextView) view.findViewById(R.id.txtFather)).setText("Father's Name : " + sharedPreferences_svu.get_FatherName());
+            ((TextView) view.findViewById(R.id.txtMother)).setText("Mother's Name : " + sharedPreferences_svu.get_MotherName());
 
-        view.findViewById(R.id.rlFees).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ((Dashboard)getActivity()).changeFragment(new PaidFeeFragment() , "My Fees");
-            }
-        });
+            view.findViewById(R.id.rlFees).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ((Dashboard) getActivity()).changeFragment(new PaidFeeFragment(), "My Fees");
+                }
+            });
 
-        GetAcademicInfo();
-
+            GetAcademicInfo();
+        }else {
+            ((Dashboard)getActivity()).changeFragment(new HomeFragment(), "Home");
+        }
         return view;
     }
 

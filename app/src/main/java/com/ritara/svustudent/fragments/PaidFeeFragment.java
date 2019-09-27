@@ -21,11 +21,13 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.ritara.svustudent.Dashboard;
+import com.ritara.svustudent.Login;
 import com.ritara.svustudent.Payments;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.fragments.dummy.DummyContent;
 import com.ritara.svustudent.fragments.dummy.DummyContent.DummyItem;
 import com.ritara.svustudent.utils.FeeModel;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -41,7 +43,7 @@ public class PaidFeeFragment extends Fragment {
     private ArrayList<FeeModel> feeModels;
     private View view;
     double debit = 0, credit = 0;
-    private Button txtDebit, txtCredit;
+    private TextView txtDebit, txtCredit;
     private RecyclerView recyclerView;
     private ImageView makepayment;
     private OnListFragmentInteractionListener mListener;
@@ -72,19 +74,24 @@ public class PaidFeeFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_paidfee_list, container, false);
 
-        txtCredit = (Button) view.findViewById(R.id.txtCredit);
-        txtDebit = (Button) view.findViewById(R.id.txtDebit);
-        makepayment = (ImageView) view.findViewById(R.id.make_payment);
-        recyclerView = (RecyclerView) view.findViewById(R.id.list);
-        feeModels = new ArrayList<>();
-        makepayment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(), Payments.class));
-            }
-        });
-        GetFeeInfo();
+        if(!SharedPreferences_SVU.getInstance(getActivity()).get_Logged()){
+            startActivity(new Intent(getActivity(), Login.class));
+        }else {
+            txtCredit = (TextView) view.findViewById(R.id.txtCredit);
+            txtDebit = (TextView) view.findViewById(R.id.txtDebit);
+            makepayment = (ImageView) view.findViewById(R.id.make_payment);
+            recyclerView = (RecyclerView) view.findViewById(R.id.list);
+            feeModels = new ArrayList<>();
 
+            makepayment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getActivity(), Payments.class));
+                }
+            });
+
+            GetFeeInfo();
+        }
         // Set the adapter
 
         return view;

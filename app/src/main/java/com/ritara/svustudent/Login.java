@@ -12,6 +12,7 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
+import com.ritara.svustudent.ui.home.HomeFragment;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONArray;
@@ -92,5 +93,14 @@ public class Login extends BaseActivity {
               }
 
             });
+  }
+
+  @Override
+  public void onBackPressed() {
+//    super.onBackPressed();
+    if(!SharedPreferences_SVU.getInstance(this).get_Logged()){
+      finish();
+      startActivity(new Intent(this, Dashboard.class));
+    }
   }
 }

@@ -687,6 +687,7 @@ color colorNavIcon
 color colorNavText
 color colorPrimary
 color colorPrimaryDark
+color color_green_icash
 color current_day_of_month
 color day_disabled_background_color
 color day_disabled_text_color
@@ -788,6 +789,7 @@ color tooltip_background_light
 color transparent1
 color white
 dimen _216sdp
+dimen _3sdp
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -930,6 +932,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen eightfive
 dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
@@ -1445,6 +1448,7 @@ drawable ic_video_camera
 drawable ic_videos
 drawable image_splash
 drawable item_transparent_background
+drawable loader
 drawable members
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1463,6 +1467,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pp
+drawable progresscustombg
 drawable recieve_message
 drawable rzp_border
 drawable rzp_border_bottom
@@ -1475,6 +1480,7 @@ drawable rzp_secured_by_bg
 drawable rzp_white_border_black_bg
 drawable send_message
 drawable side_nav_bar
+drawable splash_new
 drawable submit_background
 drawable svu_app_icon
 drawable tooltip_frame_dark
@@ -1695,7 +1701,6 @@ id icon_group
 id ifRoom
 id image
 id imageView
-id imageViewSplash
 id imageView_arrow
 id image_books
 id image_campus
@@ -1829,6 +1834,7 @@ id profile_url
 id progressBar
 id progress_circular
 id progress_horizontal
+id progressbarr
 id radio
 id rcMarks
 id recTask
@@ -1965,7 +1971,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id txtAdDate
-id txtAppName
 id txtComment
 id txtCourse
 id txtCredit
@@ -1981,7 +1986,6 @@ id txtName
 id txtPAddress
 id txtToolHeader
 id uniform
-id university
 id unlabeled
 id up
 id useLogo
@@ -2085,6 +2089,7 @@ layout design_text_input_password_icon
 layout dialog_demo
 layout dialog_gallery
 layout dialog_profile
+layout dialog_progress
 layout dialog_zoommable_view
 layout emergency_dialog
 layout exams

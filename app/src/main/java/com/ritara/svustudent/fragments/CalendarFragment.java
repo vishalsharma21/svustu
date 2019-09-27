@@ -2,6 +2,7 @@ package com.ritara.svustudent.fragments;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,6 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.ritara.svustudent.Login;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.utils.CalendarDB;
 import com.ritara.svustudent.utils.CalendarRecyclerAdapter;
@@ -54,75 +56,60 @@ public class CalendarFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_calendar, container, false);
 
-        recTask = (RecyclerView) root.findViewById(R.id.recTask);
+        if(SharedPreferences_SVU.getInstance(getActivity()).get_Logged()) {
+            recTask = (RecyclerView) root.findViewById(R.id.recTask);
+            calendarDB = new CalendarDB(getActivity());
+            taskModel = new ArrayList<>();
+            taskModel.addAll(calendarDB.getAllRecords());
+            recTask.setLayoutManager(new LinearLayoutManager(getActivity()));
+            adapter = new CalendarRecyclerAdapter(getActivity(), taskModel);
+            recTask.setAdapter(adapter);
 
-        calendarDB = new CalendarDB(getActivity());
+            calendarView = (CustomCalendarView) root.findViewById(R.id.calendar_view);
+            Calendar currentCalendar = Calendar.getInstance(Locale.getDefault());
+            calendarView.setFirstDayOfWeek(Calendar.MONDAY);
+            calendarView.setShowOverflowDate(false);
+            calendarView.refreshCalendar(currentCalendar);
 
-        taskModel = new ArrayList<>();
+            List<DayDecorator> decorators = new ArrayList<>();
+            decorators.add(new DisabledColorDecorator());
+            calendarView.setDecorators(decorators);
+            calendarView.refreshCalendar(currentCalendar);
 
-        taskModel.addAll(calendarDB.getAllRecords());
+            calendarView.setCalendarListener(new CalendarListener() {
+                @Override
+                public void onDateSelected(Date date_) {
+                    df = new SimpleDateFormat("dd-MM-yyyy");
+                    date = date_;
+                    taskModel.clear();
+                    taskModel = new ArrayList<>();
+                    taskModel.addAll(calendarDB.getRecordsByDate(df.format(date)));
 
-        recTask.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter = new CalendarRecyclerAdapter(getActivity(), taskModel);
-        recTask.setAdapter(adapter);
-
-
-        //Initialize CustomCalendarView from layout
-        calendarView = (CustomCalendarView) root.findViewById(R.id.calendar_view);
-
-        //Initialize calendar with date
-        Calendar currentCalendar = Calendar.getInstance(Locale.getDefault());
-
-        //Show Monday as first date of week
-        calendarView.setFirstDayOfWeek(Calendar.MONDAY);
-
-        //Show/hide overflow days of a month
-        calendarView.setShowOverflowDate(false);
-
-        //call refreshCalendar to update calendar the view
-        calendarView.refreshCalendar(currentCalendar);
-
-        //adding calendar day decorators
-        List<DayDecorator> decorators = new ArrayList<>();
-        decorators.add(new DisabledColorDecorator());
-        calendarView.setDecorators(decorators);
-        calendarView.refreshCalendar(currentCalendar);
-
-        //Handling custom calendar events
-        calendarView.setCalendarListener(new CalendarListener() {
-            @Override
-            public void onDateSelected(Date date_) {
-                df = new SimpleDateFormat("dd-MM-yyyy");
-                date = date_;
-                taskModel.clear();
-                taskModel = new ArrayList<>();
-                taskModel.addAll(calendarDB.getRecordsByDate(df.format(date)));
-
-                recTask.setLayoutManager(new LinearLayoutManager(getActivity()));
-                adapter = new CalendarRecyclerAdapter(getActivity(), taskModel);
-                recTask.setAdapter(adapter);
-//                Toast.makeText(getActivity(), df.format(date), Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onMonthChanged(Date date) {
-                SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
-//                Toast.makeText(getActivity(), df.format(date), Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        root.findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    openDialog(df.format(date));
-                }catch (Exception e){
-                    Snackbar.make(view, "Please select date from calendar.", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    recTask.setLayoutManager(new LinearLayoutManager(getActivity()));
+                    adapter = new CalendarRecyclerAdapter(getActivity(), taskModel);
+                    recTask.setAdapter(adapter);
                 }
-            }
-        });
 
+                @Override
+                public void onMonthChanged(Date date) {
+                    SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
+                }
+            });
+
+            root.findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    try {
+                        openDialog(df.format(date));
+                    } catch (Exception e) {
+                        Snackbar.make(view, "Please select date from calendar.", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                }
+            });
+        }else{
+            startActivity(new Intent(getActivity(), Login.class));
+        }
         return root;
     }
 

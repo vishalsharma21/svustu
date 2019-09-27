@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
-        <Button
+        <TextView
             android:id="@+id/txtDebit"
             android:textSize="12sp"
             android:layout_width="wrap_content"
@@ -44,10 +45,11 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:textColor="@color/white"
+            android:padding="2dp"
             android:background="@drawable/button_signup_curve"
-            android:layout_marginLeft="15dp"/>
+            android:layout_marginLeft="5dp"/>
 
-        <Button
+        <TextView
             android:id="@+id/txtCredit"
             android:textSize="12sp"
             android:layout_width="wrap_content"
@@ -55,8 +57,9 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:textColor="@color/white"
+            android:padding="2dp"
             android:background="@drawable/button_signup_curve"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="5dp"/>
 
     </RelativeLayout>
 

@@ -19,6 +19,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.ritara.svustudent.utils.MyProgressDialog;
+
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -28,12 +30,15 @@ import okhttp3.OkHttpClient;
 
 public class BaseActivity extends AppCompatActivity {
     private static OkHttpClient httpClient;
-    ProgressDialog progressDialog;
+//    ProgressDialog progressDialog;
     private float mDensity;
+    MyProgressDialog progressdialog;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        progressDialog = new ProgressDialog(BaseActivity.this);
+        progressdialog = new MyProgressDialog(this);
+
+//        progressDialog = new ProgressDialog(BaseActivity.this);
         mDensity = getResources().getDisplayMetrics().density;
 
     }
@@ -69,9 +74,7 @@ public class BaseActivity extends AppCompatActivity {
 
     public void showLoader() {
         try {
-            progressDialog.setMessage("please_wait");
-            progressDialog.setCancelable(false);
-            progressDialog.show();
+            progressdialog.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -79,7 +82,7 @@ public class BaseActivity extends AppCompatActivity {
 
     public void dismissLoader() {
         try {
-            progressDialog.dismiss();
+            progressdialog.dismiss();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -87,7 +90,7 @@ public class BaseActivity extends AppCompatActivity {
 
     public Boolean isloadershowing() {
         try {
-            if (progressDialog.isShowing()) {
+            if (progressdialog.isShowing()) {
                 return true;
             } else {
                 return false;
@@ -98,9 +101,9 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-    public ProgressDialog giveLoaderObject() {
-        return progressDialog;
-    }
+//    public ProgressDialog giveLoaderObject() {
+//        return progressDialog;
+//    }
 
     public void showToast(String msg) {
         Toast.makeText(this, "" + msg, Toast.LENGTH_SHORT).show();
