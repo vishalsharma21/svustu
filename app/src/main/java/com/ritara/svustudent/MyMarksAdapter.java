@@ -15,11 +15,9 @@ import java.util.ArrayList;
 public class MyMarksAdapter extends RecyclerView.Adapter<MyMarksAdapter.ViewHolder> {
 
     private final ArrayList<FeeModel> mValues;
-    private final MarksFragment.OnListFragmentInteractionListener mListener;
 
-    public MyMarksAdapter(ArrayList<FeeModel> items, MarksFragment.OnListFragmentInteractionListener listener) {
+    public MyMarksAdapter(ArrayList<FeeModel> items) {
         mValues = items;
-        mListener = listener;
     }
 
     @Override
@@ -32,7 +30,7 @@ public class MyMarksAdapter extends RecyclerView.Adapter<MyMarksAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(final MyMarksAdapter.ViewHolder holder, int position) {
-        holder.txtMarks.setText("Marks : " + mValues.get(position).getName());
+        holder.txtMarks.setText(mValues.get(position).getName());
 
 
     }

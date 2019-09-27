@@ -32,6 +32,7 @@ dependencies {
     implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.commit451:PhotoView:1.2.4'
+    implementation 'com.android.support:support-v4:29.+'
     testImplementation 'junit:junit:4.12'
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'com.github.imangazalievm:circlemenu:2.0.2'

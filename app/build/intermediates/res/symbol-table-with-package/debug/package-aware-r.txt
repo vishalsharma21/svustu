@@ -1567,6 +1567,8 @@ id actions
 id activity_chooser_view_content
 id add
 id adhaar
+id adhar_layout
+id adhar_number
 id admission
 id alert
 id alertTitle
@@ -1582,6 +1584,8 @@ id avg_attendance
 id back
 id banner
 id barrier
+id batch
+id batch_layout
 id beginning
 id blocking
 id books
@@ -1622,6 +1626,8 @@ id content
 id contentPanel
 id coordinator
 id countryCodeHolder
+id course
+id course_layout
 id courses
 id cpurse
 id custom
@@ -1670,6 +1676,8 @@ id expand_activities_button
 id expanded_menu
 id experts
 id fab
+id father_name
+id father_name_layout
 id favorite
 id fee_dues
 id fees_paid
@@ -1774,6 +1782,8 @@ id mobile
 id mobile_img
 id mobile_navigation
 id mobile_no
+id mother_name
+id mother_name_layout
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1927,6 +1937,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id take_photo
+id tenth_marks
+id tenth_marks_layout
 id terms
 id text
 id text2
@@ -1970,6 +1982,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id twelth_marks
+id twelth_marks_layout
 id txtAdDate
 id txtComment
 id txtCourse
@@ -2094,8 +2108,11 @@ layout dialog_zoommable_view
 layout emergency_dialog
 layout exams
 layout fragment_account
+layout fragment_admission
 layout fragment_broadcast
 layout fragment_calendar
+layout fragment_class
+layout fragment_faculties
 layout fragment_gallery
 layout fragment_help
 layout fragment_home

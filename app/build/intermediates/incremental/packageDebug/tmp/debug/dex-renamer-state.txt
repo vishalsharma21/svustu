@@ -1,7 +1,4 @@
-#Fri Sep 27 11:10:40 IST 2019
-base.0=D\:\\Users\\mac\\Desktop\\SVU_Student\\SVUStudent\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.1=classes.dex
-renamed.1=classes2.dex
+#Fri Sep 27 17:35:56 IST 2019
+base.0=D\:\\SVU_Student\\svu_student\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=D\:\\SVU_Student\\svu_student\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
