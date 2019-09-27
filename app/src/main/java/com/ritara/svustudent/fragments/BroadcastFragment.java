@@ -215,7 +215,7 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                     }
                     @Override
                     public void onError(ANError error) {
-                        // handle error
+                        error.getResponse();
                     }
                 });
     }

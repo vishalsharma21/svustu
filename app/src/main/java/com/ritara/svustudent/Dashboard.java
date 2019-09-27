@@ -1,6 +1,8 @@
 package com.ritara.svustudent;
 
+import android.Manifest;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,6 +57,11 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         setContentView(R.layout.activity_home);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        if(Build.VERSION.SDK_INT>22){
+            requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        }
 
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
         sharedPreferences_svu.setTrainingDone(true);
