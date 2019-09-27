@@ -101,17 +101,16 @@ public class MarksFragment extends Fragment {
                             for (int i = 0; i < response.length(); i++) {
                                 FeeModel feeModel = new FeeModel();
                                 JSONObject object = response.getJSONObject(i);
-                                feeModel.setName(object.getString("YearSem"));
+                                feeModel.setName("Marks : " + object.getString("YearSem"));
                                 feeModels.add(feeModel);
 
                             }
-
                                 if (mColumnCount <= 1) {
                                     rcMarks.setLayoutManager(new LinearLayoutManager(getActivity()));
                                 } else {
                                     rcMarks.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
                                 }
-                            rcMarks.setAdapter(new MyMarksAdapter(feeModels, mListener));
+                            rcMarks.setAdapter(new MyMarksAdapter(feeModels));
 
                         }
                         catch (

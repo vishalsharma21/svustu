@@ -36,6 +36,7 @@ import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.Login;
 import com.ritara.svustudent.MainActivity;
 import com.ritara.svustudent.MyMarksAdapter;
+import com.ritara.svustudent.Payments;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
 import com.ritara.svustudent.fragments.BooksFragment;
@@ -190,8 +191,9 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                     case "E-Library" :
                         test = "Library";
                         break;
-                    case "Members" :
-                        test = "Members";
+                    case "Pay Fee" :
+                        test = "Pay Fee";
+                        startActivity(new Intent(getActivity(), Payments.class));
                         break;
                     case "My Books" :
                         test = "Books";
@@ -215,7 +217,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         break;
                     case "Notice Board" :
                         test = "Notice";
-                        ((Dashboard)getActivity()).changeFragment(new NewsFragment(), "Notice");
+                        ((Dashboard)getActivity()).changeFragment(new NewsFragment(), "Notice Board");
                         break;
                     case "Alumini" :
                         test = "Alumini";
