@@ -93,7 +93,6 @@
                 android:layout_toRightOf="@+id/ccp"
                 android:hint="Father's Name"
                 android:layout_centerVertical="true"
-                android:inputType="phone"
                 android:singleLine="true"
                 android:layout_marginRight="25dp"/>
 
@@ -103,21 +102,46 @@
             android:layout_height="0.5dp"
             android:background="@drawable/gradient"/>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/mother_name_layout"
+            android:id="@+id/address_layout"
             android:layout_width="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ccp"
             android:layout_height="55dp">
 
             <EditText
-                android:id="@+id/mother_name"
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:textSize="20dp"
                 android:layout_toRightOf="@+id/ccp"
-                android:hint="Mother's Name"
+                android:hint="Address"
                 android:layout_centerVertical="true"
-                android:inputType="phone"
+                android:singleLine="false"
+                android:layout_marginRight="25dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/gradient"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dob_layout"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ccp"
+            android:layout_height="55dp">
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/ccp"
+                android:hint="Date of Birth"
+                android:layout_centerVertical="true"
                 android:singleLine="true"
                 android:layout_marginRight="25dp"/>
 
@@ -154,25 +178,24 @@
             android:layout_height="0.5dp"
             android:background="@drawable/gradient"/>
         <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/batch_layout"
+        android:id="@+id/last_qualification_layout"
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/ccp"
         android:layout_height="55dp">
 
-        <EditText
-            android:id="@+id/batch"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:textSize="20dp"
-            android:layout_toRightOf="@+id/ccp"
-            android:hint="Batch"
-            android:layout_centerVertical="true"
-            android:inputType="phone"
-            android:singleLine="true"
-            android:layout_marginRight="25dp"/>
+            <EditText
+                android:id="@+id/last_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/ccp"
+                android:hint="Last Qualification"
+                android:singleLine="true"
+                android:textSize="20dp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <View
             android:layout_width="match_parent"
@@ -203,49 +226,49 @@
             android:layout_height="0.5dp"
             android:background="@drawable/gradient"/>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tenth_marks_layout"
+        android:id="@+id/final_marks_layout"
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/ccp"
         android:layout_height="55dp">
 
         <EditText
-            android:id="@+id/tenth_marks"
+            android:id="@+id/final_marks"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:textSize="20dp"
             android:layout_toRightOf="@+id/ccp"
-            android:hint="10th or Equivalent"
+            android:hint="Final Marks"
             android:layout_centerVertical="true"
             android:inputType="phone"
             android:singleLine="true"
             android:layout_marginRight="25dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="@drawable/gradient"/>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/twelth_marks_layout"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/ccp"
-        android:layout_height="55dp">
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:background="@drawable/gradient"/>-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/twelth_marks_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_toRightOf="@+id/ccp"-->
+<!--        android:layout_height="55dp">-->
 
-        <EditText
-            android:id="@+id/twelth_marks"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:textSize="20dp"
-            android:layout_toRightOf="@+id/ccp"
-            android:hint="12th or Equivalent"
-            android:layout_centerVertical="true"
-            android:inputType="phone"
-            android:singleLine="true"
-            android:layout_marginRight="25dp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/twelth_marks"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_toRightOf="@+id/ccp"-->
+<!--            android:hint="12th or Equivalent"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:inputType="phone"-->
+<!--            android:singleLine="true"-->
+<!--            android:layout_marginRight="25dp"/>-->
 
-    </com.google.android.material.textfield.TextInputLayout>
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
         <View
             android:layout_width="match_parent"
