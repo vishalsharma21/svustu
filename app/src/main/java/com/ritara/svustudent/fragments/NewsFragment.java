@@ -60,7 +60,8 @@ public class NewsFragment extends Fragment {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "get_notice")
+                .addBodyParameter("rule", "faculties")
+                .addBodyParameter("rule", "course")
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
                 .build()
