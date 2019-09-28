@@ -80,6 +80,7 @@ public class ProfileFragment extends Fragment {
                                 ((TextView)view.findViewById(R.id.txtCourse)).setText("Course : "+object.getString("Course"));
                                 ((TextView)view.findViewById(R.id.txtAdDate)).setText("Admission Date : "+object.getString("AdmDate"));
                                 ((TextView)view.findViewById(R.id.txtLoc)).setText("Location : "+object.getString("BrLoction"));
+                                sharedPreferences_svu.setCourse((object.getString("Course")));
                             }
                         }
                         catch (Exception e) {

@@ -20,6 +20,7 @@ import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.utils.FeeModel;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -27,7 +28,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MarksFragment extends Fragment {
-
+    private SharedPreferences_SVU sharedPreferences_svu;
     private static final String ARG_COLUMN_COUNT = "column-count";
     private int mColumnCount = 1;
     private ArrayList<FeeModel> feeModels;
@@ -89,7 +90,7 @@ public class MarksFragment extends Fragment {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetMarksheetInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", "SET14A00030058")
+                .addBodyParameter("EnrollNo", "")
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)

@@ -12,6 +12,24 @@ public class FeeModel {
     String Name;
     String ReceiptNo;
     String TransDate;
+    String Fac_name;
+    String Emp_id;
+
+    public String getEmp_id() {
+        return Emp_id;
+    }
+
+    public void setEmp_id(String emp_id) {
+        Emp_id = emp_id;
+    }
+
+    public void getFac_name(String fac_name){
+        Fac_name = fac_name;
+    }
+
+    public void setFac_name(String fac_name) {
+        Fac_name = fac_name;
+    }
 
     public String getBranch() {
         return Branch;

@@ -22,6 +22,7 @@ import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.utils.FeeModel;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONObject;
 
@@ -29,7 +30,7 @@ import java.util.ArrayList;
 
 
 public class Faculties extends Fragment {
-
+    private SharedPreferences_SVU sharedPreferences_svu;
     private FaculitiesViewModel mViewModel;
     private RecyclerView rcMarks;
     private ArrayList<FeeModel> faculitiesModels;
@@ -58,7 +59,8 @@ public class Faculties extends Fragment {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "get_notice")
+                .addBodyParameter("rule", "faculties")
+                .addBodyParameter("course", "" +sharedPreferences_svu.getCourse() )
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
                 .build()
@@ -67,14 +69,14 @@ public class Faculties extends Fragment {
                     public void onResponse(JSONObject response) {
                         try {
                             ((Dashboard)getActivity()).dismissLoader();
-                            for (int i = 0; i < response.getJSONArray("result").length(); i++) {
-                                FeeModel faculitiesModels = new FeeModel();
-                                JSONObject object = response.getJSONArray("result").getJSONObject(i);
-                                faculitiesModels.setName(object.getString("message"));
-                                faculitiesModels.setFName(object.getString("from_name"));
-                                faculitiesModels.setTransDate(object.getString("date"));
+                            for (int i = 0; i < response.getJSONArray("faculties").length(); i++) {
+                                FeeModel faculitiesModel = new FeeModel();
+                                JSONObject object = response.getJSONArray("faculties").getJSONObject(i);
+                                faculitiesModel.setName(object.getString("data"));
+                                faculitiesModel.setFac_name(object.getString("name"));
+                                faculitiesModel.setEmp_id(object.getString("emp_id"));
 
-                                faculitiesModels.add(feeModel);
+                                faculitiesModels.add(faculitiesModel);
                             }
                             if (mColumnCount <= 1) {
                                 rcMarks.setLayoutManager(new LinearLayoutManager(getActivity()));

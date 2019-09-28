@@ -24,6 +24,16 @@ public class SharedPreferences_SVU {
         return sharedpreference_main;
     }
 
+    public String getCourse() {
+        return sharedPreference.getString(PREFS_USER_ID, "");
+    }
+
+    public void setCourse(String Course) {
+        editor = sharedPreference.edit();
+        editor.putString("Course", Course);
+        editor.commit();
+    }
+
     public String getUserId() {
         return sharedPreference.getString(PREFS_USER_ID, "");
     }
