@@ -217,7 +217,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
         final DrawerLayout drawer1 = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        imgToolRight.setOnClickListener(new View.OnClickListener() {
+        /*imgToolRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (drawer1.isDrawerOpen(GravityCompat.END)) {
@@ -226,7 +226,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     drawer1.openDrawer(GravityCompat.END);
                 }
             }
-        });
+        });*/
 
         NavigationView navigationView2 = (NavigationView) findViewById(R.id.nav_view2);
         navigationView2.setNavigationItemSelectedListener(Dashboard.this);
