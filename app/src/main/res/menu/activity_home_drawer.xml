@@ -11,11 +11,11 @@
           android:title="@string/menu_home" />
       <item
           android:id="@+id/nav_books"
-          android:icon="@drawable/ic_books"
+          android:icon="@drawable/management"
           android:title="@string/menu_gallery" />
       <item
           android:id="@+id/nav_video"
-          android:icon="@drawable/ic_digital_campaign"
+          android:icon="@drawable/attendant_list"
           android:title="@string/menu_slideshow" />
       <item
           android:id="@+id/nav_test"
@@ -31,11 +31,11 @@
           android:title="Messages" />
       <item
           android:id="@+id/nav_shoping_card"
-          android:icon="@drawable/ic_empty_shopping_cart"
+          android:icon="@drawable/report"
           android:title="@string/menu_send" />
       <item
           android:id="@+id/nav_my_orders"
-          android:icon="@drawable/ic_box"
+          android:icon="@drawable/reception_desk"
           android:title="@string/menu_order" />
       <item
           android:id="@+id/account"

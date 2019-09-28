@@ -21,8 +21,20 @@ public class AdmissionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_admission,container,false);
+        View view = inflater.inflate(R.layout.fragment_admission,container,false);
+        name = view.findViewById(R.id.name);
+        email_id = view.findViewById(R.id.email_id);
+        father_name = view.findViewById(R.id.father_name);
+        mother_name = view.findViewById(R.id.mother_name);
+        phone_number = view.findViewById(R.id.phone_number);
+        batch = view.findViewById(R.id.name);
+        name = view.findViewById(R.id.name);
+        name = view.findViewById(R.id.name);
+
+
+
+
+        return view;
     }
 
 

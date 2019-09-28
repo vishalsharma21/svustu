@@ -13,15 +13,15 @@
 
     <fragment
         android:id="@+id/nav_books"
-        android:name="com.ritara.svustudent.fragments.BooksFragment"
+        android:name="com.ritara.svustudent.fragments.ClassFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/books_fragment" />
+        tools:layout="@layout/fragment_class" />
 
     <fragment
         android:id="@+id/nav_video"
-        android:name="com.ritara.svustudent.ui.vid.VideosFragment"
+        android:name="com.ritara.svustudent.fragments.ViewAttendance"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_videos" />
+        tools:layout="@layout/fragment_view_attendance" />
 
     <fragment
         android:id="@+id/nav_cal"
@@ -37,15 +37,15 @@
 
     <fragment
         android:id="@+id/nav_my_orders"
-        android:name="com.ritara.svustudent.ui.orders.OrdersFragment"
+        android:name="com.ritara.svustudent.fragments.AdmissionFragment"
         android:label="@string/menu_order"
-        tools:layout="@layout/fragment_orders" />
+        tools:layout="@layout/fragment_admission" />
 
     <fragment
         android:id="@+id/nav_shoping_card"
-        android:name="com.ritara.svustudent.ui.shopping_cart.ShoppingFragment"
+        android:name="com.ritara.svustudent.fragments.MarksFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_shopping" />
+        tools:layout="@layout/fragment_marks_list" />
 
     <fragment
         android:id="@+id/notifications"
