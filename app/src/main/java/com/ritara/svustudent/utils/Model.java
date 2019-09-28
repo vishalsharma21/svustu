@@ -18,6 +18,34 @@ public class Model {
     String video;
     String file;
     String timestamp;
+    String date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getAttendance() {
+        return attendance;
+    }
+
+    public void setAttendance(String attendance) {
+        this.attendance = attendance;
+    }
+
+    public String getEnrollment_no() {
+        return enrollment_no;
+    }
+
+    public void setEnrollment_no(String enrollment_no) {
+        this.enrollment_no = enrollment_no;
+    }
+
+    String attendance;
+    String enrollment_no;
 
     public String getId() {
         return id;

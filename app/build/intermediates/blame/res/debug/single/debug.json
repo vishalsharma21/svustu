@@ -528,12 +528,12 @@
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/drawable-v24/grid_background.xml"
     },
     {
-        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_azerbaijan.png.flat",
-        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_azerbaijan.png"
-    },
-    {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_vids_fragment.xml.flat",
         "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/vids_fragment.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_azerbaijan.png.flat",
+        "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/c6cd3855e839fd441c7399f8a869b338/jetified-ccp-1.7.2/res/drawable-nodpi-v4/flag_azerbaijan.png"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-nodpi-v4_flag_djibouti.png.flat",
@@ -930,6 +930,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_att.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_att.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-v24_ic_icon.xml.flat",
@@ -3610,6 +3614,10 @@
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_fragment_gal.xml.flat",
+        "source": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/res/layout/fragment_gal.xml"
     },
     {
         "merged": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",

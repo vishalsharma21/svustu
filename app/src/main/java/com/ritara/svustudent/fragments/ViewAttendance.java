@@ -9,79 +9,96 @@ import android.os.Bundle;
 
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
+import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.ritara.svustudent.Adapters.AttendanceAdapter;
+import com.ritara.svustudent.Dashboard;
+import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
+import com.ritara.svustudent.utils.FeeModel;
+import com.ritara.svustudent.utils.Model;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 import static com.github.mikephil.charting.utils.ColorTemplate.COLORFUL_COLORS;
 
-
 public class ViewAttendance extends Fragment {
 
-private BarChart today_attendance , avg_attendance;
+    private SharedPreferences_SVU sharedPreferences_svu;
+    private RecyclerView rcAtt;
+    private ArrayList<Model> faculitiesModels;
+    private int mColumnCount = 1;
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_view_attendance, container, false);
-        today_attendance = (BarChart) view.findViewById(R.id.today_attendance);
-        avg_attendance = (BarChart) view.findViewById(R.id.avg_attendance);
-
-
-        ArrayList<BarEntry> entries = new ArrayList<>();
-        entries.add(new BarEntry(0f, 0));
-        entries.add(new BarEntry(5f, 1));
-        entries.add(new BarEntry(10f, 2));
-        entries.add(new BarEntry(15f, 3));
-        entries.add(new BarEntry(20f, 4));
-
-        BarDataSet barDataSet = new BarDataSet(entries, "Subjects");
-
-        ArrayList<String> labels = new ArrayList<>();
-            labels.add("SVU001");
-            labels.add("SVU002");
-            labels.add("SVU003");
-            labels.add("SVU004");
-            labels.add("SVU005");
-//            BarData data = new BarData(labels , barDataSet);
-//        today_attendance.setData(data);
-        barDataSet.setColor(getActivity().getColor(R.color.black));
-        today_attendance.animateY(5000);
-        today_attendance.invalidate();
-
-
-        ArrayList<BarEntry> average = new ArrayList<>();
-        average.add(new BarEntry(0f, 0));
-        average.add(new BarEntry(5f, 1));
-        average.add(new BarEntry(10f, 2));
-        average.add(new BarEntry(15f, 3));
-        average.add(new BarEntry(20f, 4));
-
-        BarDataSet barDataSet1 = new BarDataSet(entries, "Subjects");
-        ArrayList<String> labels_avg = new ArrayList<>();
-        labels_avg.add("SVU001");
-        labels_avg.add("SVU002");
-        labels_avg.add("SVU003");
-        labels_avg.add("SVU004");
-        labels_avg.add("SVU005");
-//        BarData avg_data = new BarData(labels_avg, barDataSet1);
-//        avg_attendance.setData(data);
-        barDataSet1.setColor(getActivity().getColor(R.color.black));
-        avg_attendance.animateY(5000);
-        avg_attendance.invalidate();
-
-
+        faculitiesModels = new ArrayList<>();
+        rcAtt = (RecyclerView) view.findViewById(R.id.rcAtt);
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
+        GetAttendance();
         return view;
+    }
+
+    private void GetAttendance() {
+        if (!((Dashboard)getActivity()).isloadershowing())
+            ((Dashboard)getActivity()).showLoader();
+        AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
+                .addBodyParameter("rule", "get_attendance")
+                .addBodyParameter("enrollment_no", "" +sharedPreferences_svu.getUserId())
+                .setTag("login")
+                .setPriority(Priority.MEDIUM)
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            ((Dashboard)getActivity()).dismissLoader();
+                            for (int i = 0; i < response.getJSONArray("data").length(); i++) {
+                                Model model = new Model();
+                                JSONObject object = response.getJSONArray("data").getJSONObject(i);
+                                model.setDate(object.getString("date"));
+                                model.setAttendance(object.getString("attendance"));
+
+                                faculitiesModels.add(model);
+                            }
+                            if (mColumnCount <= 1) {
+                                rcAtt.setLayoutManager(new LinearLayoutManager(getActivity()));
+                            } else {
+                                rcAtt.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
+                            }
+                            rcAtt.setAdapter(new AttendanceAdapter(faculitiesModels));
+                        }
+                        catch (Exception e) {
+                            e.getMessage();
+                            e.printStackTrace();
+                            ((Dashboard)getActivity()).dismissLoader();
+                        }
+                    }
+                    @Override
+                    public void onError(ANError anError) {
+                        ((Dashboard)getActivity()).dismissLoader();
+                    }
+                });
     }
 }

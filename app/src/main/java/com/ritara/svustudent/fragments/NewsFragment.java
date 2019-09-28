@@ -24,6 +24,7 @@ import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.utils.FeeModel;
+import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -37,6 +38,7 @@ public class NewsFragment extends Fragment {
     private ArrayList<FeeModel> feeModels;
     private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
+    private SharedPreferences_SVU sharedPreferences_svu;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -44,7 +46,7 @@ public class NewsFragment extends Fragment {
         View view = inflater.inflate(R.layout.news_fragment, container, false);
 
         rcMarks = (RecyclerView) view.findViewById(R.id.rcMarks);
-
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
         feeModels = new ArrayList<>();
 
         GetNotice();
@@ -60,8 +62,8 @@ public class NewsFragment extends Fragment {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "faculties")
-                .addBodyParameter("rule", "course")
+                .addBodyParameter("rule", "get_notice")
+//                .addBodyParameter("course", "" + sharedPreferences_svu.getCourse())
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
                 .build()

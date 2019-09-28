@@ -1587,7 +1587,6 @@ id aptitude
 id async
 id attach
 id auto
-id avg_attendance
 id back
 id banner
 id barrier
@@ -1732,6 +1731,7 @@ id image_skills
 id image_videos
 id imgBack
 id imgComment
+id imgGal
 id imgProImg
 id imgSend
 id imgToolRight
@@ -1854,6 +1854,8 @@ id progress_circular
 id progress_horizontal
 id progressbarr
 id radio
+id rcAtt
+id rcGal
 id rcMarks
 id recTask
 id recycler_countryDialog
@@ -1977,7 +1979,6 @@ id title
 id titleDividerNoCustom
 id titleLayout
 id title_template
-id today_attendance
 id toolbar
 id top
 id topPanel
@@ -1989,9 +1990,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id txtAdDate
+id txtAtt
 id txtComment
 id txtCourse
 id txtCredit
+id txtDate
 id txtDebit
 id txtEmail
 id txtEnroll
@@ -2113,10 +2116,12 @@ layout emergency_dialog
 layout exams
 layout fragment_account
 layout fragment_admission
+layout fragment_att
 layout fragment_broadcast
 layout fragment_calendar
 layout fragment_class
 layout fragment_faculties
+layout fragment_gal
 layout fragment_gallery
 layout fragment_help
 layout fragment_home

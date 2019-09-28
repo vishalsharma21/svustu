@@ -190,7 +190,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                 String test = "";
                 switch (item_list.get(position).getName()){
                     case "My TimeTable" :
-                        test = "My TimeTable";
+                        test = "Gallery";
                         ((Dashboard)getActivity()).changeFragment(new ClassFragment(), "My TimeTable");
                         break;
                     case "E-Library" :
