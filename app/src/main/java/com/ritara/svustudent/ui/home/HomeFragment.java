@@ -192,7 +192,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                 switch (item_list.get(position).getName()){
                     case "Gallery" :
                         test = "Gallery";
-                        ((Dashboard)getActivity()).changeFragment(new ClassFragment(), "My TimeTable");
+                        ((Dashboard)getActivity()).changeFragment(new ClassFragment(), "Gallery");
                         break;
                     case "Scholarship" :
                         test = "Scholarship";
