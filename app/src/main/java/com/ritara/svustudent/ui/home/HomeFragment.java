@@ -39,12 +39,16 @@ import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.Payments;
 import com.ritara.svustudent.R;
 import com.ritara.svustudent.Register;
+import com.ritara.svustudent.fragments.AdmissionFragment;
 import com.ritara.svustudent.fragments.BooksFragment;
 import com.ritara.svustudent.fragments.BroadcastFragment;
 import com.ritara.svustudent.fragments.CalendarFragment;
+import com.ritara.svustudent.fragments.ClassFragment;
+import com.ritara.svustudent.fragments.Faculties;
 import com.ritara.svustudent.fragments.MarksFragment;
 import com.ritara.svustudent.fragments.NewsFragment;
 import com.ritara.svustudent.fragments.PaidFeeFragment;
+import com.ritara.svustudent.fragments.ViewAttendance;
 import com.ritara.svustudent.ui.vid.VideosFragment;
 import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.ListManager;
@@ -185,8 +189,9 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
             public void onClick(View view) {
                 String test = "";
                 switch (item_list.get(position).getName()){
-                    case "My Class" :
-                        test = "My Class";
+                    case "My TimeTable" :
+                        test = "My TimeTable";
+                        ((Dashboard)getActivity()).changeFragment(new ClassFragment(), "My TimeTable");
                         break;
                     case "E-Library" :
                         test = "Library";
@@ -195,13 +200,13 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         test = "Pay Fee";
                         startActivity(new Intent(getActivity(), Payments.class));
                         break;
-                    case "My Books" :
-                        test = "Books";
-                        ((Dashboard)getActivity()).changeFragment(new BooksFragment(), "My Books");
+                    case "My Faculties" :
+                        test = "Faculties";
+                        ((Dashboard)getActivity()).changeFragment(new Faculties(), "My Faculties");
                         break;
-                    case "My Videos" :
-                        test = "Videos";
-                        ((Dashboard)getActivity()).changeFragment(new VideosFragment(), "My Videos");
+                    case "My Attendance" :
+                        test = "Attendance";
+                        ((Dashboard)getActivity()).changeFragment(new ViewAttendance(), "My Attendance");
                         break;
                     case "My Fees" :
                         test = "My Fees";
@@ -219,15 +224,16 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                         test = "Notice";
                         ((Dashboard)getActivity()).changeFragment(new NewsFragment(), "Notice Board");
                         break;
-                    case "Alumini" :
-                        test = "Alumini";
+                    case "Admission" :
+                        test = "Admission";
+                        ((Dashboard)getActivity()).changeFragment(new AdmissionFragment(), "Admission");
                         break;
                     case "Emergency" :
                         test = "Emergency";
                         openEmergencyDialog();
                         break;
-                    case "Reports" :
-                        test = "Reports";
+                    case "Results" :
+                        test = "Results";
                         ((Dashboard)getActivity()).changeFragment(new MarksFragment(), "Marks");
                         break;
 

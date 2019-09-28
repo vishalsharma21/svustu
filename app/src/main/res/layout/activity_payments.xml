@@ -12,16 +12,18 @@
     <EditText
         android:id="@+id/etAmount"
         android:hint="Enter amount"
-        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnPayment"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Make Payment"
+        android:background="@drawable/button_signup_curve"
+        android:textColor="@color/white"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="159dp"
