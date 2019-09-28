@@ -148,6 +148,7 @@
       android:layout_marginLeft="15dp"
       android:paddingRight="15dp"
       android:paddingLeft="35dp"
+      android:visibility="gone"
       android:background="@drawable/button_signup_curve"
       android:orientation="horizontal">
 

@@ -1403,6 +1403,7 @@ drawable ic_empty_shopping_cart
 drawable ic_expert
 drawable ic_fees
 drawable ic_file
+drawable ic_gallery
 drawable ic_home
 drawable ic_home_black_24dp
 drawable ic_home_icon
@@ -2005,6 +2006,13 @@ id txtMarks
 id txtMother
 id txtName
 id txtPAddress
+id txtScho1
+id txtScho2
+id txtScho3
+id txtScho4
+id txtScho5
+id txtScho6
+id txtScho7
 id txtToolHeader
 id uniform
 id unlabeled
@@ -2134,6 +2142,7 @@ layout fragment_orders
 layout fragment_paidfee
 layout fragment_paidfee_list
 layout fragment_profile
+layout fragment_scholarship
 layout fragment_security
 layout fragment_send
 layout fragment_share
@@ -2288,6 +2297,13 @@ string policy
 string privacy
 string resend
 string role_prompt
+string scholarship_1
+string scholarship_2
+string scholarship_3
+string scholarship_4
+string scholarship_5
+string scholarship_6
+string scholarship_7
 string search_menu_title
 string status_bar_notification_info_overflow
 string suport

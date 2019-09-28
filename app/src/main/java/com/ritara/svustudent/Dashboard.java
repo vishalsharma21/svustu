@@ -67,7 +67,6 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         sharedPreferences_svu.setTrainingDone(true);
         txtToolHeader = (TextView) toolbar.findViewById(R.id.txtToolHeader);
 
-
         ImageView imgToolRight = (ImageView) toolbar.findViewById(R.id.imgToolRight);
 
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
@@ -196,8 +195,8 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     case "Home" :
                         changeFragment(new HomeFragment() , "Home");
                         break;
-                    case "Library":
-                        changeFragment(new HomeFragment() , "Home");
+                    case "Pay Fees":
+                        startActivity(new Intent(Dashboard.this, Payments.class));
                         break;
                     case "Profile":
                         changeFragment(new ProfileFragment() , "Profile");
@@ -210,7 +209,6 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
                         default:
                             break;
-
                 }
 
                 return true;

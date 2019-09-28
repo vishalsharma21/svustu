@@ -62,18 +62,18 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int notification_action_background = 0x7f0801b1;
-        public static final int notification_bg = 0x7f0801b2;
-        public static final int notification_bg_low = 0x7f0801b3;
-        public static final int notification_bg_low_normal = 0x7f0801b4;
-        public static final int notification_bg_low_pressed = 0x7f0801b5;
-        public static final int notification_bg_normal = 0x7f0801b6;
-        public static final int notification_bg_normal_pressed = 0x7f0801b7;
-        public static final int notification_icon_background = 0x7f0801b8;
-        public static final int notification_template_icon_bg = 0x7f0801b9;
-        public static final int notification_template_icon_low_bg = 0x7f0801ba;
-        public static final int notification_tile_bg = 0x7f0801bb;
-        public static final int notify_panel_notification_icon_bg = 0x7f0801bc;
+        public static final int notification_action_background = 0x7f0801b2;
+        public static final int notification_bg = 0x7f0801b3;
+        public static final int notification_bg_low = 0x7f0801b4;
+        public static final int notification_bg_low_normal = 0x7f0801b5;
+        public static final int notification_bg_low_pressed = 0x7f0801b6;
+        public static final int notification_bg_normal = 0x7f0801b7;
+        public static final int notification_bg_normal_pressed = 0x7f0801b8;
+        public static final int notification_icon_background = 0x7f0801b9;
+        public static final int notification_template_icon_bg = 0x7f0801ba;
+        public static final int notification_template_icon_low_bg = 0x7f0801bb;
+        public static final int notification_tile_bg = 0x7f0801bc;
+        public static final int notify_panel_notification_icon_bg = 0x7f0801bd;
     }
     public static final class id {
         private id() {}
@@ -155,17 +155,17 @@ public final class R {
         private layout() {}
 
         public static final int custom_dialog = 0x7f0c002b;
-        public static final int notification_action = 0x7f0c006f;
-        public static final int notification_action_tombstone = 0x7f0c0070;
-        public static final int notification_template_custom_big = 0x7f0c0077;
-        public static final int notification_template_icon_group = 0x7f0c0078;
-        public static final int notification_template_part_chronometer = 0x7f0c007c;
-        public static final int notification_template_part_time = 0x7f0c007d;
+        public static final int notification_action = 0x7f0c0070;
+        public static final int notification_action_tombstone = 0x7f0c0071;
+        public static final int notification_template_custom_big = 0x7f0c0078;
+        public static final int notification_template_icon_group = 0x7f0c0079;
+        public static final int notification_template_part_chronometer = 0x7f0c007d;
+        public static final int notification_template_part_time = 0x7f0c007e;
     }
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f100053;
+        public static final int status_bar_notification_info_overflow = 0x7f10005a;
     }
     public static final class style {
         private style() {}

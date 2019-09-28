@@ -17,7 +17,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">My Profile</string>
-    <string name="menu_gallery">My TimeTable</string>
+    <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">My Attendance</string>
     <string name="menu_tools">My Calendar</string>
     <string name="test">My Fees</string>
@@ -37,13 +37,16 @@
     <string name="terms"><u>Terms Of Services</u></string>
     <string name="privacy"><u>Privacy Policy</u></string>
     <string name="policy"><u>Take Down Policy</u></string>
-
-
     <string name="resend"><u>Resend Code</u></string>
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="scholarship_1">The University provides scholarships to deserving and meritorious students enrolling for Undergraduate Programmes. The criteria of entitlement for scholarship are as follows:</string>
+    <string name="scholarship_2">SVU Scholarships</string>
+    <string name="scholarship_3">75% tuition fee exemption to students securing 90% and above in 10 + 2. The same criteria is applicable for subsequent examinations on yearly basis.</string>
+    <string name="scholarship_4">Meritorious Student Scholarship</string>
+    <string name="scholarship_5">25% of tuition fee exemption to students who secured 85% and above in 10 + 2. A chair would be instituted in each faculty. The topper  of each faculty is reimbursed tuition fees for 1 full year by the respective chair. The First such chair has been instituted in the Faculty of Engineering and Technology in the name of  Shri Shiv Kumar Giri, Father of Chancellor Sudhir Giri.</string>
+    <string name="scholarship_6">Extra-Curricular Excellence Schloarships</string>
+    <string name="scholarship_7">One student for each faculty, adjudged for excellence in extra curricular activities like sports, oratory, presentation, cultural activity etc., will be 50% of the tuition fee.</string>
 
     <string name="role_prompt">Select a Role</string>
 

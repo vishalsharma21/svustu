@@ -734,8 +734,8 @@ public final class R {
         public static final int flag_zambia = 0x7f080158;
         public static final int flag_zimbabwe = 0x7f080159;
         public static final int ic_arrow_drop_down_black_24dp = 0x7f08015e;
-        public static final int notification_template_icon_bg = 0x7f0801b9;
-        public static final int pp = 0x7f0801bd;
+        public static final int notification_template_icon_bg = 0x7f0801ba;
+        public static final int pp = 0x7f0801be;
     }
     public static final class id {
         private id() {}
@@ -857,10 +857,10 @@ public final class R {
         public static final int title = 0x7f0901e3;
         public static final int title_template = 0x7f0901e6;
         public static final int topPanel = 0x7f0901e9;
-        public static final int up = 0x7f090204;
-        public static final int useLogo = 0x7f090205;
-        public static final int withText = 0x7f090214;
-        public static final int wrap_content = 0x7f090216;
+        public static final int up = 0x7f09020b;
+        public static final int useLogo = 0x7f09020c;
+        public static final int withText = 0x7f09021b;
+        public static final int wrap_content = 0x7f09021d;
     }
     public static final class integer {
         private integer() {}
@@ -897,20 +897,20 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0c0018;
         public static final int abc_search_view = 0x7f0c0019;
         public static final int abc_select_dialog_material = 0x7f0c001a;
-        public static final int layout_code_picker = 0x7f0c0065;
-        public static final int layout_picker_dialog = 0x7f0c0066;
-        public static final int layout_recycler_country_tile = 0x7f0c0067;
-        public static final int notification_media_action = 0x7f0c0071;
-        public static final int notification_media_cancel_action = 0x7f0c0072;
-        public static final int notification_template_big_media = 0x7f0c0073;
-        public static final int notification_template_big_media_narrow = 0x7f0c0075;
-        public static final int notification_template_media = 0x7f0c007a;
-        public static final int notification_template_part_chronometer = 0x7f0c007c;
-        public static final int notification_template_part_time = 0x7f0c007d;
-        public static final int select_dialog_item_material = 0x7f0c008d;
-        public static final int select_dialog_multichoice_material = 0x7f0c008e;
-        public static final int select_dialog_singlechoice_material = 0x7f0c008f;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0c0091;
+        public static final int layout_code_picker = 0x7f0c0066;
+        public static final int layout_picker_dialog = 0x7f0c0067;
+        public static final int layout_recycler_country_tile = 0x7f0c0068;
+        public static final int notification_media_action = 0x7f0c0072;
+        public static final int notification_media_cancel_action = 0x7f0c0073;
+        public static final int notification_template_big_media = 0x7f0c0074;
+        public static final int notification_template_big_media_narrow = 0x7f0c0076;
+        public static final int notification_template_media = 0x7f0c007b;
+        public static final int notification_template_part_chronometer = 0x7f0c007d;
+        public static final int notification_template_part_time = 0x7f0c007e;
+        public static final int select_dialog_item_material = 0x7f0c008e;
+        public static final int select_dialog_multichoice_material = 0x7f0c008f;
+        public static final int select_dialog_singlechoice_material = 0x7f0c0090;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0c0092;
     }
     public static final class raw {
         private raw() {}
@@ -938,7 +938,7 @@ public final class R {
         public static final int abc_shareactionprovider_share_with_application = 0x7f100025;
         public static final int abc_toolbar_collapse_description = 0x7f100026;
         public static final int app_name = 0x7f10002a;
-        public static final int status_bar_notification_info_overflow = 0x7f100053;
+        public static final int status_bar_notification_info_overflow = 0x7f10005a;
     }
     public static final class style {
         private style() {}
