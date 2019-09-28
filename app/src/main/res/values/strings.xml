@@ -17,19 +17,19 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">My Profile</string>
-    <string name="menu_gallery">My Books</string>
-    <string name="menu_slideshow">My Videos</string>
+    <string name="menu_gallery">My TimeTable</string>
+    <string name="menu_slideshow">My Attendance</string>
     <string name="menu_tools">My Calendar</string>
     <string name="test">My Fees</string>
     <string name="menu_share">Notifications</string>
-    <string name="menu_send">My Shopping Cart</string>
+    <string name="menu_send">Results</string>
 
 
     <string name="first_approval">Your Request to join SVU university has been sent</string>
     <string name="approval">You may contact your institution\'s management or wait for the approval</string>
     <string name="three_approval">Alternatively,you can contact support@svu.edu.in</string>
 
-    <string name="menu_order">My Orders</string>
+    <string name="menu_order">Admission</string>
     <string name="account">Account Settings</string>
     <string name="help">Help</string>
     <string name="suport"><u>support@svu.edu.in</u></string>

@@ -9,11 +9,11 @@
       android:icon="@drawable/ic_library"
       android:contentDescription="bb"
       android:title="Library" />
-  <item
-      android:id="@+id/experts"
-      android:icon="@drawable/ic_data_scientist"
-      android:contentDescription="bb"
-      android:title="Experts" />
+<!--  <item-->
+<!--      android:id="@+id/experts"-->
+<!--      android:icon="@drawable/ic_data_scientist"-->
+<!--      android:contentDescription="bb"-->
+<!--      android:title="Experts" />-->
   <item
       android:id="@+id/form"
       android:icon="@drawable/ic_profile"

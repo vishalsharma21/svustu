@@ -54,22 +54,22 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int button_next_month_selector = 0x7f080062;
-        public static final int button_previous_month_selector = 0x7f080063;
-        public static final int ic_arrow_up_blue = 0x7f08015d;
-        public static final int ic_arrow_up_blue_soft = 0x7f08015e;
-        public static final int ic_arrow_up_gray = 0x7f08015f;
-        public static final int ic_arrow_up_gray_soft = 0x7f080160;
+        public static final int button_next_month_selector = 0x7f080063;
+        public static final int button_previous_month_selector = 0x7f080064;
+        public static final int ic_arrow_up_blue = 0x7f08015f;
+        public static final int ic_arrow_up_blue_soft = 0x7f080160;
+        public static final int ic_arrow_up_gray = 0x7f080161;
+        public static final int ic_arrow_up_gray_soft = 0x7f080162;
     }
     public static final class id {
         private id() {}
 
         public static final int dateTitle = 0x7f090092;
         public static final int daysContainer = 0x7f090093;
-        public static final int leftButton = 0x7f090106;
-        public static final int rightButton = 0x7f090175;
-        public static final int titleLayout = 0x7f0901e2;
-        public static final int weekLayout = 0x7f090210;
+        public static final int leftButton = 0x7f090105;
+        public static final int rightButton = 0x7f090174;
+        public static final int titleLayout = 0x7f0901e1;
+        public static final int weekLayout = 0x7f09020f;
     }
     public static final class layout {
         private layout() {}
