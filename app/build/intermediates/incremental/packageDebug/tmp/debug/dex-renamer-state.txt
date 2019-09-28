@@ -1,4 +1,4 @@
-#Sat Sep 28 12:15:58 IST 2019
+#Sat Sep 28 13:40:11 IST 2019
 base.0=/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

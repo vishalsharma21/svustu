@@ -68,11 +68,11 @@ public class Faculties extends Fragment {
                         try {
                             ((Dashboard)getActivity()).dismissLoader();
                             for (int i = 0; i < response.getJSONArray("result").length(); i++) {
-                                FeeModel faculitiesModels = new FeeModel();
+                                FeeModel feeModel = new FeeModel();
                                 JSONObject object = response.getJSONArray("result").getJSONObject(i);
-                                faculitiesModels.setName(object.getString("message"));
-                                faculitiesModels.setFName(object.getString("from_name"));
-                                faculitiesModels.setTransDate(object.getString("date"));
+                                feeModel.setName(object.getString("message"));
+                                feeModel.setFName(object.getString("from_name"));
+                                feeModel.setTransDate(object.getString("date"));
 
                                 faculitiesModels.add(feeModel);
                             }
