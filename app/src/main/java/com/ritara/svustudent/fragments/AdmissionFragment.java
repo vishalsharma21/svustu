@@ -34,6 +34,8 @@ public class AdmissionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_admission,container,false);
+
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
         name = view.findViewById(R.id.name);
         email_id = view.findViewById(R.id.email_id);
         father_name = view.findViewById(R.id.father_name);
@@ -53,6 +55,8 @@ public class AdmissionFragment extends Fragment {
                 admission_query();
             }
         });
+
+        sharedPreferences_svu.setFrom("");
         return view;
     }
 

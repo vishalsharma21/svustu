@@ -28,6 +28,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
+import com.ritara.svustudent.fragments.AdmissionFragment;
 import com.ritara.svustudent.fragments.BooksFragment;
 import com.ritara.svustudent.fragments.BroadcastFragment;
 import com.ritara.svustudent.fragments.CampusFragment;
@@ -50,6 +51,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     private FragmentManager fragmentManager;
     private Toolbar toolbar;
     private TextView txtToolHeader;
+    private String from = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +64,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
             requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         }
-
+        from = "";
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
         sharedPreferences_svu.setTrainingDone(true);
         txtToolHeader = (TextView) toolbar.findViewById(R.id.txtToolHeader);
@@ -232,6 +234,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         navigationView2.setNavigationItemSelectedListener(Dashboard.this);
 
         changeFragment(new HomeFragment() , "Home");
+
     }
 
     @Override
@@ -239,6 +242,19 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void gotoAdmission(Fragment fragment, String title) {
+        fragmentManager = getSupportFragmentManager();
+
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.nav_host_fragment, fragment, "" + title).commit();
+        transaction.addToBackStack(title);
+        toolbar.setTitle(title);
+        txtToolHeader.setText(title);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        drawer.closeDrawer(GravityCompat.END);
     }
 
     public void changeFragment(Fragment fragment, String title) {

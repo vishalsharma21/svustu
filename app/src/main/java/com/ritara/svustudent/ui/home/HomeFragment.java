@@ -138,6 +138,10 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
 
         GetStuLoginAccess();
 
+//        if(sharedPreferences_svu.getFrom().equalsIgnoreCase("admission")){
+//            ((Dashboard)getActivity()).changeFragment(new AdmissionFragment(), "Admission");
+//        }
+
         return view;
     }
 

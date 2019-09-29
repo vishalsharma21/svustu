@@ -198,6 +198,16 @@ public class SharedPreferences_SVU {
         editor.putInt("getChatNotiCount", userId);
         editor.commit();
     }
+
+    public String getFrom() {
+        return sharedPreference.getString("getFrom", "");
+    }
+
+    public void setFrom(String userId) {
+        editor = sharedPreference.edit();
+        editor.putString("getFrom", userId);
+        editor.commit();
+    }
 }
 
 

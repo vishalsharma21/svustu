@@ -63,6 +63,7 @@ public class NewsFragment extends Fragment {
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
                 .addBodyParameter("rule", "get_notice")
+                .addBodyParameter("type", "0")
 //                .addBodyParameter("course", "" + sharedPreferences_svu.getCourse())
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)

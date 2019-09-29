@@ -32,7 +32,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
-
+        <activity android:name=".AdmissionActivity" />
         <meta-data
             android:name="com.razorpay.ApiKey"
             android:value="rzp_test_jb3DjVU34kmZi4"/>
