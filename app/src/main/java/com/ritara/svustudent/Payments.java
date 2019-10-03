@@ -20,10 +20,13 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONObject;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+
 public class Payments extends BaseActivity implements PaymentResultListener {
 
     private String type = "fees", amt = "0";
     private SharedPreferences_SVU sharedPreferences_svu;
+    private EditText etFor, etMobile, etName, etEnrollment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,11 @@ public class Payments extends BaseActivity implements PaymentResultListener {
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
 
         final EditText etAmount = (EditText) findViewById(R.id.etAmount);
+
+        etFor = findViewById(R.id.etFor);
+        etMobile = findViewById(R.id.etMobile);
+        etName = findViewById(R.id.etName);
+        etEnrollment = findViewById(R.id.etEnrollment);
 
         ((TextView)findViewById(R.id.txtHeader)).setText("Make Payment");
 
@@ -61,7 +69,7 @@ public class Payments extends BaseActivity implements PaymentResultListener {
             JSONObject options = new JSONObject();
             options.put("name", "Shri Venkateshwara University");
             options.put("description", "" + type);
-            options.put("image", "https://mlacademians.com/wp-content/uploads/2017/09/logo_acad-cop5y-copy.png");
+            options.put("image", "http://svu.edu.in/wp-content/uploads/2018/02/testlogo1.png");
             options.put("currency", "INR");
             String payment = amt;
             double total = Double.parseDouble(payment);
@@ -93,12 +101,16 @@ public class Payments extends BaseActivity implements PaymentResultListener {
     }
 
     private void api_contribution(String txn) {
-        AndroidNetworking.post("Base URL here")
-                .addBodyParameter("rule", "payment")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter("rule", "pay_fees")
                 .addBodyParameter("transaction_id", txn)
                 .addBodyParameter("user_id", sharedPreferences_svu.getUserId())
                 .addBodyParameter("amount", "" + amt)
-                .setTag("set_contribution")
+                .addBodyParameter("mobile_number", "" + (sharedPreferences_svu.get_phone().isEmpty() ? etMobile.getText().toString() : sharedPreferences_svu.get_phone()))
+                .addBodyParameter("enrollment_no", "" + (sharedPreferences_svu.getUserId().isEmpty() ? etEnrollment.getText().toString() : sharedPreferences_svu.getUserId()))
+                .addBodyParameter("name", "" + (sharedPreferences_svu.get_Username().isEmpty() ? etName.getText().toString() : sharedPreferences_svu.get_Username()))
+                .addBodyParameter("desc", "" + etFor.getText().toString().trim())
+                .setTag("pay_fees")
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {

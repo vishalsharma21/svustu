@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".Payments"></activity>
         <activity android:name=".Password" />
         <activity android:name=".Verify" />
@@ -35,7 +36,7 @@
         <activity android:name=".AdmissionActivity" />
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_jb3DjVU34kmZi4"/>
+            android:value="rzp_live_VjId2YgOWSpByn"/>
 
     </application>
 

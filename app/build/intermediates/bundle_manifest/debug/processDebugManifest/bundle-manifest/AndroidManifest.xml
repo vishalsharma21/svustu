@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ritara.svustudent"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="3"
+    android:versionName="1.2" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -46,7 +46,7 @@
 
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_jb3DjVU34kmZi4" />
+            android:value="rzp_live_VjId2YgOWSpByn" />
 
         <receiver android:name="com.razorpay.RzpTokenReceiver" >
             <intent-filter>

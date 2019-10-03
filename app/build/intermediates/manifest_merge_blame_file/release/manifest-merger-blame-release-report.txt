@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.ritara.svustudent"
-4    android:versionCode="1"
-5    android:versionName="1.0" >
+4    android:versionCode="3"
+5    android:versionName="1.2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
@@ -21,7 +21,7 @@
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 16
 17    <application
-17-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:9:5-40:19
+17-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:9:5-41:19
 18        android:allowBackup="true"
 18-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:10:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -37,58 +37,58 @@
 24        android:usesCleartextTraffic="true" >
 24-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:15:9-44
 25        <activity android:name="com.ritara.svustudent.Payments" />
-25-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:9-55
-25-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:17:19-43
+25-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:9-55
+25-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:19-43
 26        <activity android:name="com.ritara.svustudent.Password" />
-26-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:9-46
-26-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:18:19-43
+26-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:9-46
+26-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:19-43
 27        <activity android:name="com.ritara.svustudent.Verify" />
-27-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:9-44
-27-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:19:19-41
+27-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:20:9-44
+27-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:20:19-41
 28        <activity
-28-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:20:9-23:59
+28-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:21:9-24:59
 29            android:name="com.ritara.svustudent.Dashboard"
-29-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:21:13-38
+29-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:22:13-38
 30            android:label="Home"
-30-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:22:13-33
+30-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:23:13-33
 31            android:theme="@style/AppTheme.NoActionBar" />
-31-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:23:13-56
+31-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:24:13-56
 32        <activity
-32-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:24:9-31:20
+32-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:25:9-32:20
 33            android:name="com.ritara.svustudent.SplashScreenActivity"
-33-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:24:19-55
+33-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:25:19-55
 34            android:theme="@style/AppTheme.NoActionBar" >
-34-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:25:13-56
+34-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:26:13-56
 35            <intent-filter>
-35-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:26:13-30:29
+35-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:27:13-31:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:27:17-69
-36-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:27:25-66
+36-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:28:17-69
+36-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:28:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:29:17-77
-38-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:29:27-74
+38-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:30:17-77
+38-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:30:27-74
 39            </intent-filter>
 40        </activity>
 41        <activity android:name="com.ritara.svustudent.MainActivity" />
-41-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:32:9-50
-41-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:32:19-47
+41-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:33:9-50
+41-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:33:19-47
 42        <activity android:name="com.ritara.svustudent.Register" />
-42-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:33:9-46
-42-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:33:19-43
+42-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:34:9-46
+42-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:34:19-43
 43        <activity android:name="com.ritara.svustudent.Login" />
-43-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:34:9-43
-43-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:34:19-40
+43-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:35:9-43
+43-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:35:19-40
 44        <activity android:name="com.ritara.svustudent.AdmissionActivity" />
-44-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:35:9-55
-44-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:35:19-52
+44-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:36:9-55
+44-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:36:19-52
 45
 46        <meta-data
-46-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:36:9-38:54
+46-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:37:9-39:54
 47            android:name="com.razorpay.ApiKey"
-47-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:37:13-47
-48            android:value="rzp_test_jb3DjVU34kmZi4" />
-48-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:38:13-52
+47-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:38:13-47
+48            android:value="rzp_live_VjId2YgOWSpByn" />
+48-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:39:13-52
 49
 50        <receiver android:name="com.razorpay.RzpTokenReceiver" >
 50-->[com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:12:9-16:20
@@ -112,8 +112,8 @@
 60            <intent-filter>
 60-->[com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:22:13-28:29
 61                <action android:name="android.intent.action.MAIN" />
-61-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:27:17-69
-61-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:27:25-66
+61-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:28:17-69
+61-->/Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:28:25-66
 62
 63                <data
 63-->[com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:25:17-27:47

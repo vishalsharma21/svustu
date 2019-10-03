@@ -258,7 +258,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     }
 
     public void changeFragment(Fragment fragment, String title) {
-        if(sharedPreferences_svu.get_Logged() || title.equalsIgnoreCase("Home")) {
+        if(sharedPreferences_svu.get_Logged() || title.equalsIgnoreCase("Home") || title.equalsIgnoreCase("Admission")) {
             fragmentManager = getSupportFragmentManager();
 
             FragmentTransaction transaction = fragmentManager.beginTransaction();

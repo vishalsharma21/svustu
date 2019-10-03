@@ -60,8 +60,6 @@ public class AdmissionFragment extends Fragment {
         return view;
     }
 
-
-
     private void admission_query() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();

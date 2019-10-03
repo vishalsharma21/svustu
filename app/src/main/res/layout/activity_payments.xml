@@ -12,6 +12,42 @@
     <EditText
         android:id="@+id/etAmount"
         android:hint="Enter amount"
+        android:inputType="number"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etEnrollment"
+        android:hint="Enrollment no, if existing student."
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Enter name"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/etMobile"
+        android:hint="Enter mobile"
+        android:inputType="phone"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/etFor"
+        android:hint="Enter Description"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

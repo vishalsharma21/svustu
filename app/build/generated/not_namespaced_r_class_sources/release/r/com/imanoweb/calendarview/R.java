@@ -66,10 +66,10 @@ public final class R {
 
         public static final int dateTitle = 0x7f090091;
         public static final int daysContainer = 0x7f090092;
-        public static final int leftButton = 0x7f09010b;
-        public static final int rightButton = 0x7f09017a;
-        public static final int titleLayout = 0x7f0901e5;
-        public static final int weekLayout = 0x7f09021a;
+        public static final int leftButton = 0x7f09010f;
+        public static final int rightButton = 0x7f09017e;
+        public static final int titleLayout = 0x7f0901e9;
+        public static final int weekLayout = 0x7f09021e;
     }
     public static final class layout {
         private layout() {}

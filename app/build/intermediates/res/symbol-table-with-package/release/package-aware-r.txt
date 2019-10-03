@@ -1673,6 +1673,10 @@ id enterAlways
 id enterAlwaysCollapsed
 id etAmount
 id etChat
+id etEnrollment
+id etFor
+id etMobile
+id etName
 id et_email
 id et_mobile
 id et_password
