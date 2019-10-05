@@ -48,6 +48,7 @@ import com.ritara.svustudent.fragments.Faculties;
 import com.ritara.svustudent.fragments.MarksFragment;
 import com.ritara.svustudent.fragments.NewsFragment;
 import com.ritara.svustudent.fragments.PaidFeeFragment;
+import com.ritara.svustudent.fragments.ScholarshipFragment;
 import com.ritara.svustudent.fragments.ViewAttendance;
 import com.ritara.svustudent.ui.vid.VideosFragment;
 import com.ritara.svustudent.utils.FeeModel;
@@ -137,6 +138,10 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
 
         GetStuLoginAccess();
 
+//        if(sharedPreferences_svu.getFrom().equalsIgnoreCase("admission")){
+//            ((Dashboard)getActivity()).changeFragment(new AdmissionFragment(), "Admission");
+//        }
+
         return view;
     }
 
@@ -189,12 +194,13 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
             public void onClick(View view) {
                 String test = "";
                 switch (item_list.get(position).getName()){
-                    case "My TimeTable" :
-                        test = "My TimeTable";
-                        ((Dashboard)getActivity()).changeFragment(new ClassFragment(), "My TimeTable");
+                    case "Gallery" :
+                        test = "Gallery";
+                        ((Dashboard)getActivity()).changeFragment(new ClassFragment(), "Gallery");
                         break;
-                    case "E-Library" :
-                        test = "Library";
+                    case "Scholarship" :
+                        test = "Scholarship";
+                        ((Dashboard)getActivity()).changeFragment(new ScholarshipFragment(), "Scholarship");
                         break;
                     case "Pay Fee" :
                         test = "Pay Fee";
@@ -240,7 +246,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                     default:
                         break;
                 }
-                Toast.makeText(getActivity(), test, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), test, Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -64,6 +65,7 @@ public class MarksFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_marks_list, container, false);
 
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
         rcMarks = (RecyclerView) view.findViewById(R.id.rcMarks);
 
         feeModels = new ArrayList<>();
@@ -90,7 +92,7 @@ public class MarksFragment extends Fragment {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetMarksheetInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", "")
+                .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
@@ -99,20 +101,22 @@ public class MarksFragment extends Fragment {
                     @Override
                     public void onResponse(JSONArray response) {
                         try {
-                            for (int i = 0; i < response.length(); i++) {
-                                FeeModel feeModel = new FeeModel();
-                                JSONObject object = response.getJSONObject(i);
-                                feeModel.setName("Marks : " + object.getString("YearSem"));
-                                feeModels.add(feeModel);
-
-                            }
+                            if(response.length()>0) {
+                                for (int i = 0; i < response.length(); i++) {
+                                    FeeModel feeModel = new FeeModel();
+                                    JSONObject object = response.getJSONObject(i);
+                                    feeModel.setName("Marks : " + object.getString("YearSem"));
+                                    feeModels.add(feeModel);
+                                }
                                 if (mColumnCount <= 1) {
                                     rcMarks.setLayoutManager(new LinearLayoutManager(getActivity()));
                                 } else {
                                     rcMarks.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
                                 }
-                            rcMarks.setAdapter(new MyMarksAdapter(feeModels));
-
+                                rcMarks.setAdapter(new MyMarksAdapter(feeModels));
+                            }else{
+                                Toast.makeText(getActivity(), "No data found.", Toast.LENGTH_SHORT).show();
+                            }
                         }
                         catch (
                                 Exception e) {

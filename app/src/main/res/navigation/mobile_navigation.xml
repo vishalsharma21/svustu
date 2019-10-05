@@ -53,8 +53,6 @@
         android:label="Messages"
         tools:layout="@layout/fragment_broadcast" />
 
-
-
     <fragment
         android:id="@+id/help"
         android:name="com.ritara.svustudent.ui.help.HelpFragment"

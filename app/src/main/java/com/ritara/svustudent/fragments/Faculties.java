@@ -42,8 +42,8 @@ public class Faculties extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_faculties, container, false);
 
+        sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
         rcMarks = (RecyclerView) view.findViewById(R.id.rcMarks);
-
         faculitiesModels = new ArrayList<>();
 
         GetNotice();
@@ -69,11 +69,11 @@ public class Faculties extends Fragment {
                     public void onResponse(JSONObject response) {
                         try {
                             ((Dashboard)getActivity()).dismissLoader();
-                            for (int i = 0; i < response.getJSONArray("faculties").length(); i++) {
+                            for (int i = 0; i < response.getJSONArray("data").length(); i++) {
                                 FeeModel faculitiesModel = new FeeModel();
-                                JSONObject object = response.getJSONArray("faculties").getJSONObject(i);
-                                faculitiesModel.setName(object.getString("data"));
-                                faculitiesModel.setFac_name(object.getString("name"));
+                                JSONObject object = response.getJSONArray("data").getJSONObject(i);
+                                faculitiesModel.setName(object.getString("name") + " For " + object.getString("course"));
+                                faculitiesModel.setFac_name(object.getString("course"));
                                 faculitiesModel.setEmp_id(object.getString("emp_id"));
 
                                 faculitiesModels.add(faculitiesModel);
@@ -97,6 +97,11 @@ public class Faculties extends Fragment {
                     }
                 });
     }
+
+
+
+
+
 
 
 

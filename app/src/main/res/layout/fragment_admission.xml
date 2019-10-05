@@ -20,23 +20,23 @@
         android:layout_height="100dp"
         android:src="@drawable/new_logo"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Admission Form"
+        android:text="Admission Form / Enquiry"
         android:textColor="#000"
         android:textSize="20dp"
         android:gravity="center"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_layout"
         android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
         <EditText
             android:id="@+id/name"
@@ -60,7 +60,7 @@
         android:id="@+id/email_id_layout"
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
         <EditText
             android:id="@+id/email_id"
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ccp"
-            android:layout_height="55dp">
+            android:layout_height="50dp">
 
             <EditText
                 android:id="@+id/father_name"
@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ccp"
-            android:layout_height="55dp">
+            android:layout_height="50dp">
 
             <EditText
                 android:id="@+id/address"
@@ -132,7 +132,7 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ccp"
-            android:layout_height="55dp">
+            android:layout_height="50dp">
 
             <EditText
                 android:id="@+id/dob"
@@ -158,7 +158,7 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ccp"
-            android:layout_height="55dp">
+            android:layout_height="50dp">
 
             <EditText
                 android:id="@+id/phone_number"
@@ -182,7 +182,7 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/ccp"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
             <EditText
                 android:id="@+id/last_qualification"
@@ -206,7 +206,7 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/ccp"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
         <EditText
             android:id="@+id/course"
@@ -230,12 +230,12 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/ccp"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
         <EditText
             android:id="@+id/final_marks"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="50dp"
             android:textSize="20dp"
             android:layout_toRightOf="@+id/ccp"
             android:hint="Final Marks"
@@ -279,7 +279,7 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/ccp"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
         <EditText
             android:id="@+id/adhar_number"

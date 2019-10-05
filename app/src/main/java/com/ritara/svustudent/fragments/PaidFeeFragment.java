@@ -47,6 +47,7 @@ public class PaidFeeFragment extends Fragment {
     private RecyclerView recyclerView;
     private ImageView makepayment;
     private OnListFragmentInteractionListener mListener;
+    private SharedPreferences_SVU sharedPreferences_svu;
 
     public PaidFeeFragment() {
     }
@@ -77,6 +78,7 @@ public class PaidFeeFragment extends Fragment {
         if(!SharedPreferences_SVU.getInstance(getActivity()).get_Logged()){
             startActivity(new Intent(getActivity(), Login.class));
         }else {
+            sharedPreferences_svu = SharedPreferences_SVU.getInstance(getActivity());
             txtCredit = (TextView) view.findViewById(R.id.txtCredit);
             txtDebit = (TextView) view.findViewById(R.id.txtDebit);
             makepayment = (ImageView) view.findViewById(R.id.make_payment);
@@ -130,7 +132,7 @@ public class PaidFeeFragment extends Fragment {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
         AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetFeeInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", "SET14A00030058")
+                .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())//SET14A00030058
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)

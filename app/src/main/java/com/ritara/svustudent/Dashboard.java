@@ -28,6 +28,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
+import com.ritara.svustudent.fragments.AdmissionFragment;
 import com.ritara.svustudent.fragments.BooksFragment;
 import com.ritara.svustudent.fragments.BroadcastFragment;
 import com.ritara.svustudent.fragments.CampusFragment;
@@ -50,6 +51,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     private FragmentManager fragmentManager;
     private Toolbar toolbar;
     private TextView txtToolHeader;
+    private String from = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,11 +64,10 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
             requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         }
-
+        from = "";
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
         sharedPreferences_svu.setTrainingDone(true);
         txtToolHeader = (TextView) toolbar.findViewById(R.id.txtToolHeader);
-
 
         ImageView imgToolRight = (ImageView) toolbar.findViewById(R.id.imgToolRight);
 
@@ -196,8 +197,8 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     case "Home" :
                         changeFragment(new HomeFragment() , "Home");
                         break;
-                    case "Library":
-                        changeFragment(new HomeFragment() , "Home");
+                    case "Pay Fees":
+                        startActivity(new Intent(Dashboard.this, Payments.class));
                         break;
                     case "Profile":
                         changeFragment(new ProfileFragment() , "Profile");
@@ -210,7 +211,6 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
                         default:
                             break;
-
                 }
 
                 return true;
@@ -219,7 +219,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
 
         final DrawerLayout drawer1 = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        imgToolRight.setOnClickListener(new View.OnClickListener() {
+        /*imgToolRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (drawer1.isDrawerOpen(GravityCompat.END)) {
@@ -228,12 +228,13 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     drawer1.openDrawer(GravityCompat.END);
                 }
             }
-        });
+        });*/
 
         NavigationView navigationView2 = (NavigationView) findViewById(R.id.nav_view2);
         navigationView2.setNavigationItemSelectedListener(Dashboard.this);
 
         changeFragment(new HomeFragment() , "Home");
+
     }
 
     @Override
@@ -243,8 +244,21 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                 || super.onSupportNavigateUp();
     }
 
+    public void gotoAdmission(Fragment fragment, String title) {
+        fragmentManager = getSupportFragmentManager();
+
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.nav_host_fragment, fragment, "" + title).commit();
+        transaction.addToBackStack(title);
+        toolbar.setTitle(title);
+        txtToolHeader.setText(title);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        drawer.closeDrawer(GravityCompat.END);
+    }
+
     public void changeFragment(Fragment fragment, String title) {
-        if(sharedPreferences_svu.get_Logged() || title.equalsIgnoreCase("Home")) {
+        if(sharedPreferences_svu.get_Logged() || title.equalsIgnoreCase("Home") || title.equalsIgnoreCase("Admission")) {
             fragmentManager = getSupportFragmentManager();
 
             FragmentTransaction transaction = fragmentManager.beginTransaction();

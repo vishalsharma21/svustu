@@ -7,18 +7,11 @@
     android:padding="16dp"
     tools:context=".fragments.ViewAttendance">
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/today_attendance"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcAtt"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/avg_attendance"
-        android:layout_below="@id/today_attendance"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="match_parent"
+        android:background="@drawable/submit_background"/>
 
 
 </RelativeLayout>
