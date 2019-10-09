@@ -64,8 +64,8 @@ public class ProfileFragment extends Fragment {
     private void GetAcademicInfo() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetAcademicInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", "SET14A00030058")
+        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetAcademicInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+                .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)

@@ -27,5 +27,7 @@ public class Constants {
     public static final String GET_ALL_RECEIVER = BASE_URL + "get_all_receiver_lat_long";
     public static final String ORDER_ACCEPT = BASE_URL + "accepted_order";
     public static final String MARK_ORDER_COMPLETED = BASE_URL + "completed_order";
+    public static final String KEY = "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht";
+
 }
 
