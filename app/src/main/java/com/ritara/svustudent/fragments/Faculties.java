@@ -83,7 +83,7 @@ public class Faculties extends Fragment {
                             } else {
                                 rcMarks.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
                             }
-                            rcMarks.setAdapter(new MyMarksAdapter(faculitiesModels));
+                            rcMarks.setAdapter(new MyMarksAdapter(faculitiesModels, getActivity()));
                         }
                         catch (Exception e) {
                             e.getMessage();

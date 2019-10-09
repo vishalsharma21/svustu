@@ -38,7 +38,6 @@ import java.util.List;
 
 public class PaidFeeFragment extends Fragment {
 
-    private static final String ARG_COLUMN_COUNT = "column-count";
     private int mColumnCount = 1;
     private ArrayList<FeeModel> feeModels;
     private View view;
@@ -46,29 +45,7 @@ public class PaidFeeFragment extends Fragment {
     private TextView txtDebit, txtCredit;
     private RecyclerView recyclerView;
     private ImageView makepayment;
-    private OnListFragmentInteractionListener mListener;
     private SharedPreferences_SVU sharedPreferences_svu;
-
-    public PaidFeeFragment() {
-    }
-
-    @SuppressWarnings("unused")
-    public static PaidFeeFragment newInstance(int columnCount) {
-        PaidFeeFragment fragment = new PaidFeeFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -92,35 +69,11 @@ public class PaidFeeFragment extends Fragment {
                 }
             });
 
-            GetFeeInfo();
+            GetFeeInfo(view);
         }
-        // Set the adapter
 
         return view;
     }
-
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        /*if (context instanceof OnListFragmentInteractionListener) {
-            mListener = (OnListFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnListFragmentInteractionListener");
-        }*/
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-//    @Override
-//    public void onListFragmentInteraction(ArrayList<FeeModel> item) {
-//
-//    }
 
 
     public interface OnListFragmentInteractionListener {
@@ -128,10 +81,10 @@ public class PaidFeeFragment extends Fragment {
         void onListFragmentInteraction(ArrayList<FeeModel> item);
     }
 
-    private void GetFeeInfo() {
+    private void GetFeeInfo(final View view) {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetFeeInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetFeeInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"8&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())//SET14A00030058
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
@@ -142,11 +95,8 @@ public class PaidFeeFragment extends Fragment {
                     public void onResponse(JSONArray response) {
                         try {
                             for (int i = 0; i < response.length(); i++) {
-
                                 FeeModel feeModel = new FeeModel();
-
                                 JSONObject jsonObject1 = (JSONObject) response.get(i);
-
                                 feeModel.setBranch(jsonObject1.getString("Branch"));
                                 feeModel.setCourse(jsonObject1.getString("Course"));
                                 feeModel.setCredit(jsonObject1.getString("Credit"));
@@ -175,18 +125,14 @@ public class PaidFeeFragment extends Fragment {
 
                             txtCredit.setText("Total Credit : " + credit);
                             txtDebit.setText("Total Debit : " + debit);
-
-//                            if (view instanceof RecyclerView) {
-                                Context context = view.getContext();
-
+                            ((TextView)view.findViewById(R.id.txtDue)).setText("Due amount : " + (debit-credit));
+                                Context context = PaidFeeFragment.this.view.getContext();
                                 if (mColumnCount <= 1) {
                                     recyclerView.setLayoutManager(new LinearLayoutManager(context));
                                 } else {
                                     recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
                                 }
-                                recyclerView.setAdapter(new MyPaidFeeRecyclerViewAdapter(feeModels, mListener));
-//                            }
-
+                                recyclerView.setAdapter(new MyPaidFeeRecyclerViewAdapter(feeModels));
                         }
                         catch (
                                 Exception e) {

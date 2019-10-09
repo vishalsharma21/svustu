@@ -52,6 +52,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     private Toolbar toolbar;
     private TextView txtToolHeader;
     private String from = "";
+    public BottomNavigationView bottomNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +69,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
         sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
         sharedPreferences_svu.setTrainingDone(true);
         txtToolHeader = (TextView) toolbar.findViewById(R.id.txtToolHeader);
-
+        bottomNav = findViewById(R.id.bottom_nav);
         ImageView imgToolRight = (ImageView) toolbar.findViewById(R.id.imgToolRight);
 
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
@@ -184,7 +185,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
             }
         });
 
-        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
+
         NavigationUI.setupWithNavController(bottomNav, navController);
 
         bottomNav.setOnClickListener(null);
@@ -206,6 +207,7 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
                     case "Messages":
                         changeFragment(new BroadcastFragment(), "My Messages");
                         break;
+                        //not showing currenty.
                     case "Experts":
                         changeFragment(new CircularView() , "Experts");
 
@@ -258,7 +260,34 @@ public class Dashboard extends BaseActivity implements NavigationView.OnNavigati
     }
 
     public void changeFragment(Fragment fragment, String title) {
-        if(sharedPreferences_svu.get_Logged() || title.equalsIgnoreCase("Home") || title.equalsIgnoreCase("Admission")) {
+
+        /*switch (title){
+            case "Home" :
+                try {
+                    bottomNav.setSelectedItemId(R.id.home);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                break;
+            case "Pay Fees" :
+                bottomNav.setSelectedItemId(R.id.list);
+                break;
+            case "Profile" :
+                bottomNav.setSelectedItemId(R.id.form);
+                break;
+            case "Messages":
+                bottomNav.setSelectedItemId(R.id.master);
+                break;
+
+                default:
+                    bottomNav.setSelectedItemId(R.id.home);
+                    break;
+        }*/
+
+        if(sharedPreferences_svu.get_Logged()
+                || title.equalsIgnoreCase("Home")
+                || title.equalsIgnoreCase("Admission")
+                || title.equalsIgnoreCase("Gallery")) {
             fragmentManager = getSupportFragmentManager();
 
             FragmentTransaction transaction = fragmentManager.beginTransaction();

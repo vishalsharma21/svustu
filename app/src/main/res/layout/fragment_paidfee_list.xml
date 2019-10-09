@@ -34,12 +34,13 @@
     <RelativeLayout
         android:id="@+id/rlBottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_alignParentBottom="true">
 
         <TextView
             android:id="@+id/txtDebit"
             android:textSize="12sp"
+            android:layout_above="@+id/txtDue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -52,6 +53,7 @@
         <TextView
             android:id="@+id/txtCredit"
             android:textSize="12sp"
+            android:layout_above="@+id/txtDue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -60,6 +62,15 @@
             android:padding="2dp"
             android:background="@drawable/button_signup_curve"
             android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/txtDue"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 

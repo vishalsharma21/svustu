@@ -87,7 +87,7 @@ public class NewsFragment extends Fragment {
                             } else {
                                 rcMarks.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
                             }
-                            rcMarks.setAdapter(new MyMarksAdapter(feeModels));
+                            rcMarks.setAdapter(new MyMarksAdapter(feeModels, getActivity()));
                         }
                         catch (Exception e) {
                             e.getMessage();

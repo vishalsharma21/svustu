@@ -18,11 +18,11 @@ import java.util.List;
 public class MyPaidFeeRecyclerViewAdapter extends RecyclerView.Adapter<MyPaidFeeRecyclerViewAdapter.ViewHolder> {
 
     private final ArrayList<FeeModel> mValues;
-    private final OnListFragmentInteractionListener mListener;
+//    private final OnListFragmentInteractionListener mListener;
 
-    public MyPaidFeeRecyclerViewAdapter(ArrayList<FeeModel> items, OnListFragmentInteractionListener listener) {
+    public MyPaidFeeRecyclerViewAdapter(ArrayList<FeeModel> items) {
         mValues = items;
-        mListener = listener;
+//        mListener = listener;
     }
 
     @Override

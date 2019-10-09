@@ -64,12 +64,12 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int dateTitle = 0x7f090091;
-        public static final int daysContainer = 0x7f090092;
-        public static final int leftButton = 0x7f09010f;
-        public static final int rightButton = 0x7f09017e;
-        public static final int titleLayout = 0x7f0901e9;
-        public static final int weekLayout = 0x7f09021e;
+        public static final int dateTitle = 0x7f090092;
+        public static final int daysContainer = 0x7f090093;
+        public static final int leftButton = 0x7f090110;
+        public static final int rightButton = 0x7f09017f;
+        public static final int titleLayout = 0x7f0901ea;
+        public static final int weekLayout = 0x7f090220;
     }
     public static final class layout {
         private layout() {}

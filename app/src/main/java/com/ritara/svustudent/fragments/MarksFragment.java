@@ -20,6 +20,7 @@ import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.ritara.svustudent.Dashboard;
 import com.ritara.svustudent.MyMarksAdapter;
 import com.ritara.svustudent.R;
+import com.ritara.svustudent.utils.Constants;
 import com.ritara.svustudent.utils.FeeModel;
 import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
@@ -27,6 +28,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
+import static com.ritara.svustudent.utils.Constants.KEY;
 
 public class MarksFragment extends Fragment {
     private SharedPreferences_SVU sharedPreferences_svu;
@@ -38,27 +42,6 @@ public class MarksFragment extends Fragment {
     private TextView txtDebit, txtCredit;
     RecyclerView rcMarks;
     private OnListFragmentInteractionListener mListener;
-
-    public MarksFragment() {
-    }
-
-    @SuppressWarnings("unused")
-    public static MarksFragment newInstance(int columnCount) {
-        MarksFragment fragment = new MarksFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -91,7 +74,7 @@ public class MarksFragment extends Fragment {
     private void GetMarksInfo() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetMarksheetInfo?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetMarksheetInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())
                 .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .setTag("login")
@@ -113,7 +96,7 @@ public class MarksFragment extends Fragment {
                                 } else {
                                     rcMarks.setLayoutManager(new GridLayoutManager(getActivity(), mColumnCount));
                                 }
-                                rcMarks.setAdapter(new MyMarksAdapter(feeModels));
+                                rcMarks.setAdapter(new MyMarksAdapter(feeModels, getActivity()));
                             }else{
                                 Toast.makeText(getActivity(), "No data found.", Toast.LENGTH_SHORT).show();
                             }

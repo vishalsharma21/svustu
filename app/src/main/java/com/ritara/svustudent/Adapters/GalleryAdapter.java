@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,6 +29,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
 
     private final ArrayList<Model> mValues;
     private Context activity;
+
 
     public GalleryAdapter(ArrayList<Model> items, FragmentActivity activity) {
         mValues = items;
@@ -52,10 +54,8 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
                 .fit()
                 .into(holder.imgGal);
 
-//        Picasso.get().load(mValues.get(position).getImage()).centerCrop().into(holder.imgGal);
-        /*Glide.with(activity)
-                .load(mValues.get(position).getImage())
-                .into(holder.imgGal);*/
+
+
         holder.imgGal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,12 +72,14 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         View mView;
         ImageView imgGal;
+        Button btnExit;
         public ArrayList<FeeModel> mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
             imgGal = (ImageView) view.findViewById(R.id.imgGal);
+            btnExit = (Button) view.findViewById(R.id.btnExit);
         }
 
         @Override
@@ -88,11 +90,22 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     }
 
     public void showOpener(String img) {
-
-        Dialog dialog = new Dialog(activity);
+        final Dialog dialog = new Dialog(activity, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_zoommable_view);
 
+        dialog.findViewById(R.id.btnExit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    if (dialog.isShowing()) {
+                        dialog.dismiss();
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
         PhotoView image = dialog.findViewById(R.id.img_user_img);
         try {
             Glide.with(activity).applyDefaultRequestOptions(new RequestOptions()
