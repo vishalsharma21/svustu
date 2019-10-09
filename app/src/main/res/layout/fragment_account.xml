@@ -157,14 +157,16 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"/>
 
-    <TextView
+
+    <Button
         android:id="@+id/btnLogOut"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGOUT"
-        android:textColor="@color/Dark_Blue"
-        android:textSize="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"/>
+     android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_signup_curve"
+        android:ems="12"
+        android:text="LogOut"
+        android:textColor="#fff" />
 
 </LinearLayout>

@@ -89,7 +89,7 @@ public class Login extends BaseActivity {
                           startActivity(new Intent(Login.this, Dashboard.class));
                           finish();
                       }else{
-                        Toast.makeText(Login.this, "Password or mother's name nat matched.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Password or Mother's name not matched.", Toast.LENGTH_SHORT).show();
                       }
                   }
                 }

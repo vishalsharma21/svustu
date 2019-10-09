@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "D:\\SVU_Student\\svu_student\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f27f02ac694958930370b74328d48d4b/Custom-Calendar-View-v1.1/res/values-v14/values-v14.xml",
+                    "source": "C:\\Users\\Gyanendra\\.gradle\\caches\\transforms-2\\files-2.1\\f27f02ac694958930370b74328d48d4b\\Custom-Calendar-View-v1.1\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -56,7 +56,6 @@ public class MyMarksAdapter extends RecyclerView.Adapter<MyMarksAdapter.ViewHold
     }
 
     private void showResultDialog(String name) {
-        //Marks : IVth  Sem
         String[] marks = name.split(":");
         String mrks = marks[1].trim();
         Dialog dialog = new Dialog(context);

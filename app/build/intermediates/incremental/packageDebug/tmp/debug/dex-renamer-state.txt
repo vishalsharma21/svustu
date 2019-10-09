@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Wed Oct 09 17:19:50 IST 2019
 base.0=/Users/mac/Desktop/SVU_Student/SVUStudent/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+=======
+#Sat Oct 05 18:05:18 IST 2019
+base.0=D\:\\SVU_Student\\svu_student\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+>>>>>>> 86d69c5c52d117a89367f6f8691d587c6ddc057e
 path.0=classes.dex
 renamed.0=classes.dex
