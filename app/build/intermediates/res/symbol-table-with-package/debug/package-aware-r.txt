@@ -2042,6 +2042,7 @@ id welcome
 id withText
 id wrap
 id wrap_content
+id wvResult
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -2126,6 +2127,7 @@ layout dialog_demo
 layout dialog_gallery
 layout dialog_profile
 layout dialog_progress
+layout dialog_result_view
 layout dialog_zoommable_view
 layout emergency_dialog
 layout exams
