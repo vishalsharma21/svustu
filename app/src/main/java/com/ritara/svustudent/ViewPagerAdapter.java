@@ -45,28 +45,10 @@ public class ViewPagerAdapter extends PagerAdapter {
         view = layoutInflater.inflate(R.layout.custom_layout, container, false);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
 
-
         Picasso.get()
                 .load(images.get(position).toString()).into(imageView);
-        /*ImageView[] dots = new ImageView[images.size()];
-        LinearLayout linearLayout = view.findViewById(R.id.textView);
-        for (int i = 0; i < images.size(); i++) {
-////
-            dots[i] = new ImageView(context);
-            if (i == position) {
-                dots[i].setImageDrawable(ContextCompat.getDrawable(context.getApplicationContext(), R.drawable.active_dot));
-            } else {
-                dots[i].setImageDrawable(ContextCompat.getDrawable(context.getApplicationContext(), R.drawable.non_active_dot));
-            }
-//
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-//
-            params.setMargins(8, 0, 8, 0);
-
-            linearLayout.addView(dots[i], params);
-
-        }*/
         container.addView(view);
+
         return view;
     }
 

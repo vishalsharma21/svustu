@@ -56,5 +56,16 @@
         <item>Alumini</item>
     </string-array>
 
+    <string-array name="grievance_array">
+        <item>Select Type</item>
+        <item>Name correction on marks</item>
+        <item>Marks correction</item>
+        <item>Mark sheet reprint</item>
+        <item>Marks carry pver update</item>
+        <item>Fees and Fine</item>
+        <item>Diploma Degree</item>
+        <item>ID Card related</item>
+        <item>Others</item>
+    </string-array>
 
 </resources>

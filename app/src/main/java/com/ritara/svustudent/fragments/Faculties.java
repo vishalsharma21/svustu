@@ -28,6 +28,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.COURSE;
+import static com.ritara.svustudent.utils.Constants.FACULTIES;
+import static com.ritara.svustudent.utils.Constants.RULE;
+
 
 public class Faculties extends Fragment {
     private SharedPreferences_SVU sharedPreferences_svu;
@@ -58,10 +63,10 @@ public class Faculties extends Fragment {
     private void GetNotice() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "faculties")
-                .addBodyParameter("course", "" +sharedPreferences_svu.getCourse() )
-                .setTag("login")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, FACULTIES)
+                .addBodyParameter(COURSE, "" +sharedPreferences_svu.getCourse() )
+                .setTag(FACULTIES)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {

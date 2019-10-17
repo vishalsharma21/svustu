@@ -123,13 +123,6 @@ public class SharedPreferences_SVU {
         return sharedPreference.getBoolean("getTrainingDone", false);
     }
 
-
-
-
-
-
-
-
     public void set_MotherName(String getTrainingDone) {
         editor.putString("set_MotherName", getTrainingDone);
         editor.commit();
@@ -166,7 +159,6 @@ public class SharedPreferences_SVU {
         editor.putBoolean("chat_page", onPage);
         editor.commit();
     }
-
 
     public String getBatch() {
         return sharedPreference.getString("Batch", "");

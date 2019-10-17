@@ -1,10 +1,5 @@
 package com.ritara.svustudent.utils;
 
-
-/**
- * Created by aaditya on 3/11/18.
- */
-
 public class Model {
 
     String id;

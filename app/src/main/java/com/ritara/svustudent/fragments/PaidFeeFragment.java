@@ -36,6 +36,12 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.ritara.svustudent.utils.Constants.ENo;
+import static com.ritara.svustudent.utils.Constants.GET_FEE_INFO;
+import static com.ritara.svustudent.utils.Constants.KEY;
+import static com.ritara.svustudent.utils.Constants.KEY_NAME;
+import static com.ritara.svustudent.utils.Constants.SVU_BASE_URL;
+
 public class PaidFeeFragment extends Fragment {
 
     private int mColumnCount = 1;
@@ -84,10 +90,10 @@ public class PaidFeeFragment extends Fragment {
     private void GetFeeInfo(final View view) {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetFeeInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"8&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())//SET14A00030058
-                .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .setTag("login")
+        AndroidNetworking.post(SVU_BASE_URL+GET_FEE_INFO+"?"+ENo+"="+sharedPreferences_svu.getUserId()+"8&"+KEY_NAME+"="+KEY)
+                .addBodyParameter(ENo, ""+sharedPreferences_svu.getUserId())
+                .addBodyParameter(KEY_NAME, KEY)
+                .setTag("Fee")
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONArray(new JSONArrayRequestListener() {

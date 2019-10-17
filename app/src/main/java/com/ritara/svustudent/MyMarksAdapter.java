@@ -31,6 +31,8 @@ import java.util.ArrayList;
 
 import uk.co.senab.photoview.PhotoView;
 
+import static com.ritara.svustudent.utils.Constants.SVU_BASE_URL_MARKS;
+
 public class MyMarksAdapter extends RecyclerView.Adapter<MyMarksAdapter.ViewHolder> implements View.OnTouchListener, Handler.Callback{
 
     private final ArrayList<FeeModel> mValues;
@@ -104,10 +106,18 @@ public class MyMarksAdapter extends RecyclerView.Adapter<MyMarksAdapter.ViewHold
     private void showResultDialog(String name) {
         String[] marks = name.split(":");
         String mrks = marks[1].trim();
+        mrks = mrks.replace("  ", "%20");
         dialog = new Dialog(context,android.R.style.Theme_Black_NoTitleBar_Fullscreen);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_result_view);
-        String url = "http://45.115.168.40/result/View.aspx?r="+sharedPreferences_svu.getUserId()+"&c="+mrks;
+        String url = SVU_BASE_URL_MARKS+sharedPreferences_svu.getUserId()+"&c="+mrks;
+
+        dialog.findViewById(R.id.fltBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
 
         wb=(WebView)dialog.findViewById(R.id.wvResult);
         wb.getSettings().setJavaScriptEnabled(true);

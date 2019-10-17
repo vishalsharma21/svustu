@@ -27,10 +27,15 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.security.Key;
 import java.util.ArrayList;
 
 import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
+import static com.ritara.svustudent.utils.Constants.ENo;
 import static com.ritara.svustudent.utils.Constants.KEY;
+import static com.ritara.svustudent.utils.Constants.KEY_NAME;
+import static com.ritara.svustudent.utils.Constants.MARKS_INFO;
+import static com.ritara.svustudent.utils.Constants.SVU_BASE_URL;
 
 public class MarksFragment extends Fragment {
     private SharedPreferences_SVU sharedPreferences_svu;
@@ -74,9 +79,9 @@ public class MarksFragment extends Fragment {
     private void GetMarksInfo() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetMarksheetInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())
-                .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+        AndroidNetworking.post(SVU_BASE_URL+MARKS_INFO+"?"+ENo+"="+sharedPreferences_svu.getUserId()+"&"+KEY_NAME+"="+KEY)
+                .addBodyParameter(ENo, ""+sharedPreferences_svu.getUserId())
+                .addBodyParameter(KEY_NAME, KEY)
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
                 .build()

@@ -32,7 +32,6 @@ public class ListManager {
         this.arrayList = arrayList;
         this.resources = resources;
         baseAdapterClass = new BaseAdapterClass();
-//        baseAdapterClass.setHasStableIds(true);
         this.anInterface = anInterface;
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setAdapter(baseAdapterClass);
@@ -66,9 +65,5 @@ public class ListManager {
             return arrayList.size();
         }
 
-//        @Override
-//        public long getItemId(int position) {
-//            return position;
-//        }
     }
 }

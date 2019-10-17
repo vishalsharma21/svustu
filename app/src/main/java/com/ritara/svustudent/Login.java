@@ -2,6 +2,7 @@ package com.ritara.svustudent;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,13 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import static com.ritara.svustudent.utils.Constants.ENo;
+import static com.ritara.svustudent.utils.Constants.KEY;
+import static com.ritara.svustudent.utils.Constants.KEY_NAME;
+import static com.ritara.svustudent.utils.Constants.My_KEY;
+import static com.ritara.svustudent.utils.Constants.PER_INFO;
+import static com.ritara.svustudent.utils.Constants.SVU_BASE_URL;
 
 public class Login extends BaseActivity {
 
@@ -53,15 +61,37 @@ public class Login extends BaseActivity {
       }
     });
 
+
+
+      password.setOnKeyListener(new View.OnKeyListener()
+      {
+          public boolean onKey(View v, int keyCode, KeyEvent event)
+          {
+              if (event.getAction() == KeyEvent.ACTION_DOWN)
+              {
+                  switch (keyCode)
+                  {
+                      case KeyEvent.KEYCODE_DPAD_CENTER:
+                      case KeyEvent.KEYCODE_ENTER:
+                          register();
+                          return true;
+                      default:
+                          break;
+                  }
+              }
+              return false;
+          }
+      });
+
   }
 
   private void register() {
     if (!isloadershowing())
       showLoader();
-    AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetPersonalInfo?EnrollNo=" + username.getText().toString().trim() + "&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-            .addBodyParameter("EnrollNo", "" + username.getText().toString().trim())
-            .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-            .setTag("login")
+    AndroidNetworking.post(SVU_BASE_URL+PER_INFO+"?"+ENo+"=" + username.getText().toString().trim() + "&"+KEY_NAME+"="+My_KEY)
+            .addBodyParameter(ENo, "" + username.getText().toString().trim())
+            .addBodyParameter(KEY_NAME, My_KEY)
+            .setTag(My_KEY)
             .setPriority(Priority.MEDIUM)
             .build()
             .getAsJSONArray(new JSONArrayRequestListener() {

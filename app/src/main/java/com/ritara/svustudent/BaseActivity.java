@@ -30,15 +30,12 @@ import okhttp3.OkHttpClient;
 
 public class BaseActivity extends AppCompatActivity {
     private static OkHttpClient httpClient;
-//    ProgressDialog progressDialog;
     private float mDensity;
     MyProgressDialog progressdialog;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         progressdialog = new MyProgressDialog(this);
-
-//        progressDialog = new ProgressDialog(BaseActivity.this);
         mDensity = getResources().getDisplayMetrics().density;
 
     }
@@ -101,10 +98,6 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-//    public ProgressDialog giveLoaderObject() {
-//        return progressDialog;
-//    }
-
     public void showToast(String msg) {
         Toast.makeText(this, "" + msg, Toast.LENGTH_SHORT).show();
     }
@@ -120,7 +113,6 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void hideSoftKeyBoard(View view) {
-//        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         if (view != null) {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
@@ -128,7 +120,6 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void showSoftKeyBoard(View view) {
-//        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
         if (view.requestFocus()) {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.showSoftInput(view, InputMethodManager.SHOW_IMPLICIT);

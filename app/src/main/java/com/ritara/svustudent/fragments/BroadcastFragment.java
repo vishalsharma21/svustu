@@ -77,6 +77,26 @@ import uk.co.senab.photoview.PhotoView;
 
 import static android.app.Activity.RESULT_OK;
 import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.BATCH;
+import static com.ritara.svustudent.utils.Constants.DELETE_CHAT;
+import static com.ritara.svustudent.utils.Constants.FIREBASE;
+import static com.ritara.svustudent.utils.Constants.GET_CHAT;
+import static com.ritara.svustudent.utils.Constants.GP_CHAT;
+import static com.ritara.svustudent.utils.Constants.HS_NO;
+import static com.ritara.svustudent.utils.Constants.IMAGE;
+import static com.ritara.svustudent.utils.Constants.KEY_FULLNAME;
+import static com.ritara.svustudent.utils.Constants.KEY_USER_ID;
+import static com.ritara.svustudent.utils.Constants.MESSAGE;
+import static com.ritara.svustudent.utils.Constants.MOBILE_NUMBER;
+import static com.ritara.svustudent.utils.Constants.NAME;
+import static com.ritara.svustudent.utils.Constants.PROFILE_IMAGE;
+import static com.ritara.svustudent.utils.Constants.RECEIVER_ID;
+import static com.ritara.svustudent.utils.Constants.RULE;
+import static com.ritara.svustudent.utils.Constants.SENDERS_ID;
+import static com.ritara.svustudent.utils.Constants.SENDERS_NAME;
+import static com.ritara.svustudent.utils.Constants.SENDER_ID;
+import static com.ritara.svustudent.utils.Constants.SOCIETY_ID;
+import static com.ritara.svustudent.utils.Constants.UPLOAD_IMAGE;
 
 public class BroadcastFragment extends Fragment implements View.OnClickListener {
 
@@ -113,7 +133,7 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
 
             sharedPreference_main.setOnChat(true);
 
-            getChat("get_chat", getParams("get_chat"));
+            getChat(GET_CHAT, getParams(GET_CHAT));
 
             try {
                 chat_list = new ArrayList<>();
@@ -127,7 +147,7 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
             BroadcastReceiver receiver = new BroadcastReceiver() {
                 @Override
                 public void onReceive(Context context, Intent intent) {
-                    getChat("get_chat_from_br", getParams("get_chat"));
+                    getChat("get_chat_from_br", getParams(GET_CHAT));
                 }
             };
             getActivity().registerReceiver(receiver, filter);
@@ -173,21 +193,21 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
         bundle = getActivity().getIntent().getExtras();
         if (bundle != null) {
             try {
-                if (bundle.getString("senders_id") == null) {
-                    name = bundle.getString("KEY_FULLNAME");
-                    reciepient_id = bundle.getString("KEY_USER_ID");
+                if (bundle.getString(SENDERS_ID) == null) {
+                    name = bundle.getString(KEY_FULLNAME);
+                    reciepient_id = bundle.getString(KEY_USER_ID);
                     from_where = "";
                 } else {
-                    name = bundle.getString("senders_name");
-                    reciepient_id = bundle.getString("senders_id");
-                    from_where = "firebase";
+                    name = bundle.getString(SENDERS_NAME);
+                    reciepient_id = bundle.getString(SENDERS_ID);
+                    from_where = FIREBASE;
                 }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
-        textName.setText("ML Academians");
+        textName.setText("SVU");
         imgComment.setOnClickListener(this);
         imgBack.setOnClickListener(this);
         imgSend.setOnClickListener(this);
@@ -221,9 +241,9 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
 
     private void uploadImage(File photo, final String from) {
         AndroidNetworking.upload(BASE_URL)
-                .addMultipartFile("image",photo)
-                .addMultipartParameter("rule", "upload_image")
-                .setTag("upload_image")
+                .addMultipartFile(IMAGE, photo)
+                .addMultipartParameter(RULE, UPLOAD_IMAGE)
+                .setTag(UPLOAD_IMAGE)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
@@ -232,9 +252,6 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                         try{
                             if (response.getString("status").equals("1")) {
                                 SendChat(response.getString("url"), from);
-//                                showToast("Uploaded_Successfully");
-                            } else {
-//                                showToast(response.getString("message"));
                             }
                         }catch (Exception e){
                             e.printStackTrace();
@@ -473,7 +490,7 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                     cursor.moveToFirst();
                     image_path = cursor.getString(cursor.getColumnIndex(filePathColumn[0]));
                     file = new File(new URI("file://" + image_path.replace(" ", "%20")));
-                    uploadImage(file, "image");
+                    uploadImage(file, IMAGE);
                     cursor.close();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -552,56 +569,10 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
 
     private HashMap<String, String> getParams(String type) {
         HashMap<String, String> params = new HashMap<>();
-        params.put("rule", "get_chat");
-        params.put("batch", sharedPreference_main.getBatch());
+        params.put(RULE, GET_CHAT);
+        params.put(BATCH, sharedPreference_main.getBatch());
         return params;
     }
-
-    /*@Override
-    public void onResponse(String response, String type) {
-        try {
-//            if (type.equalsIgnoreCase("get_chat")) {
-            dismissLoader();
-//            }
-            JSONObject object = new JSONObject(response);
-//            if (type.equalsIgnoreCase("get_chat")) {
-            if (object.getString("status").equals("1")) {
-                sharedPreference_main.setChatNotiCount(0);
-                if (type.equalsIgnoreCase("get_chat")) {
-                    etChat.setText("");
-                }
-                chat_list = new ArrayList<>();
-                JSONArray array = object.getJSONArray("data");
-                Db_Chat db_chat = Db_Chat.getInstance(ChatActivity.this);
-
-                for (int i = 0; i < array.length(); i++) {
-                    JSONObject jsonObject = array.getJSONObject(i);
-                    Model model = new Model();
-                    model.setId(jsonObject.getString("id"));
-                    model.setUser_id(jsonObject.getString("user_id"));
-                    model.setTimestamp(jsonObject.getString("timestamp").substring(0, jsonObject.getString("timestamp").length() - 1));
-                    model.setText(Base_activity.getenDecoodedString(jsonObject.getString("text")));
-                    model.setImage(jsonObject.getString("image"));
-                    model.setVideo(jsonObject.getString("video"));
-                    model.setFile(jsonObject.getString("file"));
-                    model.setName(jsonObject.getString("name"));
-                    model.setMobile_no(jsonObject.getString("mobile_number"));
-                    model.setGroup_chat_id(jsonObject.getString("receiver_id"));
-                    if (!db_chat.IsItemExist(jsonObject.getString("id"))) {
-                        db_chat.insertDB_ChatDetails(model);
-                    }
-                }
-                chat_list = new ArrayList<>();
-                chat_list.addAll(db_chat.get_DB_Chat_Details());
-                setAdapter();
-            }
-//            }
-        } catch (Exception e) {
-            e.getMessage();
-            e.printStackTrace();
-            dismissLoader();
-        }
-    }*/
 
     private void SendChat(final String imgUrl, final String from) {
 
@@ -612,24 +583,24 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
             } else if (from.equalsIgnoreCase("file")) {
                 mBodyParameterMap.put("file", imgUrl);
             } else {
-                mBodyParameterMap.put("image", imgUrl);
+                mBodyParameterMap.put(IMAGE, imgUrl);
             }
         } else {
             mBodyParameterMap.put("message", BaseActivity.getEncodedString(etChat.getText().toString()).length()>0 ? etChat.getText().toString() : "Deleted#" + delId);
         }
 
         AndroidNetworking.post(BASE_URL)
-                .addBodyParameter("rule", "gp_chat")
-                .addBodyParameter("sender_id", sharedPreference_main.getUserId())
-                .addBodyParameter("batch", "2019")
-                .addBodyParameter("profile_img", sharedPreference_main.getProfilepic())
-                .addBodyParameter("mobile_number", sharedPreference_main.getUserId())
-                .addBodyParameter("name", sharedPreference_main.get_Username())
-                .addBodyParameter("receiver_id", ""+ jumpTo)
-                .addBodyParameter("society_id", "SVU")
-                .addBodyParameter("house_number", "C150")
+                .addBodyParameter(RULE, GP_CHAT)
+                .addBodyParameter(SENDER_ID, sharedPreference_main.getUserId())
+                .addBodyParameter(BATCH, "2019")
+                .addBodyParameter(PROFILE_IMAGE, sharedPreference_main.getProfilepic())
+                .addBodyParameter(MOBILE_NUMBER, sharedPreference_main.getUserId())
+                .addBodyParameter(NAME, sharedPreference_main.get_Username())
+                .addBodyParameter(RECEIVER_ID, ""+ jumpTo)
+                .addBodyParameter(SOCIETY_ID, "SVU")
+                .addBodyParameter(HS_NO, "C150")
                 .addBodyParameter(mBodyParameterMap)
-                .setTag("set_contribution")
+                .setTag(GP_CHAT)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
@@ -639,13 +610,13 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                             if (response.getString("status").equals("1")) {
                                 lstChat.setSelection(lstChat.getAdapter().getCount() - 1);
                                 etChat.setText("");
-                                getChat("get_chat", getParams("get_chat"));
+                                getChat(GET_CHAT, getParams(GET_CHAT));
 //                                hit_api.hitVolleyApi(ChatActivity.this, "get_chat", ChatActivity.this, getParams("get_chat"));
                                 txtComment.setVisibility(View.GONE);
                                 imgComment.setVisibility(View.GONE);
                                 jumpTo = "";
                             } else {
-                                ((Dashboard)getActivity()).showToast(response.getString("message"));
+                                ((Dashboard)getActivity()).showToast(response.getString(MESSAGE));
                             }
                         }catch (Exception e){
                             e.printStackTrace();
@@ -671,8 +642,8 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
 
     private void getChat(final String get_chat_from_br, HashMap<String, String> get_chat){
         AndroidNetworking.post(BASE_URL)
-                .addBodyParameter("rule", "get_chat")
-                .setTag("Get_Chat")
+                .addBodyParameter(RULE, GET_CHAT)
+                .setTag(GET_CHAT)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
@@ -682,7 +653,7 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                         try{
                             if (object.getString("status").equals("1")) {
                                 sharedPreference_main.setChatNotiCount(0);
-                                if (get_chat_from_br.equalsIgnoreCase("get_chat")) {
+                                if (get_chat_from_br.equalsIgnoreCase(GET_CHAT)) {
                                     etChat.setText("");
                                 }
                                 chat_list = new ArrayList<>();
@@ -835,7 +806,7 @@ public class BroadcastFragment extends Fragment implements View.OnClickListener 
                                         delId = chatData.get(i).getId();
 
                                         AndroidNetworking.post(BASE_URL)
-                                                .addBodyParameter("rule", "delete_chat")
+                                                .addBodyParameter(RULE, DELETE_CHAT)
                                                 .addBodyParameter("id", "" + chatData.get(i).getId())
                                                 .setTag("")
                                                 .setPriority(Priority.MEDIUM)

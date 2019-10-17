@@ -24,6 +24,20 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import static com.ritara.svustudent.utils.Constants.ADDRESS;
+import static com.ritara.svustudent.utils.Constants.ADHAR_NO;
+import static com.ritara.svustudent.utils.Constants.ADMISSION_QUERY;
+import static com.ritara.svustudent.utils.Constants.BASE_URL_MAIN;
+import static com.ritara.svustudent.utils.Constants.COURSE;
+import static com.ritara.svustudent.utils.Constants.DOB;
+import static com.ritara.svustudent.utils.Constants.EMAIL;
+import static com.ritara.svustudent.utils.Constants.FATHER_NAME;
+import static com.ritara.svustudent.utils.Constants.FINAL_MARKS;
+import static com.ritara.svustudent.utils.Constants.LAST_QUALIFICATION;
+import static com.ritara.svustudent.utils.Constants.MOBILE;
+import static com.ritara.svustudent.utils.Constants.NAME;
+import static com.ritara.svustudent.utils.Constants.RULE;
+
 public class AdmissionFragment extends Fragment {
 
     private EditText name, email_id ,father_name,last_qualification,phone_number,course,final_marks,adhar_number,dob,address;
@@ -63,22 +77,19 @@ public class AdmissionFragment extends Fragment {
     private void admission_query() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/suv_api/api.php")
-                .addBodyParameter("rule", "admission_query" )
-                .addBodyParameter("name", "" + name.getText().toString().trim())
-                .addBodyParameter("email", "" + email_id.getText().toString().trim())
-                .addBodyParameter("mobile", "" + phone_number.getText().toString().trim())
-                .addBodyParameter("course", "" + course.getText().toString().trim())
-                .addBodyParameter("last_qualification", "" + last_qualification.getText().toString().trim())
-                .addBodyParameter("dob", "" + dob.getText().toString().trim())
-                .addBodyParameter("father_name", "" + father_name.getText().toString().trim())
-                .addBodyParameter("adhar_no", "" + adhar_number.getText().toString().trim())
-                .addBodyParameter("final_marks", "" + final_marks.getText().toString().trim())
-                .addBodyParameter("address", "" + address.getText().toString().trim())
-
-//            .addBodyParameter("mob_email", "" + username)
-//            .addBodyParameter("device_id", sharedPreferences_svu.getTokenIdForFirebase())
-                .setTag("admission_query")
+        AndroidNetworking.post(BASE_URL_MAIN)
+                .addBodyParameter(RULE, ADMISSION_QUERY )
+                .addBodyParameter(NAME, "" + name.getText().toString().trim())
+                .addBodyParameter(EMAIL, "" + email_id.getText().toString().trim())
+                .addBodyParameter(MOBILE, "" + phone_number.getText().toString().trim())
+                .addBodyParameter(COURSE, "" + course.getText().toString().trim())
+                .addBodyParameter(LAST_QUALIFICATION, "" + last_qualification.getText().toString().trim())
+                .addBodyParameter(DOB, "" + dob.getText().toString().trim())
+                .addBodyParameter(FATHER_NAME, "" + father_name.getText().toString().trim())
+                .addBodyParameter(ADHAR_NO, "" + adhar_number.getText().toString().trim())
+                .addBodyParameter(FINAL_MARKS, "" + final_marks.getText().toString().trim())
+                .addBodyParameter(ADDRESS, "" + address.getText().toString().trim())
+                .setTag(ADMISSION_QUERY)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONArray(new JSONArrayRequestListener() {

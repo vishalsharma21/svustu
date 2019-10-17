@@ -31,6 +31,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.GET_NOTICE;
+import static com.ritara.svustudent.utils.Constants.RULE;
+import static com.ritara.svustudent.utils.Constants.TYPE;
+
 public class NewsFragment extends Fragment {
 
     private NewsViewModel mViewModel;
@@ -61,11 +66,10 @@ public class NewsFragment extends Fragment {
     private void GetNotice() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "get_notice")
-                .addBodyParameter("type", "0")
-//                .addBodyParameter("course", "" + sharedPreferences_svu.getCourse())
-                .setTag("login")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, GET_NOTICE)
+                .addBodyParameter(TYPE, "0")
+                .setTag(GET_NOTICE)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {

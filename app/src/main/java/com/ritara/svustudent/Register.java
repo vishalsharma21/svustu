@@ -23,6 +23,13 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.EMAIL;
+import static com.ritara.svustudent.utils.Constants.MOBILE;
+import static com.ritara.svustudent.utils.Constants.RULE;
+import static com.ritara.svustudent.utils.Constants.SEND_OTP;
+import static com.ritara.svustudent.utils.Constants.TYPE;
+
 public class Register extends BaseActivity {
     private CountryCodePicker ccp;
     private String countryCodeAndroid = "91";
@@ -63,11 +70,11 @@ public class Register extends BaseActivity {
             public void onClick(View v) {
                 if(type == 1){
                     Intent intent = new Intent(Register.this, Login.class);
-                    intent.putExtra("type", "admission");
+                    intent.putExtra(TYPE, "admission");
                     startActivity(intent);
                 }else {
                     Intent intent = new Intent(Register.this, AdmissionActivity.class);
-                    intent.putExtra("type", "admission");
+                    intent.putExtra(TYPE, "admission");
                     startActivity(intent);
                     SharedPreferences_SVU.getInstance(Register.this).setFrom("admission");
                 }
@@ -90,11 +97,11 @@ public class Register extends BaseActivity {
     private void sendOtp() {
         if (!isloadershowing())
             showLoader();
-        AndroidNetworking.post("solutionsdot-com.in/SVU_api/svu_api.php")
-                .addBodyParameter("rule", "sendotp")
-                .addBodyParameter("mobile", phone_number.getText().toString())
-                .addBodyParameter("email", email_id.getText().toString())
-                .setTag("register")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, SEND_OTP)
+                .addBodyParameter(MOBILE, phone_number.getText().toString())
+                .addBodyParameter(EMAIL, email_id.getText().toString())
+                .setTag(SEND_OTP)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {

@@ -15,6 +15,15 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.DEVICE_ID;
+import static com.ritara.svustudent.utils.Constants.EMAIL;
+import static com.ritara.svustudent.utils.Constants.MOBILE;
+import static com.ritara.svustudent.utils.Constants.NAME;
+import static com.ritara.svustudent.utils.Constants.PASSWORD;
+import static com.ritara.svustudent.utils.Constants.RULE;
+import static com.ritara.svustudent.utils.Constants.STUDENT_SIGN;
+
 public class Password extends BaseActivity {
     private String name, phone_number, email_id;
     private EditText pass, cnfrmpass;
@@ -43,14 +52,14 @@ public class Password extends BaseActivity {
     private void register() {
         if (!isloadershowing())
             showLoader();
-        AndroidNetworking.post("solutionsdot-com.in/SVU_api/svu_api.php")
-                .addBodyParameter("rule", "student_signup")
-                .addBodyParameter("password", "" +pass )
-                .addBodyParameter("name", "" + name)
-                .addBodyParameter("mobile", "" + phone_number)
-                .addBodyParameter("email", "" + email_id)
-                .addBodyParameter("device_id", sharedPreferences_svu.getTokenIdForFirebase())
-                .setTag("register")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, STUDENT_SIGN)
+                .addBodyParameter(PASSWORD, "" +pass )
+                .addBodyParameter(NAME, "" + name)
+                .addBodyParameter(MOBILE, "" + phone_number)
+                .addBodyParameter(EMAIL, "" + email_id)
+                .addBodyParameter(DEVICE_ID, sharedPreferences_svu.getTokenIdForFirebase())
+                .setTag(STUDENT_SIGN)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {

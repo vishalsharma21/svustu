@@ -19,13 +19,11 @@ public class CalendarRecyclerAdapter extends RecyclerView.Adapter<CalendarRecycl
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
 
-    // data is passed into the constructor
     public CalendarRecyclerAdapter(Context context, ArrayList<UserModel> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
     }
 
-    // inflates the cell layout from xml when needed
     @Override
     @NonNull
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -33,7 +31,6 @@ public class CalendarRecyclerAdapter extends RecyclerView.Adapter<CalendarRecycl
         return new ViewHolder(view);
     }
 
-    // binds the data to the TextView in each cell
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.info_date.setText("Date : " + mData.get(position).getDate());
@@ -41,14 +38,12 @@ public class CalendarRecyclerAdapter extends RecyclerView.Adapter<CalendarRecycl
         holder.info_message.setText(mData.get(position).getMessage());
     }
 
-    // total number of cells
     @Override
     public int getItemCount() {
         return mData.size();
     }
 
 
-    // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView info_date, info_time_in, info_message;
         ViewHolder(View itemView) {
@@ -67,17 +62,14 @@ public class CalendarRecyclerAdapter extends RecyclerView.Adapter<CalendarRecycl
         }
     }
 
-    // convenience method for getting data at click position
     public String getItem(int id) {
         return mData.get(id).getDate();
     }
 
-    // allows clicks events to be caught
     public void setClickListener(ItemClickListener itemClickListener) {
         this.mClickListener = itemClickListener;
     }
 
-    // parent activity will implement this method to respond to click events
     public interface ItemClickListener {
         void onItemClick(View view, int position);
     }

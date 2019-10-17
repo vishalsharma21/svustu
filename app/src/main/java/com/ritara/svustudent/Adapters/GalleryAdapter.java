@@ -54,12 +54,12 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
                 .fit()
                 .into(holder.imgGal);
 
-
+        holder.title.setText(mValues.get(position).getName());
 
         holder.imgGal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showOpener(mValues.get(position).getImage());
+                showOpener(mValues.get(position).getImage(), mValues.get(position).getName());
             }
         });
     }
@@ -73,6 +73,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
         View mView;
         ImageView imgGal;
         Button btnExit;
+        TextView title;
         public ArrayList<FeeModel> mItem;
 
         public ViewHolder(View view) {
@@ -80,6 +81,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
             mView = view;
             imgGal = (ImageView) view.findViewById(R.id.imgGal);
             btnExit = (Button) view.findViewById(R.id.btnExit);
+            title = (TextView) view.findViewById(R.id.title);
         }
 
         @Override
@@ -89,11 +91,11 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
         }
     }
 
-    public void showOpener(String img) {
+    public void showOpener(String img, String ttl) {
         final Dialog dialog = new Dialog(activity, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_zoommable_view);
-
+        ((TextView)dialog.findViewById(R.id.txtTtl)).setText(ttl);
         dialog.findViewById(R.id.btnExit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

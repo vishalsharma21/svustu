@@ -40,6 +40,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import static com.github.mikephil.charting.utils.ColorTemplate.COLORFUL_COLORS;
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.ENROLL_NO;
+import static com.ritara.svustudent.utils.Constants.GET_ATTENDANCE;
+import static com.ritara.svustudent.utils.Constants.RULE;
 
 public class ViewAttendance extends Fragment {
 
@@ -63,10 +67,10 @@ public class ViewAttendance extends Fragment {
     private void GetAttendance() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "get_attendance")
-                .addBodyParameter("enrollment_no", "" +sharedPreferences_svu.getUserId())
-                .setTag("login")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, GET_ATTENDANCE)
+                .addBodyParameter(ENROLL_NO, "" +sharedPreferences_svu.getUserId())
+                .setTag(GET_ATTENDANCE)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {

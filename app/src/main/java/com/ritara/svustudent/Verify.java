@@ -16,6 +16,18 @@ import com.mukesh.OtpView;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.EMAIL;
+import static com.ritara.svustudent.utils.Constants.EMAIL_ID;
+import static com.ritara.svustudent.utils.Constants.MOBILE;
+import static com.ritara.svustudent.utils.Constants.NAME;
+import static com.ritara.svustudent.utils.Constants.OTP;
+import static com.ritara.svustudent.utils.Constants.PHONE_NUM;
+import static com.ritara.svustudent.utils.Constants.RULE;
+import static com.ritara.svustudent.utils.Constants.SEND_OTP;
+import static com.ritara.svustudent.utils.Constants.STATUS;
+import static com.ritara.svustudent.utils.Constants.VERIFYOTP;
+
 public class Verify extends BaseActivity {
     private String name, phone_number, email_id;
     private OtpView otp_view;
@@ -24,10 +36,11 @@ public class Verify extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.verify);
+
         otp_view = findViewById(R.id.otp_view);
-        name = getIntent().getStringExtra("name");
-        email_id = getIntent().getStringExtra("email_id");
-        phone_number = getIntent().getStringExtra("phone_number");
+        name = getIntent().getStringExtra(NAME);
+        email_id = getIntent().getStringExtra(EMAIL_ID);
+        phone_number = getIntent().getStringExtra(PHONE_NUM);
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,11 +71,11 @@ public class Verify extends BaseActivity {
     private void verifyOtp() {
         if (!isloadershowing())
             showLoader();
-        AndroidNetworking.post("solutionsdot-com.in/SVU_api/svu_api.php")
-                .addBodyParameter("rule", "verify_otp")
-                .addBodyParameter("otp", "" + otp_view.getOTP())
-                .addBodyParameter("mobile", "" + phone_number)
-                .setTag("register")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, VERIFYOTP)
+                .addBodyParameter(OTP, "" + otp_view.getOTP())
+                .addBodyParameter(MOBILE, "" + phone_number)
+                .setTag(VERIFYOTP)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
@@ -72,9 +85,9 @@ public class Verify extends BaseActivity {
                             if (response.getString("res").equalsIgnoreCase("1")) {
                                 Toast.makeText(Verify.this, "" + response.getString("message"), Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(Verify.this, Password.class);
-                                intent.putExtra("name", name);
-                                intent.putExtra("email_id", email_id);
-                                intent.putExtra("phone_number", phone_number);
+                                intent.putExtra(NAME, name);
+                                intent.putExtra(EMAIL_ID, email_id);
+                                intent.putExtra(PHONE_NUM, phone_number);
                                 startActivity(intent);
                             }
                         } catch (
@@ -91,32 +104,29 @@ public class Verify extends BaseActivity {
                         dismissLoader();
                         anError.getErrorCode();
                     }
-
-
                 });
     }
-
 
     private void sendOtp() {
         if (!isloadershowing())
             showLoader();
-        AndroidNetworking.post("solutionsdot-com.in/SVU_api/svu_api.php")
-                .addBodyParameter("rule", "sendotp")
-                .addBodyParameter("mobile", phone_number)
-                .addBodyParameter("email", email_id)
-                .setTag("register")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, SEND_OTP)
+                .addBodyParameter(MOBILE, phone_number)
+                .addBodyParameter(EMAIL, email_id)
+                .setTag(SEND_OTP)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            if (response.getString("status").equalsIgnoreCase("1")) {
+                            if (response.getString(STATUS).equalsIgnoreCase("1")) {
                                 Toast.makeText(Verify.this, "" + response.getString("message"), Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(Verify.this, Verify.class);
-                                intent.putExtra("name", name);
-                                intent.putExtra("email_id", email_id);
-                                intent.putExtra("phone_number", phone_number);
+                                intent.putExtra(NAME, name);
+                                intent.putExtra(EMAIL_ID, email_id);
+                                intent.putExtra(PHONE_NUM, phone_number);
                                 startActivity(intent);
                             }
                         } catch (Exception e) {

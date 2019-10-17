@@ -26,6 +26,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.ritara.svustudent.utils.Constants.BASE_URL;
+import static com.ritara.svustudent.utils.Constants.GET_GALLERY;
+import static com.ritara.svustudent.utils.Constants.IMAGE;
+import static com.ritara.svustudent.utils.Constants.RULE;
+
 
 public class ClassFragment extends Fragment {
 
@@ -44,9 +49,9 @@ public class ClassFragment extends Fragment {
     private void getGal(final View view) {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://solutionsdot-com.in/SVU_api/svu_api.php/")
-                .addBodyParameter("rule", "get_gallery")
-                .setTag("login")
+        AndroidNetworking.post(BASE_URL)
+                .addBodyParameter(RULE, GET_GALLERY)
+                .setTag(GET_GALLERY)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
@@ -58,16 +63,13 @@ public class ClassFragment extends Fragment {
                             for (int i = 0; i < response.getJSONArray("data").length(); i++) {
                                 Model model = new Model();
                                 JSONObject object = response.getJSONArray("data").getJSONObject(i);
-                                model.setImage(object.getString("image"));
+                                String[] ttl = object.getString(IMAGE).split("upload/");
+                                model.setImage(object.getString(IMAGE));
+                                model.setName(ttl[1]);
                                 models.add(model);
-//                                faculitiesModels.add(model);
                             }
-//                            if (mColumnCount <= 1) {
-//                                rcAtt.setLayoutManager(new LinearLayoutManager(getActivity()));
-//                            } else {
                             RecyclerView rcGal = (RecyclerView) view.findViewById(R.id.rcGal);
                             rcGal.setLayoutManager(new GridLayoutManager(getActivity(), 3));
-//                            }
                             rcGal.setAdapter(new GalleryAdapter(models, getActivity()));
                         }
                         catch (Exception e) {

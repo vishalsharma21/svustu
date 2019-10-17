@@ -27,11 +27,6 @@ public class SplashScreenActivity extends Activity {
 
     sharedPreferences_svu = SharedPreferences_SVU.getInstance(this);
 
-//    imageViewSplash = (ImageView) findViewById(R.id.imageViewSplash);
-//    txtAppName = (TextView) findViewById(R.id.txtAppName);
-//    university = (TextView) findViewById(R.id.university);
-//    relativeLayout = (RelativeLayout) findViewById(R.id.relative);
-
     startAnimations();
   }
 
@@ -42,11 +37,6 @@ public class SplashScreenActivity extends Activity {
 
     rotate.reset();
     translate.reset();
-//    relativeLayout.clearAnimation();
-
-//    imageViewSplash.startAnimation(rotate);
-//    university.startAnimation(translate);
-//    txtAppName.startAnimation(translate);
     SplashThread = new Thread(){
       @Override
       public void run() {
@@ -75,6 +65,8 @@ public class SplashScreenActivity extends Activity {
         startActivity(intent);
       }
     };
+
     SplashThread.start();
   }
+
 }

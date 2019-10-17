@@ -81,8 +81,6 @@ public class CalendarDB {
 
     public void updateStatus(String rowId){
         ContentValues cv = new ContentValues();
-//        cv.put(EMP_STATUS, "1");
-//        database.update(EMP_TABLE, cv, EMP_ORDER_ID + "= ?", new String[] {rowId});
     }
 
 }
