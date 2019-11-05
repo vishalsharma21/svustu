@@ -53,7 +53,7 @@ public class MyMarksAdapter extends RecyclerView.Adapter<MyMarksAdapter.ViewHold
             return true;
         }
         if (msg.what == CLICK_ON_WEBVIEW){
-            Toast.makeText(context, "WebView clicked", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(context, "WebView clicked", Toast.LENGTH_SHORT).show();
             return true;
         }
         return false;

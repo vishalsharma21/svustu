@@ -5,11 +5,11 @@ INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidMani
 INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-43:12
 MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:2:1-32:12
-MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/43e994e5406576743e1bf10b3b842ea1/jetified-navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/e0a6dce5536e90dea31320d84924f58e/jetified-navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/bdd85a0be319268f10045e34a79f4d00/jetified-android-networking-1.0.2/AndroidManifest.xml:18:1-27:12
-MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/AndroidManifest.xml:2:1-11:12
-MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1289f2765c1e7682ffa19faab755c892/jetified-ccp-1.7.2/AndroidManifest.xml:2:1-17:12
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/702e1a40d96e7d12c186d72091148f87/jetified-android-networking-1.0.2/AndroidManifest.xml:18:1-27:12
+MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06fe6ee808bbfa121a77384f29a3d4c8/jetified-circlemenu-2.0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9bcb1b4e0f91f79fe7eed0c5285262b8/jetified-ccp-1.7.2/AndroidManifest.xml:2:1-17:12
 MERGED from [com.github.mukeshsolanki:android-otpview-pinview:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06580449c08a6f1e5e0f603d005076ac/android-otpview-pinview-1.0.2/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.commit451:PhotoView:1.2.4] /Users/mac/.gradle/caches/transforms-2/files-2.1/c23f899ba2945277001ae25f06842c15/PhotoView-1.2.4/AndroidManifest.xml:2:1-12:12
@@ -20,8 +20,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/mac/.gradle/c
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d382ba9b8c9ea9d7b43a9cfaea0ecdf4/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/324a702de98e8e0560de88ae82ee3427/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6d33be1f4a4abbc59bac3397c16fc0bd/jetified-glide-4.8.0/AndroidManifest.xml:2:1-12:12
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/fad910ee69bf0da087f38e8916d5e50a/jetified-glide-4.8.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [com.github.npanigrahy:Custom-Calendar-View:v1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/f27f02ac694958930370b74328d48d4b/Custom-Calendar-View-v1.1/AndroidManifest.xml:2:1-6:12
 MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/3780989bbb47afd43f2eeea4b35b6d56/MPAndroidChart-v3.1.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -51,7 +51,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/mac/.gradl
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/384e1b5d703f7ead48bd253f34125353/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9b4652ab8552ed570c2a60bd4c9ad3ff/jetified-gifdecoder-4.8.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bf9ed8a3d8244619826e573ac714665d/jetified-gifdecoder-4.8.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/ae8b971b40c132101f87c0e7d5e73037/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9d52be8c254a228a91eaf05f51d52923/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9093771a98b01557e81860f4122d7892/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -93,22 +93,22 @@ MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-
 MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:11:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1289f2765c1e7682ffa19faab755c892/jetified-ccp-1.7.2/AndroidManifest.xml:11:5-15:19
-MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1289f2765c1e7682ffa19faab755c892/jetified-ccp-1.7.2/AndroidManifest.xml:11:5-15:19
+MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9bcb1b4e0f91f79fe7eed0c5285262b8/jetified-ccp-1.7.2/AndroidManifest.xml:11:5-15:19
+MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9bcb1b4e0f91f79fe7eed0c5285262b8/jetified-ccp-1.7.2/AndroidManifest.xml:11:5-15:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/df470e1373f88845f5f332cb0d11af75/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/df470e1373f88845f5f332cb0d11af75/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6d33be1f4a4abbc59bac3397c16fc0bd/jetified-glide-4.8.0/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6d33be1f4a4abbc59bac3397c16fc0bd/jetified-glide-4.8.0/AndroidManifest.xml:10:5-20
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/fad910ee69bf0da087f38e8916d5e50a/jetified-glide-4.8.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/fad910ee69bf0da087f38e8916d5e50a/jetified-glide-4.8.0/AndroidManifest.xml:10:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c75b512c68f7bb7a7c5a931aae563be5/lifecycle-process-2.1.0/AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c75b512c68f7bb7a7c5a931aae563be5/lifecycle-process-2.1.0/AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.core:core:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9b4652ab8552ed570c2a60bd4c9ad3ff/jetified-gifdecoder-4.8.0/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9b4652ab8552ed570c2a60bd4c9ad3ff/jetified-gifdecoder-4.8.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bf9ed8a3d8244619826e573ac714665d/jetified-gifdecoder-4.8.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bf9ed8a3d8244619826e573ac714665d/jetified-gifdecoder-4.8.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
@@ -191,16 +191,16 @@ INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidMani
 INJECTED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml
 MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:5:5-7:41
 MERGED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/43e994e5406576743e1bf10b3b842ea1/jetified-navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/43e994e5406576743e1bf10b3b842ea1/jetified-navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/e0a6dce5536e90dea31320d84924f58e/jetified-navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/e0a6dce5536e90dea31320d84924f58e/jetified-navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/bdd85a0be319268f10045e34a79f4d00/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
-MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/bdd85a0be319268f10045e34a79f4d00/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
-MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1289f2765c1e7682ffa19faab755c892/jetified-ccp-1.7.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/1289f2765c1e7682ffa19faab755c892/jetified-ccp-1.7.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/702e1a40d96e7d12c186d72091148f87/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/702e1a40d96e7d12c186d72091148f87/jetified-android-networking-1.0.2/AndroidManifest.xml:23:5-25:41
+MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06fe6ee808bbfa121a77384f29a3d4c8/jetified-circlemenu-2.0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.imangazalievm:circlemenu:2.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06fe6ee808bbfa121a77384f29a3d4c8/jetified-circlemenu-2.0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9bcb1b4e0f91f79fe7eed0c5285262b8/jetified-ccp-1.7.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.hbb20:ccp:1.7.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9bcb1b4e0f91f79fe7eed0c5285262b8/jetified-ccp-1.7.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.mukeshsolanki:android-otpview-pinview:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06580449c08a6f1e5e0f603d005076ac/android-otpview-pinview-1.0.2/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.mukeshsolanki:android-otpview-pinview:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/06580449c08a6f1e5e0f603d005076ac/android-otpview-pinview-1.0.2/AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/AndroidManifest.xml:20:5-44
@@ -221,10 +221,10 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mac/.gradle/ca
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/324a702de98e8e0560de88ae82ee3427/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6d33be1f4a4abbc59bac3397c16fc0bd/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6d33be1f4a4abbc59bac3397c16fc0bd/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/fad910ee69bf0da087f38e8916d5e50a/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/fad910ee69bf0da087f38e8916d5e50a/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
 MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/3780989bbb47afd43f2eeea4b35b6d56/MPAndroidChart-v3.1.0/AndroidManifest.xml:16:5-18:41
 MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/3780989bbb47afd43f2eeea4b35b6d56/MPAndroidChart-v3.1.0/AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
@@ -281,8 +281,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/mac/.gradle/caches/tra
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9b4652ab8552ed570c2a60bd4c9ad3ff/jetified-gifdecoder-4.8.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9b4652ab8552ed570c2a60bd4c9ad3ff/jetified-gifdecoder-4.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bf9ed8a3d8244619826e573ac714665d/jetified-gifdecoder-4.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/bf9ed8a3d8244619826e573ac714665d/jetified-gifdecoder-4.8.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/ae8b971b40c132101f87c0e7d5e73037/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/ae8b971b40c132101f87c0e7d5e73037/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/9d52be8c254a228a91eaf05f51d52923/documentfile-1.0.0/AndroidManifest.xml:20:5-44
@@ -332,13 +332,13 @@ ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2
 	android:scheme
 		ADDED from [com.razorpay:checkout:1.5.12] /Users/mac/.gradle/caches/transforms-2/files-2.1/cb959ff3d6a327c2db060a4e9eca91f0/checkout-1.5.12/AndroidManifest.xml:27:21-44
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /Users/mac/Desktop/SVU_Student/SVUStudent/app/src/main/AndroidManifest.xml:2:1-43:12 reason: com.imanoweb.calendarview has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE

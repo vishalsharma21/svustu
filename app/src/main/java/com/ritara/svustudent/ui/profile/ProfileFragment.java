@@ -26,6 +26,9 @@ import com.ritara.svustudent.utils.SharedPreferences_SVU;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import static com.ritara.svustudent.utils.Constants.My_KEY;
+import static com.ritara.svustudent.utils.Constants.SVU_BASE_URL;
+
 public class ProfileFragment extends Fragment {
 
     private SharedPreferences_SVU sharedPreferences_svu;
@@ -64,9 +67,9 @@ public class ProfileFragment extends Fragment {
     private void GetAcademicInfo() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetAcademicInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+        AndroidNetworking.post(SVU_BASE_URL+"GetAcademicInfo?EnrollNo="+sharedPreferences_svu.getUserId()+"&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
                 .addBodyParameter("EnrollNo", ""+sharedPreferences_svu.getUserId())
-                .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+                .addBodyParameter("key", My_KEY)
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
                 .build()

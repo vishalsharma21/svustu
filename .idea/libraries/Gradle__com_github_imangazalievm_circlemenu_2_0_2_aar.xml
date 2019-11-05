@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.imangazalievm:circlemenu:2.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b114c38959ff2dea1130e9b1dc92f2ee/jetified-circlemenu-2.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06fe6ee808bbfa121a77384f29a3d4c8/jetified-circlemenu-2.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/06fe6ee808bbfa121a77384f29a3d4c8/jetified-circlemenu-2.0.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.imangazalievm/circlemenu/2.0.2/a02bf197e7e1dea4220cf1dbab7f1eae0ac162af/circlemenu-2.0.2-javadoc.jar!/" />

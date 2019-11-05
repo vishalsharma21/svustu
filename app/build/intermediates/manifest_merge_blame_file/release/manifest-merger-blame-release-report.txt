@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.ritara.svustudent"
-4    android:versionCode="6"
-5    android:versionName="1.5" >
+4    android:versionCode="8"
+5    android:versionName="1.7" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
@@ -125,13 +125,13 @@
 67        </activity>
 68
 69        <provider
-69-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+69-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 70            android:name="com.squareup.picasso.PicassoProvider"
-70-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+70-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 71            android:authorities="com.ritara.svustudent.com.squareup.picasso"
-71-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+71-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 72            android:exported="false" />
-72-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/814814131711868d2d604fd63ea4517d/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+72-->[com.squareup.picasso:picasso:2.71828] /Users/mac/.gradle/caches/transforms-2/files-2.1/14964a50300c606a4600dc5f6fe1a45d/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 73        <provider
 73-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/c75b512c68f7bb7a7c5a931aae563be5/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
 74            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

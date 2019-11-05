@@ -61,6 +61,12 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.ritara.svustudent.utils.Constants.ENROLL_NO;
+import static com.ritara.svustudent.utils.Constants.GetLoginAccess;
+import static com.ritara.svustudent.utils.Constants.My_KEY;
+import static com.ritara.svustudent.utils.Constants.SVU_BASE_URL;
+import static com.ritara.svustudent.utils.Constants.SVU_SE_BASE_URL;
+
 public class HomeFragment extends Fragment implements ListManager.ListManagerInterface {
 
     private ListManager grid_adapter;
@@ -146,7 +152,7 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     }
 
     public void onResponse(){
-        AndroidNetworking.get("https://shuddhairpurifier.com/SVU/svu_api.php?rule=SVU_get_home")
+        AndroidNetworking.get(SVU_SE_BASE_URL+"SVU_get_home")
                 .setTag("uploadTest")
                 .setPriority(Priority.HIGH)
                 .build()
@@ -357,9 +363,9 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
     private void GetStuLoginAccess() {
         if (!((Dashboard)getActivity()).isloadershowing())
             ((Dashboard)getActivity()).showLoader();
-        AndroidNetworking.post("http://svu.svu.edu.in/svustuservice.asmx/GetStuLoginAccess?EnrollNo=SET14A00030058&key=rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
-                .addBodyParameter("EnrollNo", "SET14A00030058")
-                .addBodyParameter("key", "rky8UCIdFnfFUVzS8MC9zWVxI1ktu4ht/hO0msS+rSE")
+        AndroidNetworking.post(SVU_BASE_URL+GetLoginAccess+"?EnrollNo="+ sharedPreferences_svu.getUserId() +"&key="+My_KEY)
+                .addBodyParameter(ENROLL_NO, sharedPreferences_svu.getUserId())
+                .addBodyParameter("key", My_KEY)
                 .setTag("login")
                 .setPriority(Priority.MEDIUM)
                 .build()
@@ -388,7 +394,5 @@ public class HomeFragment extends Fragment implements ListManager.ListManagerInt
                     }
                 });
     }
-
-
 
 }

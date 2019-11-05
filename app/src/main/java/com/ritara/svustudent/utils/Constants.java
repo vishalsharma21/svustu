@@ -1,11 +1,12 @@
 package com.ritara.svustudent.utils;
 
 public class Constants {
-    public static final String SVU_BASE_URL = "http://svu.svu.edu.in/svustuservice.asmx/";
+    public static final String SVU_SE_BASE_URL = "https://shuddhairpurifier.com/SVU/svu_api.php?rule=";
+    public static final String SVU_BASE_URL = "https://svu.svu.edu.in/svustuservice.asmx/";
     public static final String SVU_BASE_URL_MARKS = "http://45.115.168.40/result/View.aspx?r=";
     public static final String BASE_URL = "http://solutionsdot-com.in/SVU_api/svu_api.php/";
     public static final String BASE_URL_MAIN = "http://solutionsdot-com.in/SVU_api/suv_api/api.php";
-    public static final String SVU_LIVE_LOGO = "http://svu.edu.in/wp-content/uploads/2018/02/testlogo1.png";
+    public static final String SVU_LIVE_LOGO = "https://svu.edu.in/wp-content/uploads/2018/02/testlogo1.png";
     public static final String SVU = "Shri Venkateshwara University";
 
     public static final String LOGIN_URL = BASE_URL + "login";
@@ -17,6 +18,8 @@ public class Constants {
 
     public static final String STATUS = "status";
     public static final String PHONE_NUM = "phone_number";
+    public static final String GetLoginAccess = "GetStuLoginAccess";
+
     public static final String EMAIL_ID = "email_id";
     public static final String VERIFYOTP = "verify_otp";
     public static final String OTP = "OTP";
